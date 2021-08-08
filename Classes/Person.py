@@ -29,10 +29,10 @@ class Person:
     def speak(self):
         return f"My name is {self.name} and I am {self.age} years old."
 
-    # Static Method
     @staticmethod
     def isAdult(age): 
-        return age > 18
+      return age > 18
+
     #
     # Private methods
     #

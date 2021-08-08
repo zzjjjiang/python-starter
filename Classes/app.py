@@ -8,6 +8,8 @@
 from Person import Person
 
 def main():
+
+  # Construction
   p = Person('Marty', 19)
   print(p.speak())
 
@@ -18,8 +20,9 @@ def main():
   r = Person.isAdult(30)
   print(r)
 
-  print(len(p)) # dunder: __len__
-  print(p) # dunder __repr__
+  # Dunder methods
+  print(len(p))
+  print(p)
 
 if __name__ == "__main__":  
     main()
