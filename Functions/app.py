@@ -14,17 +14,17 @@
 # and you can't mutate the object.
 
 def main():
-  # mutableTest()
-  immutableTest()
+  mutableExample()
+  #immutableExample()
 
-def mutableTest():
+def mutableExample():
   list1 = ['red', 'yellow', 'green']
-  print(list1)
+  print(f'List 1: {list1}')
   list2 = foo(list1)
   print(f'List 1: {list1}')
   print(f'List 2: {list2}')
 
-def immutableTest():
+def immutableExample():
   s1 = 'Hello World'
   s2 = foo2(s1)
   print(s1)
