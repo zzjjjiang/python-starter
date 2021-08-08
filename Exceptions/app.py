@@ -9,10 +9,16 @@ from NotFoundException import NotFoundException
 
 def main():
   try:
-    a = 1
-    if not a == 2:
-      raise NotFoundException('a not be found')
+    # raise Exception('failure')
+    #data = 'Hello World'
+    data = ''
+    if data == '':
+      raise NotFoundException('Hello World could not found.')
+  except NotFoundException as nfe:
+    print('Caught NotFoundException')
+    print(nfe)
   except Exception as e:
+    print('Caught Exception')
     print(e)
 
 if __name__ == "__main__":  
