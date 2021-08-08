@@ -5,8 +5,21 @@
 # Desc: Classes
 #
 
+from Person import Person
+
 def main():
-  pass
+  p = Person('Marty', 19)
+  print(p.speak())
+
+  p2 = Person.fromBirthYear('Marty', 1970)
+  print(p2.speak())
+
+  # Static method
+  r = Person.isAdult(30)
+  print(r)
+
+  print(len(p)) # dunder: __len__
+  print(p) # dunder __repr__
 
 if __name__ == "__main__":  
     main()
