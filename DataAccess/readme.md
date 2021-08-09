@@ -1,7 +1,7 @@
 # DataAccess
 Navigate to this directorty and execute: `python app.py`
 
- # RDS Token
+ # IAM DB Authentication
 ```
 CREATE USER 'nssp-mb-app-user'@'%' IDENTIFIED WITH AWSAuthenticationPlugin as 'RDS';
 GRANT EXECUTE, SELECT, DELETE, INSERT, UPDATE ON sia.* TO 'nssp-mb-app-user'@'%';
