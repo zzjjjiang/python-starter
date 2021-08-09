@@ -8,11 +8,27 @@
 from collections import namedtuple
 
 def main():
-  #listExample()
-  dictionaryExample()
+  listExample()
+  #dictionaryExample()
   #tupleExample()
   #setExample()
   #namedTupleExample()
+  #deepCopyVsShallowCopy()
+
+def deepCopyVsShallowCopy():
+  # Shallow Copy
+  colorList1 = ['red', 'yellow', 'green']
+  colorList2 = colorList1
+  colorList2.append('black')
+  print(colorList1)
+  print(colorList2)
+
+  # Deep Copy
+  # colorList1 = ['red', 'yellow', 'green']
+  # colorList2 = colorList1.copy()
+  # colorList2.append('black')
+  # print(colorList1)
+  # print(colorList2)
 
 def listExample():
   fruitList = ['apple', 'orange', 'grape']
