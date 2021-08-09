@@ -9,10 +9,10 @@ from collections import namedtuple
 
 def main():
   #listExample()
-  #dictionaryExample()
+  dictionaryExample()
   #tupleExample()
   #setExample()
-  namedTupleExample()
+  #namedTupleExample()
 
 def listExample():
   fruitList = ['apple', 'orange', 'grape']
