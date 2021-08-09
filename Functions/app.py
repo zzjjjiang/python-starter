@@ -13,9 +13,20 @@
 # If you pass an immutable object to a method, you still can't rebind the outer reference, 
 # and you can't mutate the object.
 
+count = 3
+
 def main():
   mutableExample()
   #immutableExample()
+  #scopeExample()
+
+def scopeExample():
+  setCount(55)
+  print(count)
+
+def setCount(number):
+  #global count # rebinds global vars into local context
+  count = number
 
 def mutableExample():
   list1 = ['red', 'yellow', 'green']
