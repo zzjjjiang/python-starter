@@ -5,15 +5,8 @@
 # Desc: Python 101
 #
 
-print('test')
-
-a = 'hello world'
-print(a)
-
-b = 10
-c = 11
-
-r = 10/2
+r = 11 % 2
+r = (3 * 2) / 2
 print(r)
 
 
