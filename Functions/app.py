@@ -16,9 +16,9 @@
 count = 3
 
 def main():
-  mutableExample()
+  #mutableExample()
   #immutableExample()
-  #scopeExample()
+  scopeExample()
 
 def scopeExample():
   setCount(55)
@@ -33,7 +33,7 @@ def mutableExample():
   print(f'List 1: {list1}')
   list2 = foo(list1)
   print(f'List 1: {list1}')
-  print(f'List 2: {list2}')
+  #print(f'List 2: {list2}')
 
 def immutableExample():
   s1 = 'Hello World'
@@ -42,10 +42,10 @@ def immutableExample():
   print(s2)
 
 def foo(list): # Pass by reference
-  #list.append('orange')
-  list2 = list.copy()
-  list2.append('purple')
-  return list2
+  list.append('orange')
+  # list2 = list.copy()
+  # list2.append('purple')
+  # return list2
 
 def foo2(s1): # Pass by copy
   s1 = 'test'
