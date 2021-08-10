@@ -32,13 +32,15 @@ def deepCopyVsShallowCopy():
 
 def listExample():
   fruitList = ['apple', 'orange', 'grape']
-  colorList = ['red', 'yellow', 'green']
+  colorList = ['amber', 'red', 'yellow', 'green']
   c = colorList.count('red')
   colorList.append('white')
   fruitList.remove('apple')
-  fruitListCopy = fruitList.copy() # Deep Copy
-  fruitListShallowCopy = fruitList # Shallow Copy
   len(fruitList)
+
+  colorList.sort(key=len) # inplace sort
+  print(colorList)
+
 
 def dictionaryExample():
   dict1 = {
