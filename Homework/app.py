@@ -3,9 +3,9 @@ from collections import defaultdict
 wordDictionary = defaultdict(lambda:0)
 
 file = open("input.txt", "r")
-for x in file:
-  if len(x) > 1: 
-    wordList = x.split()
+for line in file:
+  if len(line) > 1: 
+    wordList = line.split()
     for word in wordList:
       if (word[-1] == '.'):
         word = word[:-1]
@@ -17,13 +17,3 @@ for x in file:
 for key in wordDictionary:
   count = wordDictionary[key]
   print(f'{key}:{count}')
-
-# s = sorted(wordDictionary.items(), key=lambda x: x)
-
-# print(s)
-
-# # l = []
-# # for key, value in wordDictionary.items():
-# #     temp = [key,value]
-# #     l.append(temp)
-# # print(l[0])

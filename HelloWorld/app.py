@@ -20,3 +20,6 @@ print(l1 == l2) # True Equality, these are different references but they have an
 print(l1 == l3) # True, same reference to one list
 
 
+
+
+

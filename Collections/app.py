@@ -73,6 +73,7 @@ def tupleExample():
   myColorTuple2 = ('orange', 'purple', 'black')
   t = myColorTuple1 + myColorTuple2
   # Cannot add or remove.
+  
   print(t)
 
 def setExample():
