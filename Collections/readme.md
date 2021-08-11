@@ -30,6 +30,10 @@ if __name__ == "__main__":
 
 # Ex 2
 - Create a program that contains a function takes two Lists of numbers and returns one List without any duplicates with the numbers in descending order.
+```
+  list1 = [7,6,5,4,3,2,1]
+  list2 = [10,9,8,7,6,5,4,3]
+```
 
 # Ex 3
 - Create a program that contains a function that returns the sum of a List of people passed into it:
