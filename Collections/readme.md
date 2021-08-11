@@ -13,10 +13,10 @@
  - Venn diagram
 
 # Ex 1
-- Create a program that contains a function that accepts a list of colors and returns every other one and prints the results.
+- Create a program that contains a function that accepts a List of colors and returns every other one and prints the results.
 
 # Ex 2
-- Create a program that contains a function takes two lists of numbers and returns a List without any duplicates with the numbers in descending order.
+- Create a program that contains a function takes two Lists of numbers and returns one List without any duplicates with the numbers in descending order.
 
 # Ex 3
 - Create a program that contains a function that returns the sum of a List of people passed into it:
@@ -25,9 +25,10 @@
     name: Paul,  age: 30
     name: Mary,  age: 40
 ```
-HINT: Think JSON
+HINT: The PeopleList is a list of JSON objects.
 
 # Ex 4
+- Pre-req: http://jsonviewer.stack.hu/
 - Create a program that contains a function that accepts a Dictionary and a List.  The dictionary is the following:
   ```
   carDictionary = {
