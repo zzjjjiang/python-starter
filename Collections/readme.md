@@ -12,6 +12,19 @@
  - Only support unique values
  - Venn diagram
 
+# Template
+```
+def your_function_here():
+  # TODO
+  pass
+
+def main():
+  your_function_here()
+
+if __name__ == "__main__":  
+    main()
+```
+
 # Ex 1
 - Create a program that contains a function that accepts a List of colors and returns every other one and prints the results.
 
