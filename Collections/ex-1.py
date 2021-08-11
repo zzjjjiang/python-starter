@@ -7,9 +7,11 @@
 
 def everyOtherColor(colorList):
   retval = []
-  for idx, color in enumerate(colorList):
+  idx = 0
+  for color in colorList:
     if (idx % 2):
       retval.append(color)
+    idx += 1
   return retval
 
 def main():
@@ -19,3 +21,4 @@ def main():
 
 if __name__ == "__main__":  
     main()
+

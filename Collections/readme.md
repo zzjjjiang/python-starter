@@ -25,26 +25,32 @@ if __name__ == "__main__":
     main()
 ```
 
-# Ex 1
+# Ex 1: Every Other Color
 - Create a program that contains a function that accepts a List of colors and returns every other one and prints the results.
 
-# Ex 2
-- Create a program that contains a function takes two Lists of numbers and returns one List without any duplicates with the numbers in descending order.
+# Ex 2: Remove Dupes
+- Create a program that contains a function that takes two Lists of numbers and returns one List without any duplicates with the numbers in descending order.
+
+Input:
 ```
   list1 = [7,6,5,4,3,2,1]
   list2 = [10,9,8,7,6,5,4,3]
 ```
+Ouput:
+```
+  [10,9,8,7,6,5,4,3,2,1]
+```
 
-# Ex 3
+# Ex 3: Sum of Ages
 - Create a program that contains a function that returns the sum of a List of people passed into it:
  ```
     name: Peter, age: 20
     name: Paul,  age: 30
     name: Mary,  age: 40
 ```
-HINT: The PeopleList is a list of JSON objects.
+HINT: The PeopleList is a List of JSON objects.
 
-# Ex 4
+# Ex 4: Car Models
 - Pre-req: http://jsonviewer.stack.hu/
 - Create a program that contains a function that accepts a Dictionary and a List.  The dictionary is the following:
   ```
@@ -61,6 +67,9 @@ HINT: The PeopleList is a list of JSON objects.
   ```
 
   The function returns a String that contains the models of cars that peter and mary own ("Mustang, Corvette")
+
+# Ex 5: Find Longest List
+-  Create a program that contains a function that accepts three Lists and returns the length of the longest one.
 
 # Bigger
 - Create a program that contains a Dictionary of 10 people that stores the following data:
