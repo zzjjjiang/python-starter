@@ -10,12 +10,7 @@ def lenLongestList(list1, list2, list3):
   lenList1 = len(list1)
   lenList2 = len(list2)
   lenList3 = len(list3)
-  if (lenList1 > lenList2):
-    retval = lenList1
-  else:
-    retval = lenList2
-  if (retval < lenList3):
-    retval = lenList3
+  retval = max(lenList1, lenList2, lenList3)
   return retval
 
 def main():

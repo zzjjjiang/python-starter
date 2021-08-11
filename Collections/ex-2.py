@@ -5,7 +5,7 @@
 # Desc: Remove dupes.
 #
 
-def removeDups(list1, list2):
+def removeDupes(list1, list2):
   retval = []
   s1 = set(list1)
   s2 = set(list2)
@@ -16,7 +16,7 @@ def removeDups(list1, list2):
 def main():
   list1 = [7,6,5,4,3,2,1]
   list2 = [10,9,8,7,6,5,4,3]
-  newList = removeDups(list1, list2)
+  newList = removeDupes(list1, list2)
   print(newList)
 
 if __name__ == "__main__":  
