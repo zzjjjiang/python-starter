@@ -2,7 +2,7 @@
 # File: ex-10.py
 # Auth: Martin Burolla
 # Date: 8/11/2021
-# Desc: Write Hello World
+# Desc: Hello File
 #
 
 def createFile(fileName, content):
