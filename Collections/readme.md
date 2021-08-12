@@ -102,7 +102,27 @@ Output:`[3, 5, 5, 3, 5, 4, 3, 4, 3]`
 
   `Peter drives a Ford Mustang.`
 
-# Bigger
+# Ex 9: Joe's Tuple
+- Create a program that contains a function that accepts three arguments and returns a Tuple:
+```
+age
+firstname
+state
+```
+The program prints the Tuple to the console:
+
+Example: `(40, 'Joe', 'New York')`
+
+# Ex 10: 
+- Create a program that contains a function called `createFile` that accepts two arguments:
+```
+string: filename - The name of the file
+string: content - The contents of a file
+```
+The function creates a new file every time it is invoked (runs).  The program writes `Hello World` to a file named: `output.txt`.
+
+
+# Final?
 - Create a program that contains a Dictionary of 10 people that stores the following data:
   - First Name 
   - Last Name
