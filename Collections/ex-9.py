@@ -10,8 +10,8 @@ def createTuple(age, name, location):
   return retval
 
 def main():
-  r = createTuple(40, 'Joe', 'New York')
-  print(r)
+  myTuple = createTuple(40, 'Joe', 'New York')
+  print(myTuple)
 
 if __name__ == "__main__":  
     main()
