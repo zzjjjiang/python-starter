@@ -71,6 +71,37 @@ HINT: The PeopleList is a List of JSON objects.
 # Ex 5: Find Longest List
 -  Create a program that contains a function that accepts three Lists and returns the length of the longest one.
 
+# Ex 6: Create, Sum and Sammy
+- Create a program that contains two functions: 
+```
+createList
+sumList
+```
+The createList function creates the following List of numbers: [1,2,3,4,5,6,7,8,9,10].
+The sumList function accepts a List and sums the values in the List (Sum: 55).
+The program must use an f-string to print sum of all the values in the List:
+```
+"I can't drive 55."
+```
+# Ex 7: Length of Words
+- Create a program that contains a function that accepts a sentence and returns a List that contains the length of each word.
+
+Example: `The quick brown fox jumps over the lazy dog`
+Output:`[3, 5, 5, 3, 5, 4, 3, 4, 3]`
+
+# Ex 8: Peter's Ford
+- Create a program that contains the following dictionary:
+  ```
+  carDictionary = {
+     'peter': { 'brand' : 'Ford', 'model' : 'Mustang' },
+     'paul': { 'brand' : 'Toyota', 'model' : 'Prius' },
+     'mary': { 'brand' : 'Chevy', 'model' : 'Corvette' },
+   }
+  ```
+  The program must use an f-string to query the dictionary for peter's car and prints the following output:
+
+  `Peter drives a Ford Mustang.`
+
 # Bigger
 - Create a program that contains a Dictionary of 10 people that stores the following data:
   - First Name 
