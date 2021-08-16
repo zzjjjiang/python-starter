@@ -1,8 +1,8 @@
 #
 # File: ex-10.py
 # Auth: Martin Burolla
-# Date: 8/11/2021
-# Desc: Oven List
+# Date: 8/16/2021
+# Desc: Parts is parts
 #
 
 def main():
@@ -15,11 +15,11 @@ def main():
   }
 
   totalCost = 0
-  for key in partsDictionary.keys():
+  for key in partsDictionary.keys(): # Get all the keys in the dictionary.
     myList = partsDictionary[key]
     if myList[0]["inStock"]:
       for dictionary in myList:
-        if "cost" in dictionary:
+        if "cost" in dictionary: # Check if this key is in the dictionary.
           totalCost += dictionary["cost"]
 
   currency = "${:,.2f}".format(totalCost)

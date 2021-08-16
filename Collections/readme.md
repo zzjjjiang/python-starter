@@ -113,7 +113,7 @@ The program prints the Tuple to the console:
 
 Example: `(40, 'Joe', 'New York')`
 
-# Ex 10: Hello File
+# Ex 10: Parts is Parts
 - Create a program that contains the following dictionary:
 
 ```
@@ -126,7 +126,7 @@ Example: `(40, 'Joe', 'New York')`
   }
 
 ```
-The program sums the cost for all the parts that are in stock and diplays the following:
+The program sums the cost for all the parts that are in stock and writes the following to the console:
 
 ```
 Total Cost: $15.00.
