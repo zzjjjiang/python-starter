@@ -82,16 +82,16 @@ kitchenDictionary = {
     "Microwave" : { "make" : "whirlpool" }
   }
 
-# Get all the keys in a dictionary.
-for k in kitchenDictionary.keys():
-  print(k)
+# # Get all the keys in a dictionary.
+# for k in kitchenDictionary.keys():
+#   print(k)
 
-# Check if a key exists in a dictionary.
-if "Thing" in kitchenDictionary:
-  print('YES')
-else: 
-  print('NO')
-  
+# # Check if a key exists in a dictionary.
+# if "Thing" in kitchenDictionary:
+#   print('YES')
+# else: 
+#   print('NO')
+
 
 #print(kitchenDictionary["Fridge"])
 #print(kitchenDictionary["Stove"])
@@ -133,3 +133,12 @@ else:
 # a = 1
 # b = 2
 # print(a == b)
+
+# import requests
+
+# print(requests.get('http://www.google.com').content) 
+
+
+import random
+
+print(random.randint(0, 10))

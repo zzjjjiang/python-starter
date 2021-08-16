@@ -150,7 +150,6 @@ Tang Hongbo is in Tiangong.
 ```
 
 
-
 # Final?
 - Create a program that contains a Dictionary of 10 people that stores the following data:
   - First Name 
