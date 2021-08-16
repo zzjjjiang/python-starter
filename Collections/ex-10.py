@@ -11,14 +11,18 @@ def main():
     "Stove" : "silver",
     "Trash Compactor" : False,
     "Oven1" : [ "silver", "whirlpool", "large" ],
-    "Oven2" : [ { "color" : "silver" }, { "make" : "Whirlpool" }, { "size" : "small" } ],
+    "Oven2" : [ { "color" : "silver" }, { "make" : "Whirlpool" }, {"model" : "123"}, { "size" : "small" } ],
     "Microwave" : { "make" : "whirlpool" }
   }
 
   oven1Size = (kitchenDictionary["Oven1"][2])
-  oven2Size = (kitchenDictionary["Oven2"][2]["size"])
+  oven2Size = (kitchenDictionary["Oven2"][3]["size"])
   sizeList = [oven1Size, oven2Size]
-  print(sizeList)
+
+  f = open("output.txt", "w")
+  for size in sizeList:
+    f.write(size + '\n')
+  f.close()
 
 if __name__ == "__main__":  
     main()

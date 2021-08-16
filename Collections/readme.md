@@ -117,20 +117,21 @@ Example: `(40, 'Joe', 'New York')`
 - Create a program that contains the following dictionary:
 
 ```
-kitchenDictionary = {
+  kitchenDictionary = {
     "Fridge" : 1,
     "Stove" : "silver",
     "Trash Compactor" : False,
     "Oven1" : [ "silver", "whirlpool", "large" ],
-    "Oven2" : [ { "color" : "silver" }, { "make" : "Whirlpool" }, { "size" : "small" } ],
+    "Oven2" : [ { "color" : "silver" }, { "make" : "Whirlpool" }, { "model" : "123" }, { "size" : "small" } ],
     "Microwave" : { "make" : "whirlpool" }
   }
 ```
 
-The program prints a list of all the oven sizes:
-
-['large', 'small']
-
+The program saves the oven sizes to a file called `output.txt`:
+```
+large
+small
+```
 
 # Final?
 - Create a program that contains a Dictionary of 10 people that stores the following data:
