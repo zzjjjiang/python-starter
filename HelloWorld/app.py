@@ -82,6 +82,17 @@ kitchenDictionary = {
     "Microwave" : { "make" : "whirlpool" }
   }
 
+# Get all the keys in a dictionary.
+for k in kitchenDictionary.keys():
+  print(k)
+
+# Check if a key exists in a dictionary.
+if "Thing" in kitchenDictionary:
+  print('YES')
+else: 
+  print('NO')
+  
+
 #print(kitchenDictionary["Fridge"])
 #print(kitchenDictionary["Stove"])
 #print(kitchenDictionary["Trash Compactor"])

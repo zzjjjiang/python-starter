@@ -132,8 +132,22 @@ The program sums the cost for all the parts that are in stock and writes the fol
 Total Cost: $15.00.
 ```
 
+# Ex 11: People in Space
+- Create a program that makes an HTTP request to: `http://api.open-notify.org/astros.json` and
+saves the list of people in space to a file named output.txt:
 
-
+```
+Mark Vande Hei is in ISS.
+Oleg Novitskiy is in ISS.
+Pyotr Dubrov is in ISS.
+Thomas Pesquet is in ISS.
+Megan McArthur is in ISS.
+Shane Kimbrough is in ISS.
+Akihiko Hoshide is in ISS.
+Nie Haisheng is in Tiangong.
+Liu Boming is in Tiangong.
+Tang Hongbo is in Tiangong.
+```
 
 
 

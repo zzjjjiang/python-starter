@@ -15,7 +15,7 @@ def main():
   }
 
   totalCost = 0
-  for key in partsDictionary.keys(): # Get all the keys in the dictionary.
+  for key in partsDictionary: # Get all the keys in the dictionary.
     myList = partsDictionary[key]
     if myList[0]["inStock"]:
       for dictionary in myList:
@@ -27,3 +27,4 @@ def main():
 
 if __name__ == "__main__":  
     main()
+
