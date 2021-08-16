@@ -6,23 +6,24 @@
 #
 
 def main():
-  kitchenDictionary = {
-    "Fridge" : 1,
-    "Stove" : "silver",
-    "Trash Compactor" : False,
-    "Oven1" : [ "silver", "whirlpool", "large" ],
-    "Oven2" : [ { "color" : "silver" }, { "make" : "Whirlpool" }, {"model" : "123"}, { "size" : "small" } ],
-    "Microwave" : { "make" : "whirlpool" }
+  partsDictionary = {
+    "Screw" : [ { "inStock": True }, { "color" : "silver" }, { "partNumber" : "123" }, { "cost" : 1.00 } ],
+    "Hammer" : [ { "inStock": True }, { "color" : "silver" }, { "cost" : 10.00 } ],
+    "Bolt" : [ { "inStock": True }, { "color" : "silver" }, { "cost" : 1.00 } ],
+    "Nail" : [ { "inStock": False }, { "color" : "silver" }, { "cost" : .10 } ],
+    "Wood" : [ { "inStock": True }, { "cost" : 3.00 } ],
   }
 
-  oven1Size = (kitchenDictionary["Oven1"][2])
-  oven2Size = (kitchenDictionary["Oven2"][3]["size"])
-  sizeList = [oven1Size, oven2Size]
+  totalCost = 0
+  for key in partsDictionary.keys():
+    myList = partsDictionary[key]
+    if myList[0]["inStock"]:
+      for dictionary in myList:
+        if "cost" in dictionary:
+          totalCost += dictionary["cost"]
 
-  f = open("output.txt", "w")
-  for size in sizeList:
-    f.write(size + '\n')
-  f.close()
+  currency = "${:,.2f}".format(totalCost)
+  print(f"Total Cost: {currency}.")
 
 if __name__ == "__main__":  
     main()

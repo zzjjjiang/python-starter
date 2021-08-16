@@ -117,21 +117,25 @@ Example: `(40, 'Joe', 'New York')`
 - Create a program that contains the following dictionary:
 
 ```
-  kitchenDictionary = {
-    "Fridge" : 1,
-    "Stove" : "silver",
-    "Trash Compactor" : False,
-    "Oven1" : [ "silver", "whirlpool", "large" ],
-    "Oven2" : [ { "color" : "silver" }, { "make" : "Whirlpool" }, { "model" : "123" }, { "size" : "small" } ],
-    "Microwave" : { "make" : "whirlpool" }
+  partsDictionary = {
+    "Screw" : [ { "inStock": True }, { "color" : "silver" }, { "partNumber" : "123" }, { "cost" : 1.00 } ],
+    "Hammer" : [ { "inStock": True }, { "color" : "silver" }, { "cost" : 10.00 } ],
+    "Bolt" : [ { "inStock": True }, { "color" : "silver" }, { "cost" : 1.00 } ],
+    "Nail" : [ { "inStock": False }, { "color" : "silver" }, { "cost" : .10 } ],
+    "Wood" : [ { "inStock": True }, { "cost" : 3.00 } ],
   }
+
+```
+The program sums the cost for all the parts that are in stock and diplays the following:
+
+```
+Total Cost: $15.00.
 ```
 
-The program saves the oven sizes to a file called `output.txt`:
-```
-large
-small
-```
+
+
+
+
 
 # Final?
 - Create a program that contains a Dictionary of 10 people that stores the following data:
