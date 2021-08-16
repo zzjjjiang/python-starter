@@ -11,6 +11,7 @@ def main():
      'paul': { 'brand' : 'Toyota', 'model' : 'Prius' },
      'mary': { 'brand' : 'Chevy', 'model' : 'Corvette' },
   }
+
   print(f"Peter drives a {carDictionary['peter']['brand']} {carDictionary['peter']['model']}.")
 
 if __name__ == "__main__":  

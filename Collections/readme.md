@@ -114,12 +114,22 @@ The program prints the Tuple to the console:
 Example: `(40, 'Joe', 'New York')`
 
 # Ex 10: Hello File
-- Create a program that contains a function called `createFile` that accepts two arguments:
+- Create a program that contains the following dictionary:
+
 ```
-string: filename - The name of the file
-string: content - The contents of a file
+kitchenDictionary = {
+    "Fridge" : 1,
+    "Stove" : "silver",
+    "Trash Compactor" : False,
+    "Oven1" : [ "silver", "whirlpool", "large" ],
+    "Oven2" : [ { "color" : "silver" }, { "make" : "Whirlpool" }, { "size" : "small" } ],
+    "Microwave" : { "make" : "whirlpool" }
+  }
 ```
-The function creates a new file every time it is invoked (runs).  The program writes `Hello World` to a file named: `output.txt`.
+
+The program prints a list of all the oven sizes:
+
+['large', 'small']
 
 
 # Final?
