@@ -7,8 +7,8 @@
 
 def main():
   retval = False
-  inputList = input('Enter list of numbers: ')
-  myList = inputList.split(',')
+  inputString = input('Enter list of numbers: ')
+  myList = inputString.split(',')
   first = myList[0].strip()
   last = myList[-1].strip()
   if first == last:

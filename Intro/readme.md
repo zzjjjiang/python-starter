@@ -27,7 +27,7 @@ Volume is: 1.72.
 ```
 
 # Ex 3: First and Last
-Create a program that accepts a list of numbers using the `input()` function and writes `True` if the first and last number are the same, otherwise write `False` to the console.
+Create a program that accepts a list of numbers using the `input()` function and writes `True` if the first and last numbers are the same, otherwise write `False` to the console.
 
 Example input:
 ```
@@ -110,3 +110,14 @@ Example output:
 Vowels: 2
 Consonants: 3
 ```
+
+# Ex 11: Write Date Today
+Create a program that writes the current date to a file named: `output.txt`.  The program must use an f-string when writing to a file.
+
+File Contents:
+```
+Today's date is: 08/17/2021.
+```
+
+# Ex 12: 
+
