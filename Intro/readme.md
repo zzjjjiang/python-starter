@@ -2,7 +2,7 @@
 Beginner assignments.
 
 # Ex 1: Random number
-- Create a program that creates a list of 10 random numbers and sums all the numbers.  The result is printed to the console.  The numbers in the list range from 0 - 100.  The program must use an f-string to display the output.
+Create a program that creates a list of 10 random numbers and sums all the numbers.  The result is printed to the console.  The numbers in the list range from 0 - 100.  The program must use an f-string to display the output.
 
 Example list: [1,34,2,33,45,67,24,87,32,38]
 
@@ -11,5 +11,93 @@ Example Output:
 The sum is: <random number>
 ```
 
-# Ex 2: 
+# Ex 2: Python in a Box
+Create a program that uses the `input()` function to access the width, height and length of a box.  The program computes the volume of the box (width * height * length) and writes it to the console:
+```
+Volume is: 6.
+```
 
+# Ex 3: First and Last
+Create a program that accepts a list of numbers using the `input()` function and writes `True` if the first and last number are the same, otherwise write `False` to the console.
+
+Example:
+```
+Enter list of numbers: 1,2,3
+```
+
+Output:
+```
+False
+```
+# Ex 4: Count Word
+Create a program that counts the number of times the word `Python` appears in this text and writes the result to the console. Do not use the `count()` method on the string class.
+
+```
+"Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to ABC programming language, which was inspired by SETL capable of exception handling and interfacing with the Amoeba operating system. Its implementation began in December 1989. Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his permanent vacation from his responsibilities as Python's Benevolent Dictator For Life, a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker. In January 2019, active Python core developers elected a 5-member Steering Council to lead the project. As of 2021, the current members of this council are Barry Warsaw, Brett Cannon, Carol Willing, Thomas Wouters, and Pablo Galindo Salgado."
+```
+ Example output:
+```
+3
+```
+
+# Ex 5: Bigger Set
+Create a program that adds the following List of numbers to the Set and writes the final Set to the console:
+```
+myList = [1,2,3]
+mySet = {3,4,5}
+```
+Example ouput:
+```
+{1,2,3,4,5}
+```
+# Ex 6: Reverse Me
+Create a program that writes the following list of numbers in reverse order to the console:
+```
+[11, 100, 101, 999, 1001]
+```
+Example ouput:
+```
+[11, 100, 101, 999, 1001]
+```
+
+# Ex 7: Winner Winner
+Create a program that generates a randon number between 1 and 100.  If the number is less than 10 print the value of the number and `you lose` on the console.  If the number is greater than 10 and less than 50 print the value of the number and `try again` on the console.  if the number is greater than 50 print the value of the number and `you win` on the console.
+
+Exaple output:
+```
+9: You lose.
+17: Try again.
+86: You win!
+```
+
+# Ex 8: Shortest Straw
+Create a program that finds the smallest number in this list and writes the result to the console.  Do not use the `min()` function.
+```
+myList = [6,2,7,3,77,7,1]
+```
+
+# Ex 9: Uppers or Lowers
+Create a program that writes `True` to the console if a string is upper case, `False` if a string is not.
+
+Example input:
+```
+Enter string: "HELLO"
+```
+
+Example output:
+```
+True
+```
+
+# Ex 10: Vs and Cs
+Create a program that counts all the vowels and consonants in a string and writes the count to the console:
+
+Example input:
+```
+Enter string: Apple
+```
+```
+Example output:
+Vowels: 2
+Consonants: 3
+```

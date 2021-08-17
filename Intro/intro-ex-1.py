@@ -1,5 +1,5 @@
 # 
-# File: ex-1.py
+# File: intro-ex-1.py
 # Auth: Martin Burolla
 # Date: 8/16/2021
 # Desc: Sum of Random Numbers
