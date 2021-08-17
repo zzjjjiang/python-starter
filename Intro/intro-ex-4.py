@@ -18,10 +18,10 @@ def main():
     are Barry Warsaw, Brett Cannon, Carol Willing, Thomas Wouters, and Pablo Galindo Salgado."
   '''
   wordCount = 0
-  words = text.split(' ')
-  for word in words:
+  wordList = text.split(' ')
+  for word in wordList:
     if (word == 'Python'):
-      wordCount += 1
+      wordCount += 1 # wordCount = wordCount + 1
   print(wordCount)
   
 if __name__ == "__main__":  

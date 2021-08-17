@@ -55,7 +55,7 @@ Create a program that adds the following List of numbers to the Set and writes t
 myList = [1,2,3]
 mySet = {3,4,5}
 ```
-Example ouput:
+Example output:
 ```
 {1,2,3,4,5}
 ```
@@ -64,9 +64,9 @@ Create a program that writes the following list of numbers in reverse order to t
 ```
 [11, 100, 101, 999, 1001]
 ```
-Example ouput:
+Example output:
 ```
-[11, 100, 101, 999, 1001]
+[1001, 999, 101, 100, 11]
 ```
 
 # Ex 7: Winner Winner
