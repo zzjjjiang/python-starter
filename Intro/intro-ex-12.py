@@ -2,7 +2,7 @@
 # File: intro-ex-12.py
 # Auth: Martin Burolla
 # Date: 8/17/2021
-# Desc: Negative & Positive
+# Desc: Negative to Positive / Positive to Negative
 #
 
 def main():
@@ -12,7 +12,7 @@ def main():
   if ("." in inputString):
     retval = f'ERROR: {inputString} is not an integer.'
   elif (inputString[0] == "-"):
-    retval = inputString[1:len(inputString)] # Slice everything after the minus.
+    retval = inputString[1:len(inputString)] # Return everything after the minus.
   else:
     retval = "-" + inputString
 

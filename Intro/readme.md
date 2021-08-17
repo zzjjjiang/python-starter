@@ -119,8 +119,8 @@ File Contents:
 Today's date is: 08/17/2021.
 ```
 
-# Ex 12: Negativde & Positive
-Create a program that prompts the user to enter an integer value.  The program converts a positive integer to a negative integer and writes it on the console.  The program converts a negative integer to a positive integer and writes it on the console.  The program returns an error is a float (decimal) is entered.
+# Ex 12: Negative to Positive / Positive to Negative
+Create a program that prompts the user to enter an integer value.  The program converts a positive integer to a negative integer, and converts a negative integer to a positive integer.  The result is written to the console. The program returns an error is a float (decimal) is entered.
 
 Examples:
 ```
