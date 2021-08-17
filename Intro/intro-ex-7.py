@@ -12,7 +12,7 @@ def main():
   num = randint(1, 100)
   if (num < 10):
     retval = f'{num}: You lose.'
-  elif (num > 10 and num < 50):
+  elif (num >= 10 and num <= 50):
     retval = f'{num}: Try again.'
   elif (num > 50):
     retval = f'{num}: You win!'
