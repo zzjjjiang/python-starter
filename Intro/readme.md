@@ -12,20 +12,29 @@ The sum is: <random number>
 ```
 
 # Ex 2: Python in a Box
-Create a program that uses the `input()` function to access the width, height and length of a box.  The program computes the volume of the box (width * height * length) and writes it to the console:
+Create a program that uses the `input()` function to obtain the width, height and length of a box.  The program computes the volume of the box (width * height * length) and writes it to the console:
+
+Example input:
 ```
-Volume is: 6.
+Enter width: 10
+Enter height: 11
+Enter length: 12
+```
+
+Example output:
+```
+Volume is: 1320
 ```
 
 # Ex 3: First and Last
 Create a program that accepts a list of numbers using the `input()` function and writes `True` if the first and last number are the same, otherwise write `False` to the console.
 
-Example:
+Example input:
 ```
 Enter list of numbers: 1,2,3
 ```
 
-Output:
+Example output:
 ```
 False
 ```
@@ -63,7 +72,7 @@ Example ouput:
 # Ex 7: Winner Winner
 Create a program that generates a randon number between 1 and 100.  If the number is less than 10 print the value of the number and `you lose` on the console.  If the number is greater than 10 and less than 50 print the value of the number and `try again` on the console.  if the number is greater than 50 print the value of the number and `you win` on the console.
 
-Exaple output:
+Example output:
 ```
 9: You lose.
 17: Try again.
