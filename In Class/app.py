@@ -145,7 +145,13 @@ kitchenDictionary = {
 # print(doubledList)
 
 # Three ways of creating stings...
-s1 = "test"
+# s1 = "Marty's test"
+# s2 = 'test'
+# s3 = '''
+#   this is a test
+#   this is another string
+#   and here we are
+#   **********
+#   ##$I&(*&)
+# '''
 
-
-print(s1)

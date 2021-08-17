@@ -38,8 +38,8 @@ Example output:
 ```
 False
 ```
-# Ex 4: Count Word
-Create a program that counts the number of times the word `Python` appears in this text and writes the result to the console. Do not use the `count()` method on the string class.
+# Ex 4: Word Count
+Create a program that counts the number of times the word `Python` appears in the text below and writes the result to the console. Do not use the `string.count()` method.
 
 ```
 "Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to ABC programming language, which was inspired by SETL capable of exception handling and interfacing with the Amoeba operating system. Its implementation began in December 1989. Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his permanent vacation from his responsibilities as Python's Benevolent Dictator For Life, a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker. In January 2019, active Python core developers elected a 5-member Steering Council to lead the project. As of 2021, the current members of this council are Barry Warsaw, Brett Cannon, Carol Willing, Thomas Wouters, and Pablo Galindo Salgado."
@@ -119,5 +119,21 @@ File Contents:
 Today's date is: 08/17/2021.
 ```
 
-# Ex 12: 
+# Ex 12: Negativde & Positive
+Create a program that prompts the user to enter an integer value.  The program converts a positive integer to a negative integer and writes it on the console.  The program converts a negative integer to a positive integer and writes it on the console.  The program returns an error is a float (decimal) is entered.
 
+Examples:
+```
+Enter integer: 12
+-12
+```
+
+```
+Enter integer: -133
+133
+```
+
+```
+Enter integer: 123232.1
+ERROR: 123232.1 is not an integer.
+```
