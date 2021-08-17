@@ -139,11 +139,6 @@ kitchenDictionary = {
 # 8/17/2021
 ##############################################################################
 
-# List comprehension, works like a map()
-# numbers = [1, 2, 3, 4, 5, 6]
-# doubledList = [(number * 2) for number in numbers]  
-# print(doubledList)
-
 # Three ways of creating stings...
 # s1 = "Marty's test"
 # s2 = 'test'

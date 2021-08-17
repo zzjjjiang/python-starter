@@ -84,6 +84,10 @@ Create a program that finds the smallest number in this list and writes the resu
 ```
 myList = [6,2,7,3,77,7,1]
 ```
+Example output:
+```
+1
+```
 
 # Ex 9: Uppers or Lowers
 Create a program that writes `True` to the console if a string is upper case, `False` if a string is not.
