@@ -6,10 +6,11 @@
 #
 
 def main():
-  w = int(input('Enter width: '))
-  h = int(input('Enter height: '))
-  l = int(input('Enter length: '))
+  w = float(input('Enter width: '))
+  h = float(input('Enter height: '))
+  l = float(input('Enter length: '))
   volume = (w * h * l)
+  volume = round(volume, 2)
   print(f'Volume is: {volume}.')
 
 if __name__ == "__main__":  

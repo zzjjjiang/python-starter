@@ -16,14 +16,14 @@ Create a program that uses the `input()` function to obtain the width, height an
 
 Example input:
 ```
-Enter width: 10
-Enter height: 11
-Enter length: 12
+Enter width: 1.1 
+Enter height: 1.2
+Enter length: 1.3
 ```
 
 Example output:
 ```
-Volume is: 1320
+Volume is: 1.72.
 ```
 
 # Ex 3: First and Last
