@@ -70,7 +70,7 @@ Example ouput:
 ```
 
 # Ex 7: Winner Winner
-Create a program that generates a randon number between 1 and 100.  If the number is less than 10 the program prints the value of the number and `You lose` on the console.  If the number is greater than 10 and less than 50 the program prints the value of the number and `Try again` on the console.  if the number is greater than 50 the program prints the value of the number and `You win` on the console.
+Create a program that generates a randon number between 1 and 100.  If the number is less than 10 the program prints the value of the number and `You lose.` on the console.  If the number is greater than 10 and less than 50 the program prints the value of the number and `Try again.` on the console.  if the number is greater than 50 the program prints the value of the number and `You win!` on the console.
 
 Example output:
 ```
