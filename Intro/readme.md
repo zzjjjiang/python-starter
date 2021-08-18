@@ -109,8 +109,9 @@ Example input:
 ```
 Enter string: Apple
 ```
-```
+
 Example output:
+```
 Vowels: 2
 Consonants: 3
 ```
