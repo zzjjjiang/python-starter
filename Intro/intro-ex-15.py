@@ -11,7 +11,7 @@ def shouldExit(inStr):
   return inStr == "exit"
 
 def main():
-    f = open("output.txt", "w")
+    fileHandle = open("output.txt", "w")
   
     while (True):
       result = 0
@@ -22,7 +22,8 @@ def main():
       if shouldExit(operand2):
         break
       operation = input("Enter operation (add, sub, mul, div): ")
-      shouldExit(operation)
+      if shouldExit(operation):
+        break
 
       operand1 = float(operand1)
       operand2 = float(operand2)
@@ -40,10 +41,10 @@ def main():
         result = operand1 * operand2
 
       todaysDate = datetime.today().strftime('%m/%d/%Y %I:%M:%S %p')
-      f.write(f"{todaysDate}: {operand1} {operation} {operand2} = {result}\n")
+      fileHandle.write(f"{todaysDate}: {operand1} {operation} {operand2} = {result}\n")
       print(f'Answer: {result}')
 
-    f.close()
+    fileHandle.close()
     exit()
 
 if __name__ == "__main__":  

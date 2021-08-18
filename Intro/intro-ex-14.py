@@ -18,7 +18,8 @@ def main():
       if shouldExit(operand2):
         break
       operation = input("Enter operation (add, sub, mul, div): ")
-      shouldExit(operation)
+      if shouldExit(operation):
+        break
 
       operand1 = float(operand1)
       operand2 = float(operand2)
@@ -36,6 +37,7 @@ def main():
         result = operand1 * operand2
 
       print(f'Answer: {result}')
+      
     exit()
 
 if __name__ == "__main__":  
