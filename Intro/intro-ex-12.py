@@ -9,7 +9,7 @@ def main():
   retval = ''
   inputString = input("Enter integer: ").strip()
 
-  if ("." in inputString):
+  if ("." in inputString): # Validation.
     retval = f'ERROR: {inputString} is not an integer.'
   elif (inputString[0] == "-"):
     retval = inputString[1:len(inputString)] # Return everything after the minus.

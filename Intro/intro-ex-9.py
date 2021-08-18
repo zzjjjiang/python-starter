@@ -6,7 +6,7 @@
 #
 
 def main():
-  inString = input('Enter String:')
+  inString = input('Enter String: ')
   if (inString.isupper()):
     print("True")
   else:
