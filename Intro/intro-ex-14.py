@@ -38,8 +38,6 @@ def main():
       result = operand1 * operand2
 
     print(f'Answer: {result}')
-    
-  exit()
 
 if __name__ == "__main__":  
   main()

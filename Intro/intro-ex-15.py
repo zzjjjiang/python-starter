@@ -46,7 +46,6 @@ def main():
     print(f'Answer: {result}')
 
   fileHandle.close()
-  exit()
 
 if __name__ == "__main__":  
   main()
