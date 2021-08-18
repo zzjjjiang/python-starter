@@ -116,7 +116,7 @@ Vowels: 2
 Consonants: 3
 ```
 
-# Ex 11: Write Date Today
+# Ex 11: Write Today's Date
 Create a program that writes the current date to a file named: `output.txt`.  The program must use an f-string when writing to a file.
 
 File Contents:

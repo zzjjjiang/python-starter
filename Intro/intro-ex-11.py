@@ -2,7 +2,7 @@
 # File: intro-ex-11.py
 # Auth: Martin Burolla
 # Date: 8/17/2021
-# Desc: Write Date Today
+# Desc: Write Today's Date
 #
 
 from datetime import datetime
