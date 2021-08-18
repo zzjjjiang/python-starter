@@ -9,6 +9,7 @@ def shouldExit(inStr):
   return inStr == "exit"
 
 def main():
+  print("Type exit at anytime to end program...")
   while (True):
     operand1 = input("Enter first integer: ")
     if shouldExit(operand1):

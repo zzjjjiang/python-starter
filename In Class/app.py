@@ -153,6 +153,8 @@ kitchenDictionary = {
 # Hashing
 # YT: https://youtu.be/2BldESGZKB8
 # NOT Encryption
+# "One way hash"
+#
 
 import hashlib
 
