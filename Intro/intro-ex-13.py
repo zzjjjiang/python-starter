@@ -5,15 +5,19 @@
 # Desc: Add Only Calculator
 #
 
+def shouldExit(inStr):
+  return inStr == "exit"
+
 def main():
   while (True):
-    num1 = input("Enter first integer: ")
-    if (num1 == "exit"):
-      exit()
-    num2 = input("Enter second integer: ")
-    if (num2 == "exit"):
-      exit()
-    print(f'Answer: {int(num1) + int(num2)}.')
-    
+    operand1 = input("Enter first integer: ")
+    if shouldExit(operand1):
+      break
+    operand2 = input("Enter second integer: ")
+    if shouldExit(operand2):
+      break
+    print(f'Answer: {int(operand1) + int(operand2)}.')
+  exit()
+  
 if __name__ == "__main__":  
   main()

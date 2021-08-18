@@ -6,16 +6,17 @@
 #
 
 def shouldExit(inStr):
-  if (inStr == "exit"):
-    exit()
+  return inStr == "exit"
 
 def main():
     while (True):
       result = 0
       operand1 = input("Enter first integer: ")
-      shouldExit(operand1)
+      if shouldExit(operand1):
+        break
       operand2 = input("Enter second integer: ")
-      shouldExit(operand2)
+      if shouldExit(operand2):
+        break
       operation = input("Enter operation (add, sub, mul, div): ")
       shouldExit(operation)
 
@@ -35,6 +36,7 @@ def main():
         result = operand1 * operand2
 
       print(f'Answer: {result}')
+    exit()
 
 if __name__ == "__main__":  
   main()

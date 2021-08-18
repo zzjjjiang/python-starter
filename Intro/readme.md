@@ -172,3 +172,13 @@ Answer: 12.0
 Enter first integer: exit
 ```
 
+# Ex: 15 Forever Calculator Logger
+Extend Exercise 15 and log every calculation to a file named `output.txt`.
+
+Example log file:
+```
+08/17/2021 07:59:36 PM: 1.0 add 2.0 = 3.0
+08/17/2021 07:59:40 PM: 4.0 sub 5.0 = -1.0
+08/17/2021 07:59:44 PM: 2.0 mul 6.0 = 12.0
+08/17/2021 07:59:51 PM: 1.0 div 2.0 = 0.5
+```
