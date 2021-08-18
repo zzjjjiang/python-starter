@@ -156,8 +156,17 @@ kitchenDictionary = {
 # "One way hash"
 #
 
-import hashlib
+# import hashlib
 
-password = 'mypassword'
-passwordHash = hashlib.sha256(password.encode())
-print(passwordHash.hexdigest())
+# password = 'mypassword'
+# passwordHash = hashlib.sha256(password.encode())
+# print(passwordHash.hexdigest())
+
+# import sys
+# print(sys.maxsize)
+# int 8 bytes, anything larger than 8 bytes is done in software.
+
+
+a = int(1)
+
+print(a)
