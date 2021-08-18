@@ -80,7 +80,7 @@ Example output:
 ```
 
 # Ex 8: Shortest Straw
-Create a program that finds the smallest number in this list and writes the result to the console.  Do not use the `min()` function.
+Create a program that finds the smallest number in this list and writes the result to the console.  Do not use the `min()` or `sort()` functions.
 ```
 myList = [6,2,7,3,77,7,1]
 ```
@@ -103,7 +103,7 @@ True
 ```
 
 # Ex 10: Vs and Cs
-Create a program that counts all the vowels and consonants in a string and writes the count to the console:
+Create a program that counts all the vowels and consonants in a word and writes the count to the console:
 
 Example input:
 ```
@@ -182,4 +182,18 @@ Example log file:
 08/17/2021 07:59:40 PM: 4.0 sub 5.0 = -1.0
 08/17/2021 07:59:44 PM: 2.0 mul 6.0 = 12.0
 08/17/2021 07:59:51 PM: 1.0 div 2.0 = 0.5
+```
+
+# Ex: 16 Hash It, Print It
+Create a program that prompts the user to enter a username and password.  The program hashes the password and stores it in a dictionary.  The key for the dictionary is the user name.  The program loops forever unti `exit` is entered.  When `exit` is entered the program prints the key/value pairs from the dictionary to the console.
+
+Example Usage:
+```
+Enter username: mburolla
+Enter password: test
+Enter username: joe
+Enter password: test2
+Enter username: exit
+mburolla : 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+joe : 60303ae22b998861bce3b28f33eec1be758a213c86c93c076dbe9f558c11c752
 ```

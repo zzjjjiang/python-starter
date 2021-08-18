@@ -150,3 +150,12 @@ kitchenDictionary = {
 #   ##$I&(*&)
 # '''
 
+# Hashing
+# YT: https://youtu.be/2BldESGZKB8
+# NOT Encryption
+
+import hashlib
+
+password = 'mypassword'
+passwordHash = hashlib.sha256(password.encode())
+print(passwordHash.hexdigest())
