@@ -141,3 +141,34 @@ Enter integer: -133
 Enter integer: 123232.1
 ERROR: 123232.1 is not an integer.
 ```
+
+# Ex: 13 Add Only Calculator
+Create a program that prompts the user for two integers and adds them.  The program runs indefinitely until `exit` is typed.
+
+Example:
+```
+Enter first integer: 1
+Enter second integer: 3
+Answer: 4.
+Enter first integer: 5
+Enter second integer: 5
+Answer: 10.
+Enter first integer: exit
+```
+
+# Ex: 14 Forever Calculator
+Extend Exercise 13 and create a program that prompts the user for two integers.  The program also asks the user for a mathmetical operation (add, subtract, multiply, divide).  The program runs indefinitely until `exit` is typed.  Ensure the program does not crash when dividing by zero.
+
+Example usage:
+```
+Enter first integer: 3
+Enter second integer: 1
+Enter operation (add, sub, mul, div): sub
+Answer: 2.0
+Enter first integer: 3
+Enter second integer: 4
+Enter operation (add, sub, mul, div): mul
+Answer: 12.0
+Enter first integer: exit
+```
+

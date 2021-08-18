@@ -28,3 +28,9 @@
 # ageList = [(person["age"]) for person in people if ("age" in person and person["age"] > 30)]
 # ageSum = sum(ageList)
 # print(ageList, ageSum)
+
+#
+# myList = [6,2,7,3,77,7,1]
+# myList.sort()
+# print("Smallest Number is:", myList[0])
+#
