@@ -240,3 +240,19 @@ Too high
 Enter a number between 1-10: 2
 You guessed it!!!!
 ```
+
+# Ex: 19 Frame It
+Create a program that contains a list of strings and prints them in a frame on the console:
+
+```
+mylist = ["Hello", "World", "in", "a", "frame"]
+```
+```
+*********
+* Hello *
+* World *
+* in    *
+* a     *
+* frame *
+*********
+```

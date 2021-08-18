@@ -18,7 +18,6 @@ def main():
     if shouldExit(operand2):
       break
     print(f'Answer: {int(operand1) + int(operand2)}.')
-  exit()
   
 if __name__ == "__main__":  
   main()
