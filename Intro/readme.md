@@ -198,7 +198,7 @@ mburolla : 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
 joe : 60303ae22b998861bce3b28f33eec1be758a213c86c93c076dbe9f558c11c752
 ```
 
-# Ex: 17 Easy Authentication, Not Authorization
+# Ex: 17 Easy Authentication, No Authorization
 Extend the program created in Exercise 16 and prompt the user to select one of two modes: 
 #### Add 
 "Add mode" adds users to the dictionary (essentially Exercise 16).

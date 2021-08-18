@@ -2,7 +2,7 @@
 # File: intro-ex-17.py
 # Auth: Martin Burolla
 # Date: 8/18/2021
-# Desc: Easy Authentication, Not Authorization
+# Desc: Easy Authentication, No Authorization
 #
 
 import hashlib
