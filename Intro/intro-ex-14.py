@@ -29,7 +29,7 @@ def main():
       elif (operation == 'div'):
         try:
           result = operand1 / operand2
-        except:
+        except ZeroDivisionError:
           result = 0
       elif (operation == 'mul'):
         result = operand1 * operand2
