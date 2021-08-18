@@ -125,7 +125,7 @@ Today's date is: 08/17/2021.
 ```
 
 # Ex 12: Negative to Positive / Positive to Negative
-Create a program that prompts the user to enter an integer value.  The program converts a positive integer to a negative integer, and converts a negative integer to a positive integer.  The result is written to the console. The program returns an error is a float (decimal) is entered.
+Create a program that prompts the user to enter an integer value.  The program converts a positive integer to a negative integer, and converts a negative integer to a positive integer.  The result is written to the console. The program returns an error if the user enters a float value.
 
 Examples:
 ```
@@ -224,7 +224,7 @@ Enter mode (add|login): exit
 mburolla : 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
 ```
 
-# Ex: 17 Random Number Game
+# Ex: 18 Random Number Game
 Create a program generates a random number 1-10 inclusive.  Th program prompts the user to enter a number between 1-10.  If the user number is too low the program prints (`Too low`).  If the user number is too high, the program prints (`Too high`).  If the user number is equal to the number the program generated print (`You guessed it!!!`) and the program terminates.
 
 Example Usage:
