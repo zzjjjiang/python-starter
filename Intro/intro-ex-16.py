@@ -21,9 +21,8 @@ def main():
     password = input("Enter password: ")
     if shouldExit(password):
       break
-    passwordHash = hashlib.sha256(password.encode())
-    userPwdDict[username] = passwordHash.hexdigest()
-
+    userPwdDict[username] = hashlib.sha256(password.encode()).hexdigest() # Add our key/value pair to dictionary.
+ 
   # Print contents of dictionary.
   for key in userPwdDict:
     print(f'{key} : {userPwdDict[key]}')

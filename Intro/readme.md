@@ -197,3 +197,29 @@ Enter username: exit
 mburolla : 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
 joe : 60303ae22b998861bce3b28f33eec1be758a213c86c93c076dbe9f558c11c752
 ```
+
+# Ex: 17 Easy Auth
+Extend the program created in Exercise 16 and prompt the user to select one of two modes: 
+### Add 
+Add mode adds users to the dictionary
+### Login 
+Provides a user to login with their username and password.  The program prints `Password is correct.` when the user has entered the correct password, and prints `Incorrect password.` when the password is incorrect.  If the user does not exist in the dictionary, print `User does not exist.`.
+
+Example Usage:
+
+```
+Type exit at anytime to end program...
+Enter mode (add|login): add
+Enter username: mburolla
+Enter password: test
+Enter mode (add|login): login
+Enter username: mburolla
+Enter password: test
+Password is correct.
+Enter mode (add|login): login
+Enter username: mburolla
+Enter password: wrongpassword
+Incorrect password.
+Enter mode (add|login): exit
+mburolla : 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+```
