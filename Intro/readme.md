@@ -174,7 +174,7 @@ Enter first integer: exit
 ```
 
 # Ex: 15 Forever Calculator Logger
-Extend Exercise 15 and log every calculation to a file named `output.txt`.
+Extend Exercise 14 and log every calculation to a file named `output.txt`.
 
 Example log file:
 ```
