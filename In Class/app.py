@@ -70,6 +70,9 @@
 #   https://jsonformatter.org/json-viewer
 #
 
+from os import killpg
+
+
 kitchenDictionary = {
     "Fridge" : 1,
     "Stove" : "silver",
@@ -166,3 +169,12 @@ kitchenDictionary = {
 # print(sys.maxsize)
 # int 8 bytes, anything larger than 8 bytes is done in software.
 
+for i in range(2):
+  print(i)
+
+r = list(range(1,10))
+print(r)
+
+s = 'hello world'
+s2 = s[-4:]
+print(s2)
