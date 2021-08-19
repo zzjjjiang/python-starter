@@ -259,3 +259,20 @@ wordlist = ["Hello", "World", "in", "a", "frame"]
 * frame *
 *********
 ```
+
+# Ex: 20 Super Simple File Indexer
+Create a program that reads the words from the following file: [input-file-1.txt](http://www.google.com).  The program contains a dictionary that keeps track of the word count and prints the results to the console.
+
+Example output:
+```
+This:4
+is:4
+a:1
+test:1
+to:1
+see:1
+how:1
+.
+.
+.
+``
