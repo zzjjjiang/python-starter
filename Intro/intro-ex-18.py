@@ -3,9 +3,6 @@
 # Auth: Martin Burolla
 # Date: 8/18/2021
 
-# Desc: Random Number Game
-#
-
 from random import randint
 
 def main():

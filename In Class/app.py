@@ -181,5 +181,4 @@ kitchenDictionary = {
 # num = randint(1, 5)
 # print(myList[num])
 
-result = 99.1
-print(f"The answer is: {result}")
+
