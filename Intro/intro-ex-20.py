@@ -15,8 +15,8 @@ def cleanWordList(dirtyWordList):
   retval = []
   for dirtyWord in dirtyWordList:
     if len(dirtyWord) > 0 and dirtyWord != '\n':
-      dirtyWord = dirtyWord.translate(string.punctuation)
-      retval.append(dirtyWord)
+      cleanWord = removePunctuation(dirtyWord)
+      retval.append(cleanWord)
   return retval
   
 def main():
