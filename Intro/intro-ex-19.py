@@ -14,18 +14,18 @@ def createSeparator(length):
 def createTextLine(word, lenLongestWord):
   retval = ''
   endString = ''
-  numSpacesToAdd = lenLongestWord - len(word)
-  for _ in range(numSpacesToAdd + 1):
+  numSpacesToAdd = (lenLongestWord - len(word)) + 1
+  for _ in range(numSpacesToAdd):
     endString += ' '
   endString += '*'
   retval = f'* {word}{endString}'
   return retval
 
 def main():
-  myList = ["Hello", "World", "in", "a", "frame"]
-  lenLongestWord = max([(len(word)) for word in myList]) # List comprehension
+  wordList = ["Hello", "World", "in", "a", "frame"]
+  lenLongestWord = max([(len(word)) for word in wordList]) # List comprehension
   print(createSeparator(lenLongestWord))
-  for word in myList:
+  for word in wordList:
     print(createTextLine(word, lenLongestWord))
   print(createSeparator(lenLongestWord))
 

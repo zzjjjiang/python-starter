@@ -245,7 +245,7 @@ You guessed it!!!!
 Create a program that contains a list of strings and prints them in a frame on the console:
 
 ```
-mylist = ["Hello", "World", "in", "a", "frame"]
+wordlist = ["Hello", "World", "in", "a", "frame"]
 ```
 ```
 *********
