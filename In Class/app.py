@@ -166,19 +166,3 @@ kitchenDictionary = {
 # print(sys.maxsize)
 # int 8 bytes, anything larger than 8 bytes is done in software.
 
-# myString = "1,2,3,4,5,6"
-# x = myString.split(",")
-# print(x)
-
-# myList = []
-# for x in range(0,4):
-#   myList.append(x)
-# print(myList)
-
-# from random import randint
-
-# myList = ['a','b','c','d', 'e']
-# num = randint(1, 5)
-# print(myList[num])
-
-
