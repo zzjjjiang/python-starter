@@ -2,7 +2,7 @@
 # File: intro-ex-21.py
 # Auth: Martin Burolla
 # Date: 8/18/2021
-# Desc: Blast Off
+# Desc: Blast Off!!!
 #
 
 import time
