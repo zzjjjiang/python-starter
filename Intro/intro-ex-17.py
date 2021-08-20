@@ -34,11 +34,13 @@ def main():
       if shouldExit(username): 
         break
       password = input("Enter password: ")
-      enteredPasswordHash = hashlib.sha256(password.encode()).hexdigest()
+      if shouldExit(password): 
+        break
+      passwordHash = hashlib.sha256(password.encode()).hexdigest()
 
       if (username in userPwdDict):
         savedPasswordHash = userPwdDict[username]  # Lookup password hash for this user from dictionary.
-        if (savedPasswordHash == enteredPasswordHash):
+        if (savedPasswordHash == passwordHash):
           print("Password is correct.")
         else:
           print("Incorrect password.")
