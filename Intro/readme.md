@@ -228,6 +228,28 @@ Enter mode (add|login): exit
 mburolla : 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
 ```
 
+#### Pseudocode
+```
+main: 
+  
+  dictonary = {}
+
+  loop:
+    mode = input(enter mode)
+
+    if mode is add:
+      ex 16 stuff here...
+
+    if mode is login:
+      New stuff here...
+      username = input(username)
+      password = input(password)
+
+      hashpassword = hash(password)
+      lookup hashpassword for this user in dictionary
+      compare hashes, print results
+```
+
 # Ex: 18 Random Number Game
 Create a program generates a random number 1-10 inclusive.  Th program prompts the user to enter a number between 1-10.  If the user number is too low the program prints (`Too low`).  If the user number is too high, the program prints (`Too high`).  If the user number is equal to the number the program generated print (`You guessed it!!!`) and the program terminates.
 
