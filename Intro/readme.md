@@ -303,7 +303,7 @@ how:1
 ```
 
 # Ex: 21 Blast Off!!!
-Create a program that asks the user for a countdown value in seconds, and then starts printing the countdown. When the countdown ends the program prints `Blast off!!!` on the console.  If the user enters a non integer value, exit the program with proper message.
+Create a program that asks the user for a countdown value in seconds, and then starts printing the countdown. When the countdown ends the program displays `Blast off!!!` on the console.  If the user enters a negative value, the programs terminates with an error message. 
 
 Example output:
 ```
