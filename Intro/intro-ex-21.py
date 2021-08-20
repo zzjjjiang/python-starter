@@ -17,6 +17,7 @@ def main():
   for x in range(countDown, 0, -1):
     time.sleep(1)
     print(x)
+  time.sleep(1)
   print('Blast off!!')
 
 if __name__ == "__main__":  
