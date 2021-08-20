@@ -316,6 +316,6 @@ Enter countdown (sec): 5
 Blast off!!
 ```
 
-# Ex: 22 Morse Code It
-Create a program that converts text into morse code, and morse code to text.
+# Ex: 22 Morse Codify It
+Create a program that converts text to morse code, and morse code to text.
 
