@@ -4,7 +4,7 @@
 # Date: 8/17/2021
 # Desc: List comprehensions
 #       Works like a map() but more clear to the reader.
-#       Format: [(mutate/return item) for item in items if (condition)]
+#       Format: [(expression to execute on each item) for item in list if conditional]
 #
 
 # numbers = [1, 2, 3, 4, 5, 6]
