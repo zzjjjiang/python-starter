@@ -5,9 +5,6 @@
 # Desc: Frame it.
 #
 
-from hashlib import md5
-
-
 def createSeparator(length):
   retval = ''
   for _ in range(length + 4):
