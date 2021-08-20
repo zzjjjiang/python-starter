@@ -7,20 +7,22 @@
 
 import string
 
-def removePunctuation(dirtyWord):
-  retval = dirtyWord
-  return retval
+from collections import OrderedDict
 
 def cleanWordList(dirtyWordList):
+  '''
+  Accepts a list of dirty words and returns a list of clean words.
+  '''
   retval = []
   for dirtyWord in dirtyWordList:
-    if len(dirtyWord) > 0 and dirtyWord != '\n':
-      cleanWord = removePunctuation(dirtyWord)
+    if dirtyWord != '\n' and dirtyWord != '':
+      cleanerWord = dirtyWord.replace('\n', '')
+      cleanWord = cleanerWord.strip(string.punctuation)
       retval.append(cleanWord)
   return retval
   
 def main():
-  wordDictionary = {}
+  wordDictionary = OrderedDict()
 
   f = open("input-file-1.txt")
   lines = f.readlines()
@@ -33,6 +35,8 @@ def main():
         else:
           count = wordDictionary[word]
           wordDictionary[word] += count
+
+ #  dict(sorted(x.items(), key=lambda item: item[1]))
 
   for key in wordDictionary:
     print(f'{key}:{wordDictionary[key]}')
