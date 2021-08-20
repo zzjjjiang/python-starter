@@ -18,7 +18,7 @@ def main():
     time.sleep(1)
     print(x)
   time.sleep(1)
-  print('Blast off!!')
+  print('Blast off!!!')
 
 if __name__ == "__main__":  
   main()
