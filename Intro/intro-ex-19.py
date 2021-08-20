@@ -5,6 +5,9 @@
 # Desc: Frame it.
 #
 
+from hashlib import md5
+
+
 def createSeparator(length):
   retval = ''
   for _ in range(length + 4):
@@ -23,7 +26,11 @@ def createTextLine(word, lenLongestWord):
 
 def main():
   wordList = ["Hello", "World", "in", "a", "frame"]
-  lenLongestWord = max([(len(word)) for word in wordList]) # List comprehension
+  #lenLongestWord = max([(len(word)) for word in wordList]) # Functional Python: List comprehension
+  lenLongestWord = 0 # Iterative Python
+  for word in wordList:
+    if len(word) > lenLongestWord:
+      lenLongestWord = len(word)
   print(createSeparator(lenLongestWord))
   for word in wordList:
     print(createTextLine(word, lenLongestWord))
