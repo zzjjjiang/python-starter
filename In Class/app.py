@@ -157,24 +157,59 @@ kitchenDictionary = {
 # YT: https://youtu.be/2BldESGZKB8
 # NOT Encryption
 # "One way hash"
+#  - PWD
+#  - Signing 
+#  - DeDupe
+
+import hashlib
+
+password = 'SongA.mp3'
+passwordHash = hashlib.md5(password.encode()).hexdigest()
+print(passwordHash)
+
 #
+# My computer test.py ==> Internet ==>  AWS
+#
+# Boto3 (Python lib)
+# - private secret: 123
+#
+# Request
+# - Type: PUT
+# - Body: Hello World
+# - Signature: 446bad0cc3cf4ab377e655db3d11d382
 
-# import hashlib
+#
+# My Computer    ===>  AWS S3
+# Marty: SongA.mp3     hash: 58b5428a6dd575ae154e9704303e871c 
+# Jason: SongA.mp3     hash: 58b5428a6dd575ae154e9704303e871c   
+# 
+# Table:
+# Marty SongA.mp3 58b5428a6dd575ae154e9704303e871c resides: 0X2323
+# Jason SongA.mp3 58b5428a6dd575ae154e9704303e871cSongA.
 
-# password = 'mypassword'
-# passwordHash = hashlib.sha256(password.encode())
-# print(passwordHash.hexdigest())
 
-# import sys
-# print(sys.maxsize)
-# int 8 bytes, anything larger than 8 bytes is done in software.
 
-for i in range(2):
-  print(i)
+# AWS HASH: 446bad0cc3cf4ab377e655db3d11d382
 
-r = list(range(1,10))
-print(r)
+# a6309881d9962e3eac73ae456351aac5
+# cb6e3360990811e6eb0cdc9c556e24a7
 
-s = 'hello world'
-s2 = s[-4:]
-print(s2)
+# MD5: 9c87baa223f464954940f859bcf2e233
+# SHA1: 1cf4c502ddd89b918c4bfefea76dadd590693b48
+# SHA256: 6e659deaa85842cdabb5c6305fcc40033ba43772ec00d45c2a3c921741a5e377
+# SHA512: f58d2a3eea606202c580591f1af9bed15298576c44094d579aa18df2defa6e1eb3b749783a551af5b619a32758fe0e9b0fcd30ffd0ca8a34ca5b7907055a1c36
+
+
+myDictionary = {
+  "LOL" : "Laugh out loud",
+  "BRB" : "Be right back", 
+  "IDK" : "I don't know"
+}
+
+# Adding to dictionary:
+myDictionary["AFAIK"] = "As far as I know"
+
+# Print key/values from dictionary:
+for key in myDictionary:
+  print(f"{key}:{myDictionary[key]}")
+  

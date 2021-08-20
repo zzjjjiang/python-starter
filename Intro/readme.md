@@ -185,7 +185,8 @@ Example log file:
 ```
 
 # Ex: 16 Hash It, Print It
-Create a program that prompts the user to enter a username and password.  The program hashes the password and stores it in a dictionary.  The key for the dictionary is the user name.  The program loops forever unti `exit` is entered.  When `exit` is entered the program prints the key/value pairs from the dictionary to the console.
+Create a program that prompts the user to enter a username and password.  The program hashes the password
+using the `sha256()` algorithm and stores it in a dictionary.  The key for the dictionary is the user name.  The program loops forever unti `exit` is entered.  When `exit` is entered the program prints the key/value pairs from the dictionary to the console.
 
 Example Usage:
 ```
