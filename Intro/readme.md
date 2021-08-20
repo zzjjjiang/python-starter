@@ -253,7 +253,7 @@ main:
 ```
 
 # Ex: 18 Random Number Game
-Create a program generates a random number 1-10 inclusive.  Th program prompts the user to enter a number between 1-10.  If the user number is too low the program prints `Too low`.  If the user number is too high, the program prints `Too high`.  If the user number is equal to the number the program generated print `You guessed it!!!` and the program terminates.
+Create a program generates a random number 1-10 inclusive.  The program prompts the user to enter a number between 1-10.  If the user number is too low the program prints `Too low`.  If the user number is too high, the program prints `Too high`.  If the user number is equal to the number the program generated print `You guessed it!!!` and the program terminates.
 
 Example Usage:
 ```
