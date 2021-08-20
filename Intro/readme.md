@@ -185,6 +185,8 @@ Example log file:
 ```
 
 # Ex: 16 Hash It, Print It
+Hashing is often applied to passwords.  Instead of storing raw passwords in backend systems, passwords are hashed (optionally with a salt value) and the hash value is stored.
+
 Create a program that prompts the user to enter a username and password.  The program hashes the password
 using the `sha256()` algorithm and stores it in a dictionary.  The key for the dictionary is the user name.  The program loops forever unti `exit` is entered.  When `exit` is entered the program prints the key/value pairs from the dictionary to the console.
 
@@ -199,7 +201,7 @@ mburolla : 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
 joe : 60303ae22b998861bce3b28f33eec1be758a213c86c93c076dbe9f558c11c752
 ```
 
-# Ex: 17 Easy Authentication, No Authorization
+# Ex: 17 Simple Authentication, No Authorization
 #### Background
 Authentication is the process in which a set of credentials is validated.  Authorization is what the user is allowed to do once they have been Authenticated. To summarize, Authentication is proving who you are and Authorization is what you are allowed to do.
 
