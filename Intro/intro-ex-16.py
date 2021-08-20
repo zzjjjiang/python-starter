@@ -14,7 +14,7 @@ def main():
   print("Type exit at anytime to end program...")
 
   userPwdDict = {}
-  while (True):
+  while True:
     username = input("Enter username: ")
     if shouldExit(username): 
       break

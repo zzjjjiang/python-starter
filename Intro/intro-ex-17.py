@@ -14,13 +14,12 @@ def main():
   print("Type exit at anytime to end program...")
 
   userPwdDict = {}
-  while (True):
-
+  while True:
     mode = input("Enter mode (add|login): ")
     if shouldExit(mode): 
       break
 
-    if (mode == "add"):
+    if mode == "add":
       username = input("Enter username: ")
       if shouldExit(username): 
         break
@@ -29,7 +28,7 @@ def main():
         break
       userPwdDict[username] = hashlib.sha256(password.encode()).hexdigest() # Add our key/value pair to dictionary.
 
-    if (mode == "login"):
+    if mode == "login":
       username = input("Enter username: ")
       if shouldExit(username): 
         break
@@ -39,9 +38,8 @@ def main():
       passwordHash = hashlib.sha256(password.encode()).hexdigest()
 
       # Lookup password hash for user.
-      if (username in userPwdDict):
-        savedPasswordHash = userPwdDict[username]  # Lookup password hash for this user from dictionary.
-        if (savedPasswordHash == passwordHash):
+      if username in userPwdDict:
+        if passwordHash == userPwdDict[username]:
           print("Password is correct.")
         else:
           print("Incorrect password.")
