@@ -39,7 +39,7 @@ def main():
       if (username in userPwdDict):
         savedPasswordHash = userPwdDict[username]  # Lookup password hash for this user from dictionary.
         if (savedPasswordHash == enteredPasswordHash):
-          print('Password is correct.')
+          print("Password is correct.")
         else:
           print("Incorrect password.")
       else:
