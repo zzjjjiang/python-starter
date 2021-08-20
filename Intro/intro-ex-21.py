@@ -10,7 +10,7 @@ import time
 def main():
   countDown = int(input('Enter countdown (sec): '))
 
-  if (countDown < 0):
+  if countDown < 0:
     print("Countdown cannot be negative.")
     exit()
 
