@@ -30,11 +30,11 @@ def main():
     wordList = line.split(' ')
     wordList = cleanWordList(wordList)
     for word in wordList:
-        if word not in wordDictionary:
-          wordDictionary[word] = 1
-        else:
-          count = wordDictionary[word]
-          wordDictionary[word] += count
+      if word not in wordDictionary:
+        wordDictionary[word] = 1
+      else:
+        count = wordDictionary[word]
+        wordDictionary[word] += count
 
   for key in wordDictionary:
     print(f'{key}:{wordDictionary[key]}')
