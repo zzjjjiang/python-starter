@@ -27,7 +27,5 @@ def main():
   for key in userPwdDict:
     print(f'{key} : {userPwdDict[key]}')
 
-  exit()
-
 if __name__ == "__main__":  
   main()
