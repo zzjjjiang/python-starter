@@ -36,8 +36,6 @@ def main():
           count = wordDictionary[word]
           wordDictionary[word] += count
 
- #  dict(sorted(x.items(), key=lambda item: item[1]))
-
   for key in wordDictionary:
     print(f'{key}:{wordDictionary[key]}')
   f.close()
