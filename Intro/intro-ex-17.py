@@ -18,7 +18,7 @@ def main():
 
     mode = input("Enter mode (add|login): ")
     if shouldExit(mode): 
-        break
+      break
 
     if (mode == "add"):
       username = input("Enter username: ")
@@ -38,6 +38,7 @@ def main():
         break
       passwordHash = hashlib.sha256(password.encode()).hexdigest()
 
+      # Lookup password hash for user.
       if (username in userPwdDict):
         savedPasswordHash = userPwdDict[username]  # Lookup password hash for this user from dictionary.
         if (savedPasswordHash == passwordHash):
@@ -50,8 +51,6 @@ def main():
   # Print contents of dictionary.
   for key in userPwdDict:
     print(f'{key} : {userPwdDict[key]}')
-
-  exit()
 
 if __name__ == "__main__":  
   main()
