@@ -466,3 +466,16 @@ sue : 15
 joe : 20
 sally : 30
 ```
+ # Ex. 28 Split & Print
+Given the following list:
+ 
+`numList = [1,2,3,4,5,6,7,9,10,11]`
+
+Create a function called `splitAndPrint(numList)` that takes a parameter named numList.  The function prints the fist half and the second half of the list on the console:
+
+Example ouput:
+
+```
+First half: [1, 2, 3, 4, 5]
+Second half: [6, 7, 9, 10, 11]
+```
