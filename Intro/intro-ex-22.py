@@ -1,58 +1,15 @@
 # 
 # File: intro-ex-22.py
 # Auth: Martin Burolla
-# Date: 8/20/2021
+# Date: 8/22/2021
 # Desc: Morse Codify It
 #
 
 def main():
   while (True):
     inputString = input('Enter text: ').lower()
-    if inputString[0] == '-' or inputString[0] == '*':
-      text = convertMorseToText(inputString)
-      print(f'Text: { text }')
-    else:
-      morseCode = convertTextToMorseCode(inputString)
-      print(f'Morse Code: { morseCode }')
-
-def convertMorseToText(morseCode):
-  retval = ''
-  morseToTextDict = {
-    '*-'   : 'a', 
-    '-***' : 'b',
-    '-*-*' : 'c',
-    '-**'  : 'd',
-    '*'    : 'e',
-    '**-*' : 'f',
-    '--*'  : 'g',
-    '****' : 'h',
-    '**'   : 'i',
-    '*---' : 'j',
-    '-*-'  : 'k',
-    '*-**' : 'l',
-    '--'   : 'm',
-    '-*'   : 'n',
-    '---'  : 'o',
-    '*--*' : 'p',
-    '--*-' : 'q',
-    '*-*'  : 'r',
-    '***'  : 's',
-    '-'    : 't',
-    '**-'  : 'u',
-    '***-' : 'v',
-    '*--'  : 'w',
-    '-**-' : 'x',
-    '-*--' : 'y',
-    '--**' : 'z'
-  }
-  
-  morseCodeList = morseCode.split(' ')
-  for code in morseCodeList:
-    if code == '':
-      retval += ' '
-    else:
-     retval += morseToTextDict[code]
-  return retval
+    morseCode = convertTextToMorseCode(inputString)
+    print(f'Morse Code: { morseCode }')
 
 def convertTextToMorseCode(text):
   retval = ''

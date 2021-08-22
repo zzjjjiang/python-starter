@@ -317,5 +317,85 @@ Blast off!!
 ```
 
 # Ex: 22 Morse Codify It
-Create a program that converts text to morse code, and morse code to text.
+Create a program that converts text to morse code.  The program loops indefinitely until `control+c`is entered by the user.  The program will contain a function called `convertTextToMorseCode(inputString)`.  This function will contain the following dictionary:
 
+```
+textToMorseDict = {
+  'a' : '*-',
+  'b' : '-***',
+  'c' : '-*-*',
+  'd' : '-**',
+  'e' : '*',
+  'f' : '**-*',
+  'g' : '--*',
+  'h' : '****',
+  'i' : '**',
+  'j' : '*---',
+  'k' : '-*-',
+  'l' : '*-**',
+  'm' : '--',
+  'n' : '-*',
+  'o' : '---',
+  'p' : '*--*',
+  'q' : '--*-',
+  'r' : '*-*',
+  's' : '***',
+  't' : '-',
+  'u' : '**-',
+  'v' : '***-',
+  'w' : '*--',
+  'x' : '-**-',
+  'y' : '-*--',
+  'z' : '--**'
+}
+```
+
+Example Usage
+```
+Enter text: python rocks
+Morse Code: *--* -*-- - **** --- -*  *-* --- -*-* -*- *** 
+Enter text: marty was here
+Morse Code: -- *- *-* - -*--  *-- *- ***  **** * *-* * 
+```
+
+ # Ex. 23 Morse to Text, Text to Morse
+ Extend exercise 22 to convert Morse Code to text.  The program will contain a function called: `convertTextToMorseCode(morseCode)` and will contain the following dictionary:
+
+ ```
+   morseToTextDict = {
+    '*-'   : 'a', 
+    '-***' : 'b',
+    '-*-*' : 'c',
+    '-**'  : 'd',
+    '*'    : 'e',
+    '**-*' : 'f',
+    '--*'  : 'g',
+    '****' : 'h',
+    '**'   : 'i',
+    '*---' : 'j',
+    '-*-'  : 'k',
+    '*-**' : 'l',
+    '--'   : 'm',
+    '-*'   : 'n',
+    '---'  : 'o',
+    '*--*' : 'p',
+    '--*-' : 'q',
+    '*-*'  : 'r',
+    '***'  : 's',
+    '-'    : 't',
+    '**-'  : 'u',
+    '***-' : 'v',
+    '*--'  : 'w',
+    '-**-' : 'x',
+    '-*--' : 'y',
+    '--**' : 'z'
+  }
+```
+
+Example output:
+```
+Enter text: python rocks
+Morse Code: *--* -*-- - **** --- -*  *-* --- -*-* -*- *** 
+Enter text: *--* -*-- - **** --- -*  *-* --- -*-* -*- ***
+Text: python rocks
+```
