@@ -6,8 +6,14 @@
 #
 
 def main():
-  userText = input('Enter text: ')
-  print(convertTextToMorseCode(userText))
+  while (True):
+    inputString = input('Enter text: ').lower()
+    if inputString[0] == '-' or inputString[0] == '*':
+      text = convertMorseToText(inputString)
+      print(f'Text: { text }')
+    else:
+      morseCode = convertTextToMorseCode(inputString)
+      print(f'Morse Code: { morseCode }')
 
 def convertMorseToText(morseCode):
   retval = ''
@@ -39,6 +45,13 @@ def convertMorseToText(morseCode):
     '-*--' : 'y',
     '--**' : 'z'
   }
+  
+  morseCodeList = morseCode.split(' ')
+  for code in morseCodeList:
+    if code == '':
+      retval += ' '
+    else:
+     retval += morseToTextDict[code]
   return retval
 
 def convertTextToMorseCode(text):
@@ -72,7 +85,10 @@ def convertTextToMorseCode(text):
     'z' : '--**'
   }
   for idx in range(len(text)):
-    retval += (textToMorseDict[text[idx]] + ' ')
+    if (text[idx] == ' '):
+      retval += ' '
+    else:
+      retval += (textToMorseDict[text[idx]] + ' ')
   return retval
 
 if __name__ == "__main__":  
