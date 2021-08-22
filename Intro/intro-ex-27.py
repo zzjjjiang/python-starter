@@ -5,6 +5,9 @@
 # Desc: Print Person
 #
 
+def _lambda(x):
+  return x['age']
+
 def printPersonList(peopleList):
   peopleList.sort(key = lambda x : x['age']) # Lambda functions: https://www.youtube.com/watch?v=Ob9rY6PQMfI
   for person in peopleList:
