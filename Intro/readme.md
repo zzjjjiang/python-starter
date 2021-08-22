@@ -317,7 +317,7 @@ Blast off!!
 ```
 
 # Ex: 22 Morse Codify It
-Create a program that converts text to morse code.  The program loops indefinitely until `control+c`is entered by the user.  The program will contain a function called `convertTextToMorseCode(inputString)`.  This function will contain the following dictionary:
+Create a program that converts text to morse code.  The program loops indefinitely until `control+c`is entered by the user.  The program will contain a function called `convertTextToMorseCode(inputString)`.  This function contains a parameter called `inputString` and will contain the following dictionary:
 
 ```
 textToMorseDict = {
@@ -359,7 +359,7 @@ Morse Code: -- *- *-* - -*--  *-- *- ***  **** * *-* *
 ```
 
  # Ex. 23 Morse to Text, Text to Morse
- Extend exercise 22 to convert Morse Code to text.  The program will contain a function called: `convertTextToMorseCode(morseCode)` and will contain the following dictionary:
+ Extend exercise 22 to convert Morse Code to text.  The program will contain a function called: `convertTextToMorseCode(morseCode)`.  This function contains a parameter called `morseCode` and will contain the following dictionary:
 
  ```
    morseToTextDict = {
@@ -398,4 +398,23 @@ Enter text or morse code: python rocks
 Morse Code: *--* -*-- - **** --- -*  *-* --- -*-* -*- *** 
 Enter text or morse code: *--* -*-- - **** --- -*  *-* --- -*-* -*- *** 
 Text: python rocks 
+```
+
+# Ex. 24 Diagon Alley
+Create a program that contains a function called `printDiagonally(word)`.  This function has a parameter called `word` and prints the word diagonally to the console.  The program prompts the user to enter text.
+
+Example Ouput:
+```
+Enter text: this is a test
+t
+ h
+  i
+   s
+i
+ s
+a
+t
+ e
+  s
+   t
 ```
