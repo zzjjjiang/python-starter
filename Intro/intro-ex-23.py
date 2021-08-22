@@ -7,7 +7,7 @@
 
 def main():
   while (True):
-    inputString = input('Enter text: ').lower()
+    inputString = input('Enter text or morse code: ').lower()
     if inputString[0] == '-' or inputString[0] == '*':
       text = convertMorseToText(inputString)
       print(f'Text: { text }')

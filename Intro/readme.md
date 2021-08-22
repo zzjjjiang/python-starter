@@ -394,8 +394,8 @@ Morse Code: -- *- *-* - -*--  *-- *- ***  **** * *-* *
 
 Example output:
 ```
-Enter text: python rocks
+Enter text or morse code: python rocks
 Morse Code: *--* -*-- - **** --- -*  *-* --- -*-* -*- *** 
-Enter text: *--* -*-- - **** --- -*  *-* --- -*-* -*- ***
-Text: python rocks
+Enter text or morse code: *--* -*-- - **** --- -*  *-* --- -*-* -*- *** 
+Text: python rocks 
 ```
