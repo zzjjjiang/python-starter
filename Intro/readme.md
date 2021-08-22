@@ -418,3 +418,12 @@ t
   s
    t
 ```
+# Ex. Count Case
+Create a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
+
+Example output:
+```
+Enter text: This is a Test.
+Upper case: 2
+Lower case: 9
+```
