@@ -428,7 +428,7 @@ Upper case: 2
 Lower case: 9
 ```
 
-# Ex 26. Print Dictionary
+# Ex. 26 Print Dictionary
 Create a program that contains a function called `printDictionary(dictionary)`.  This function contains a parameter called dictionary.  The function uses an f-string and prints the following dictionary to the screen in ascending order:
 ```
 personDictionary = {
@@ -446,4 +446,23 @@ Example output:
 333-33-3333 : fred
 444-44-4444 : fred
 555-55-5555 : mary
+```
+# Ex. 27 Lambda Sort & Print
+Create a program that contains a function called `printPersonList(peopleList)`.  This function takes a parameter called `peopleList`.  `PeopleList` is defined below:
+
+```
+  personList = [
+    { 'name' : 'joe', 'age' : 20 },
+    { 'name' : 'fred', 'age' : 10 },
+    { 'name' : 'sally', 'age' : 30},
+    { 'name' : 'sue', 'age' : 15},
+  ]
+```
+
+Example output:
+```
+fred : 10
+sue : 15
+joe : 20
+sally : 30
 ```
