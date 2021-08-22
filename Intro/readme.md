@@ -418,7 +418,7 @@ t
   s
    t
 ```
-# Ex. Count Case
+# Ex. 25 Count Case
 Create a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
 
 Example output:
@@ -426,4 +426,24 @@ Example output:
 Enter text: This is a Test.
 Upper case: 2
 Lower case: 9
+```
+
+# Ex 26. Print Dictionary
+Create a program that contains a function called `printDictionary(dictionary)`.  This function contains a parameter called dictionary.  The function uses an f-string and prints the following dictionary to the screen in ascending order:
+```
+personDictionary = {
+   '222-22-2222' : 'joe',
+   '333-33-3333' : 'fred',
+   '555-55-5555' : 'mary',
+   '444-44-4444' : 'fred',
+   '111-11-1111' : 'jane'
+}
+```
+Example output:
+``` 
+111-11-1111 : jane
+222-22-2222 : joe
+333-33-3333 : fred
+444-44-4444 : fred
+555-55-5555 : mary
 ```
