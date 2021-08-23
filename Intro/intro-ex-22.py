@@ -6,7 +6,7 @@
 #
 
 def main():
-  while (True):
+  while True:
     inputString = input('Enter text: ').lower()
     morseCode = convertTextToMorseCode(inputString)
     print(f'Morse Code: { morseCode }')
@@ -42,7 +42,7 @@ def convertTextToMorseCode(text):
     'z' : '--**'
   }
   for idx in range(len(text)):
-    if (text[idx] == ' '):
+    if text[idx] == ' ':
       retval += ' '
     else:
       retval += (textToMorseDict[text[idx]] + ' ')
