@@ -350,6 +350,8 @@ textToMorseDict = {
 }
 ```
 
+This function will also contain the necessary business logic to convert English text to morse code.
+
 Example Usage
 ```
 Enter text: python rocks
@@ -391,6 +393,8 @@ Morse Code: -- *- *-* - -*--  *-- *- ***  **** * *-* *
     '--**' : 'z'
   }
 ```
+
+This function will also contain the necessary business logic to convert more code to English.
 
 Example output:
 ```
