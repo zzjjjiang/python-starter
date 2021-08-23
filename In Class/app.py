@@ -200,16 +200,37 @@ print(passwordHash)
 # SHA512: f58d2a3eea606202c580591f1af9bed15298576c44094d579aa18df2defa6e1eb3b749783a551af5b619a32758fe0e9b0fcd30ffd0ca8a34ca5b7907055a1c36
 
 
-myDictionary = {
-  "LOL" : "Laugh out loud",
-  "BRB" : "Be right back", 
-  "IDK" : "I don't know"
-}
+# myDictionary = {
+#   "LOL" : "Laugh out loud",
+#   "BRB" : "Be right back", 
+#   "IDK" : "I don't know"
+# }
 
-# Adding to dictionary:
-myDictionary["AFAIK"] = "As far as I know"
+# # Adding to dictionary:
+# myDictionary["AFAIK"] = "As far as I know"
 
-# Print key/values from dictionary:
-for key in myDictionary:
-  print(f"{key}:{myDictionary[key]}")
+# # Print key/values from dictionary:
+# for key in myDictionary:
+#   print(f"{key}:{myDictionary[key]}")
   
+# Lambda functions
+# def add(x,y):
+#   return x + y
+
+# add = lambda x,y : x + y # "lambda" <INPUT> : <EXPRESSION> 
+# print(add(1,2))
+
+peopleList = [
+  { 'name': 'fred', 'age' : 20, 'weight': 160 },
+  { 'name': 'mary', 'age' : 10, 'weight': 130 },
+  { 'name': 'sue', 'age' : 15, 'weight': 120 },
+]
+
+peopleList.sort(key = lambda x : x['weight'])
+print(peopleList)
+
+# l = list(filter(lambda x : x['age'] >= 15, peopleList))
+# print(l)
+
+
+ 

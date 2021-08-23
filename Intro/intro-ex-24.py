@@ -13,7 +13,7 @@ def printDiagonally(word):
     print(f'{padding}{word[idx]}')
 
 def main():
-  inputString = input('Enter text: ' )
+  inputString = input('Enter text: ')
   myWordList = inputString.split(' ')
   for word in myWordList:
     printDiagonally(word)
