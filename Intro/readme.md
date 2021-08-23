@@ -401,7 +401,7 @@ Text: python rocks
 ```
 
 # Ex. 24 Diagon Alley
-Create a program that contains a function called `printDiagonally(word)`.  This function has a parameter called `word` and prints the word diagonally to the console.  The program prompts the user to enter text.
+Create a program that contains a function called `printDiagonally(word)`.  This function has a parameter called `word` and prints the word diagonally to the console.  The program prompts the user to enter a sentence.
 
 Example Ouput:
 ```
