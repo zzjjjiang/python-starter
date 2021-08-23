@@ -350,7 +350,7 @@ textToMorseDict = {
 }
 ```
 
-This function will also contain the necessary business logic to convert English text to morse code.
+This function will also contain the necessary business logic to convert English text to morse code.  Place a space between each Morse code and two spaces between each word.
 
 Example Usage
 ```
