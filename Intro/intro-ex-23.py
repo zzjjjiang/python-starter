@@ -84,11 +84,11 @@ def convertTextToMorseCode(text):
     'y' : '-*--',
     'z' : '--**'
   }
-  for idx in range(len(text)):
-    if (text[idx] == ' '):
+  for char in text:
+    if char == ' ':
       retval += ' '
     else:
-      retval += (textToMorseDict[text[idx]] + ' ')
+      retval +=  (textToMorseDict[char] + ' ')
   return retval
 
 if __name__ == "__main__":  
