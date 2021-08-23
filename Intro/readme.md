@@ -361,7 +361,7 @@ Morse Code: -- *- *-* - -*--  *-- *- ***  **** * *-* *
 ```
 
  # Ex. 23 Morse to Text, Text to Morse
- Extend exercise 22 to convert Morse Code to text.  The program will contain a function called: `convertTextToMorseCode(morseCode)`.  This function contains a parameter called `morseCode` and will contain the following dictionary:
+ Extend exercise 22 to convert Morse Code to text.  The program will contain a function called: `convertMorseCodeToText(morseCode)`.  This function contains a parameter called `morseCode` and will contain the following dictionary:
 
  ```
    morseToTextDict = {
