@@ -46,7 +46,7 @@ def convertTextToMorseCode(text):
     if char == ' ':
       retval += ' '
     else:
-      retval +=  (textToMorseDict[char] + ' ')
+      retval += (textToMorseDict[char] + ' ')
   return retval
 
 if __name__ == "__main__":  
