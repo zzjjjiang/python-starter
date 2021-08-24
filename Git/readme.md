@@ -19,7 +19,9 @@ git status
 # Exercises
 
 ### Ex 1. Setup SSH Keys
-- `ssh-keygen`
+- This links your computer to your GitHub acccount
+- Only needs to be done once
+- Execute: `ssh-keygen`
 - Copy and paste public key (`id_rsa.pub`) to GitHub (Account >> Settings >> SSH and GPG Keys)
 
 ### Ex 2. Create Repo & Upload File
