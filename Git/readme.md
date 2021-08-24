@@ -53,7 +53,7 @@ git status
 - PreReq: Add students as collaborators to GitHub repo
 - Create a local directory called `mol`
 - Initialize this directory: `git init`
-- Clone repo locally: `git clone git clone git@github.com:mburolla/mol.git`
+- Clone repo locally: `git clone git@github.com:mburolla/mol.git`
 - CD into `mol` directory and launch VS Code: `code .`
 - Run the Python `app.py`
 
