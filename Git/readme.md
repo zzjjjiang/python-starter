@@ -23,6 +23,7 @@ git status
 - Only needs to be done once
 - Execute: `ssh-keygen`
 - Copy and paste public key (`id_rsa.pub`) to GitHub (Account >> Settings >> SSH and GPG Keys)
+- NEVER share your private key!
 
 ### Ex 2. Create Repo in GitHub and Clone Locally
 - Create a new repo called py2 in GitHub
