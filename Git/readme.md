@@ -27,7 +27,6 @@ git status
 ### Ex 2. Create Repo in GitHub and Clone Locally
 - Create a new repo called py2 in GitHub
 - Clone this repo to your local hard drive (new directory py2):
-	
   - Create a directory (`mkdir`)
   - Change into directory (`cd`)
   - `git init`
@@ -37,7 +36,7 @@ git status
   - Create a commit: `git commit -m "Add file"`
   - Push to GitHub: `git push origin master`
 
-#### Ex 3. Create Code Locally, Create Repo in GitHub, Add Origin
+#### Ex 3. Create Code Locally, Create Repo in GitHub, Add Remote
 - Create a local directory
 - Open VS Code: `code .`
 - Create Python file: `app.py`
