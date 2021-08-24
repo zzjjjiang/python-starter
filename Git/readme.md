@@ -67,7 +67,7 @@ def student1():
 - Each student branches from master and creates a branch with their first name:
 Example: `git checkout -b student-<your first name>`
 - The student branch is pushed to GitHub
-- The student creates a PR that requests their branch be merged into the master (aka main) branch
+- The student creates a PR that requests their branch be merged into the `dev` branch
 - The instructor reviews and merges all the PRs
 - The students switch to the `dev` branch on their local computer, pull the latest code, and run the app
 
