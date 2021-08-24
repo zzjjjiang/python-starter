@@ -49,7 +49,13 @@ git status
 - Push: `git push origin master` (might be `main` for you)
 
 ### Ex 4. Meaning Of Life
-- Add students as collaborators
+- PreReq: Add students as collaborators to GitHub repo
+- Create a directory called `mol`
+- Initialize this directory: `git init`
+- Clone repo locally: `git clone git clone git@github.com:mburolla/mol.git`
+- CD into `mol` directory and launch VS Code: `code .`
+- Run the Python `app.py`
+
 
 
 
