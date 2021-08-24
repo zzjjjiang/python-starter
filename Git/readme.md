@@ -30,7 +30,7 @@ git status
   - Create a directory (`mkdir`)
   - Change into directory (`cd`)
   - `git init`
-  - `git clone` <SSH URL> (Not the HTTPS url)
+  - `git clone <SSH URL>` (Not the HTTPS url)
   - Add a test.txt file, add text to file, save the file.
   - Stage the file: `git add --all`
   - Create a commit: `git commit -m "Add file"`
@@ -43,7 +43,7 @@ git status
 - Add code to `app.py`
 - Create repo in GitHub
 - Initialize local directory to be a git repo: `git init`
-- Add remote: `git remote add origin <SSH URL>`
+- Add remote: `git remote add origin <SSH URL>` (Not the HTTPS url)
 - Stage: `git add --all`
 - Commit: `git commit -m "first"`
 - Push: `git push origin master` (might be `main` for you)
