@@ -24,11 +24,11 @@ git status
 - Execute: `ssh-keygen`
 - Copy and paste public key (`id_rsa.pub`) to GitHub (Account >> Settings >> SSH and GPG Keys)
 
-### Ex 2. Create Repo & Upload File
+### Ex 2. Create Repo in GitHub and Clone Locally
 - Create a new repo called py2 in GitHub
 - Clone this repo to your local hard drive (new directory py2):
 	
-  - Create a directory (`mkdir`),
+  - Create a directory (`mkdir`)
   - Change into directory (`cd`)
   - `git init`
   - `git clone` <SSH URL> (Not the HTTPS url)
@@ -37,5 +37,20 @@ git status
   - Create a commit: `git commit -m "Add file"`
   - Push to GitHub: `git push origin master`
 
-### Ex 3. 
+#### Ex 3. Create Code Locally, Create Repo in GitHub, Add Origin
+- Create a local directory
+- Open VS Code: `code .`
+- Create Python file: `app.py`
+- Add code to `app.py`
+- Create repo in GitHub
+- Initialize local directory to be a git repo: `git init`
+- Add remote: `git remote add origin <SSH URL>`
+- Stage: `git add --all`
+- Commit: `git commit -m "first"`
+- Push: `git push origin master` (might be `main` for you)
+
+### Ex 4. Meaning Of Life
+- Add students as collaborators
+
+
 
