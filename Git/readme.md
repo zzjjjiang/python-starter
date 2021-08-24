@@ -28,12 +28,12 @@ git status
 	
   - Create a directory (`mkdir`),
   - Change into directory (`cd`)
-  - git init
-  - git clone <SSH URL> (Not the HTTPS url)
-  - Add a test.txt file, added text to file, SAVED the file.
-  - Stage the file: git add --all
-  - Create a commit: git commit -m "Add file"
-  - Push to GitHub: git push origin master
+  - `git init`
+  - `git clone` <SSH URL> (Not the HTTPS url)
+  - Add a test.txt file, add text to file, save the file.
+  - Stage the file: `git add --all`
+  - Create a commit: `git commit -m "Add file"`
+  - Push to GitHub: `git push origin master`
 
 ### Ex 3. 
 
