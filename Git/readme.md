@@ -49,7 +49,7 @@ git status
 - Commit: `git commit -m "first"`
 - Push: `git push origin master` (might be `main` for you)
 
-### Ex 4. Meaning Of Life (MOL)
+### Ex 4. Meaning of Life (MOL): Part I
 - PreReq: Add students as collaborators to GitHub repo
 - Create a local directory called `mol`
 - Initialize this directory: `git init`
@@ -57,6 +57,17 @@ git status
 - CD into `mol` directory and launch VS Code: `code .`
 - Run the Python `app.py`
 
-
-
+### Ex 5. Meaning of Life (MOL): Part II
+- Every student is assigned a number
+- Each student adds their meaning of life for their assigned function:
+```
+def student1():
+  return "I like dogs"
+```
+- Each student branches from master and creates a branch with their first name:
+Example: `git checkout -b student-marty`
+- The student branch is pushed to GitHub
+- The student creates a PR that requests their branch be merged into the master (aka main) branch
+- The instructor reviews and merges all the PRs
+- The students switch to the `master` branch on their local computer, pull the latest code, and run the app
 
