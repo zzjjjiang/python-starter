@@ -20,7 +20,7 @@ git status
 
 ### Ex 1. Setup SSH Keys
 - `ssh-keygen`
-- Copy and paste public key (`id_rsa.pub`) to GitHub (Account >> Settings)
+- Copy and paste public key (`id_rsa.pub`) to GitHub (Account >> Settings >> SSH and GPG Keys)
 
 ### Ex 2. Create Repo & Upload File
 - Create a new repo called py2 in GitHub
