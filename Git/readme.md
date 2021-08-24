@@ -38,7 +38,7 @@ git status
   - Push to GitHub: `git push origin master`
 
 #### Ex 3. Create Code Locally, Create Repo in GitHub, Add Remote
-- Create a local directory
+- Create a new local directory
 - Open VS Code: `code .`
 - Create Python file: `app.py`
 - Add code to `app.py`
@@ -49,9 +49,9 @@ git status
 - Commit: `git commit -m "first"`
 - Push: `git push origin master` (might be `main` for you)
 
-### Ex 4. Meaning Of Life
+### Ex 4. Meaning Of Life (MOL)
 - PreReq: Add students as collaborators to GitHub repo
-- Create a directory called `mol`
+- Create a local directory called `mol`
 - Initialize this directory: `git init`
 - Clone repo locally: `git clone git clone git@github.com:mburolla/mol.git`
 - CD into `mol` directory and launch VS Code: `code .`
