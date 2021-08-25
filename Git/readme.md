@@ -74,7 +74,7 @@ Example: `git checkout -b student-<your first name>`
 ### Ex 6. Favorite Color
 - Every student is assigned a number
 - Before you begin, get the latest code from the `dev` branch (`git pull...`) 
-- Create a branch from the `dev` branch using the following schema: `dev-{initials}-fav-color`
+- Create a branch from the `dev` branch using the following schema: `{base branch}-{initials}-fav-color`
 - Update `app2.py` with your favorite color
 - Stage, commit and push your branch `(dev-{initials}-fav-color`) to GitHub
 - Create a PR, wait for instructor to review and comment
