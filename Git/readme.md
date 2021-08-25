@@ -71,3 +71,14 @@ Example: `git checkout -b student-<your first name>`
 - The instructor reviews and merges all the PRs
 - The students switch to the `dev` branch on their local computer, pull the latest code, and run the app
 
+### Ex 6. Favorite Color
+- Every student is assigned a number
+- Before you begin, get the latest code from the dev branch (`git pull...`) 
+- Create a branch from the `dev` branch using the following schema: `dev-{initials}-fav-color`
+- Update `app2.py` with your favorite color
+- Stage, commit and push your branch `(dev-{initials}-fav-color`) to GitHub
+- Create a PR, wait for instructor to review and comment
+
+### Ex 7. Message Recall
+- Get the latest code from the MOL repo
+- Find the message from a previous commit for `app3.py` that had something to do with cats
