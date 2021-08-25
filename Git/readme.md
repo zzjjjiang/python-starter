@@ -80,8 +80,8 @@ Example: `git checkout -b student-<your first name>`
 - Stage, commit and push your branch `(dev-{initials}-fav-color)` to GitHub
 - Create a PR, wait for instructor to review and comment
 
-### Ex 7. Favorite Color
-`app2.py` prints a list of the favorite colors from the team, however there are duplicates in the list.  Modify `app2.py` to remove duplicates from the list.
+### Ex 7. DeDupe Favorite Color
+`app2.py` prints a list of the favorite colors from the team, however there are duplicate colors in the list.  Modify `app2.py` to remove duplicates from the list.
 - Make sure you are on the `dev` branch (`git branch`)
 - Get the latest code for the `dev` branch from the MOL repo
 - Create a branch off of the `dev` branch using the following schema: `dev-{your initials}-fix-list`
