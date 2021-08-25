@@ -85,6 +85,7 @@ Example: `git checkout -b student-<your first name>`
 - Make sure you are on the `dev` branch (`git branch`)
 - Get the latest code for the `dev` branch from the MOL repo
 - Create a branch off of the `dev` branch using the following schema: `dev-{your initials}-fix-list`
+- Write your code to dedupe the list
 - Stage, commit, push your branch to GitHub and create a PR (do not merge)
 - Wait for instructor to review
 
