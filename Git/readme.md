@@ -77,9 +77,18 @@ Example: `git checkout -b student-<your first name>`
 - Before you begin, get the latest code from the `dev` branch (`git pull...`) 
 - Create a branch from the `dev` branch using the following schema: `{base branch}-{initials}-fav-color`
 - Update `app2.py` with your favorite color
-- Stage, commit and push your branch `(dev-{initials}-fav-color`) to GitHub
+- Stage, commit and push your branch `(dev-{initials}-fav-color)` to GitHub
 - Create a PR, wait for instructor to review and comment
 
-### Ex 7. Message Recall
+### Ex 7. Favorite Color
+`app2.py` prints a list of the favorite colors from the team, however there are duplicates in the list.  Modify `app2.py` to remove duplicates from the list.
+- Make sure you are on the `dev` branch (`git branch`)
+- Get the latest code for the `dev` branch from the MOL repo
+- Create a branch off of the `dev` branch using the following schema: `dev-{your initials}-fix-list`
+- Stage, commit, push your branch to GitHub and create a PR (do not merge)
+- Wait for instructor to review
+
+### Ex 8. Message Recall
+- Make sure you are on the `dev` branch
 - Get the latest code for the `dev` branch from the MOL repo
 - Find the message from a previous commit for `app3.py` that had something to do with cats
