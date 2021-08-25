@@ -81,5 +81,5 @@ Example: `git checkout -b student-<your first name>`
 - Create a PR, wait for instructor to review and comment
 
 ### Ex 7. Message Recall
-- Get the latest code from the MOL repo
+- Get the latest code for the `dev` branch from the MOL repo
 - Find the message from a previous commit for `app3.py` that had something to do with cats
