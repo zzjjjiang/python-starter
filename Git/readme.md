@@ -15,6 +15,7 @@ git commit -m “your message”
 git status
 ```
 [Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
+[All Git Commands](https://git-scm.com/docs)
 
 # Exercises
 
