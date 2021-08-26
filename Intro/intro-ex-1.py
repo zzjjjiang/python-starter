@@ -10,7 +10,7 @@ import random
 def main():
   myList = []
   for _ in range(0, 10):
-    myList.append(random.randint(1, 101))
+    myList.append(random.randint(1, 100))
   total = sum(myList)
   print(f'The sum is: {total}')
 
