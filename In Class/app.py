@@ -217,6 +217,8 @@ print(passwordHash)
 # def add(x,y):
 #   return x + y
 
+# https://youtu.be/Ob9rY6PQMfI
+
 # add = lambda x,y : x + y # "lambda" <INPUT> : <EXPRESSION> 
 # print(add(1,2))
 
