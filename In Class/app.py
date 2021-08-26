@@ -161,11 +161,11 @@ kitchenDictionary = {
 #  - Signing 
 #  - DeDupe
 
-import hashlib
+# import hashlib
 
-password = 'SongA.mp3'
-passwordHash = hashlib.md5(password.encode()).hexdigest()
-print(passwordHash)
+# password = 'SongA.mp3'
+# passwordHash = hashlib.md5(password.encode()).hexdigest()
+# print(passwordHash)
 
 #
 # My computer test.py ==> Internet ==>  AWS
@@ -229,10 +229,26 @@ peopleList = [
 ]
 
 peopleList.sort(key = lambda x : x['weight'])
-print(peopleList)
+#print(peopleList)
 
-# l = list(filter(lambda x : x['age'] >= 15, peopleList))
-# print(l)
+#l = list(filter(lambda x : x['age'] >= 15, peopleList))
+#print(l)
 
 
- 
+# print ('')
+
+# def printWords(wordlist):
+#     size = max(len(word) for word in wordlist)
+#     print('*' * (size + 4))
+    
+#     for word in wordlist:
+#        print('* {:<{}} *'.format(word, size)) # :<{}
+#     print('*' * (size + 4))
+
+# def main():
+#    wordlist = ["Hello", "World", "in", "a", "frame"]
+#    printWords(wordlist)
+
+# if __name__ == "__main__":
+#     main()
+

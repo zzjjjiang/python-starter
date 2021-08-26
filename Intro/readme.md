@@ -477,7 +477,7 @@ Given the following list:
  
 `numList = [1,2,3,4,5,6,7,9,10,11]`
 
-Create a function called `splitAndPrint(numList)` that takes a parameter named numList.  The function prints the fist half and the second half of the list on the console.
+Create a function called `splitAndPrint(numList)` that takes a parameter named numList.  The function prints the fist half and the second half of the list on the console.  Make sure the function can accept list of various lengths.
 
 Example ouput:
 
