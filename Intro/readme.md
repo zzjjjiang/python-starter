@@ -463,7 +463,7 @@ Create a program that contains a function called `printPersonList(peopleList)`. 
   ]
 ```
 
-The function sorts the personList by age (asc) and prints it to the console.
+The function sorts `personList` by age (asc) and prints it to the console.
 
 Example output:
 ```
