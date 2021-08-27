@@ -213,26 +213,6 @@ kitchenDictionary = {
 # for key in myDictionary:
 #   print(f"{key}:{myDictionary[key]}")
   
-# Lambda functions
-# def add(x,y):
-#   return x + y
-
-# https://youtu.be/Ob9rY6PQMfI
-
-# add = lambda x,y : x + y # "lambda" <INPUT> : <EXPRESSION> 
-# print(add(1,2))
-
-# peopleList = [
-#   { 'name': 'fred', 'age' : 20, 'weight': 160 },
-#   { 'name': 'mary', 'age' : 10, 'weight': 130 },
-#   { 'name': 'sue', 'age' : 15, 'weight': 120 },
-# ]
-
-# peopleList.sort(key = lambda x : x['weight'])
-#print(peopleList)
-
-#l = list(filter(lambda x : x['age'] >= 15, peopleList))
-#print(l)
 
 
 # print ('')
@@ -252,3 +232,32 @@ kitchenDictionary = {
 # if __name__ == "__main__":
 #     main()
 
+#####################################################################################
+# LAMBDA
+#####################################################################################
+
+def add(x,y):
+  return x + y
+
+r = add(1,2)
+print(r)
+print(add(1,2))
+
+# https://youtu.be/Ob9rY6PQMfI
+
+# add = lambda x, y : x + y 
+# r = add(1,2)
+# print(r)
+# FORMAT: lambda <INPUT> : <EXPRESSION> 
+
+# peopleList = [
+#   { 'name': 'fred', 'age' : 20, 'weight': 160 },
+#   { 'name': 'mary', 'age' : 10, 'weight': 130 },
+#   { 'name': 'sue', 'age' : 15, 'weight': 120 },
+# ]
+
+# peopleList.sort(key = lambda x : x['weight'])
+#print(peopleList)
+
+#l = list(filter(lambda x : x['age'] >= 15, peopleList))
+#print(l)

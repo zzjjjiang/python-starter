@@ -487,4 +487,13 @@ Second half: [6, 7, 9, 10, 11]
 ```
 
  # Ex. 29 Floor It
- Implement the function stub in your student directory called `my_floor()`.  The `my_floor()` function will operate like the Python `floor()` function.  Make sure you switch to the `dev` branch before you pull the latest changed from the remote repo (`git pull origin dev`)
+ Implement the function stub in your student directory called `my_floor()`.  The `my_floor()` function will operate like the Python `floor()` function.  Do not use the `floor()` function in your floor function.  Make sure you switch to the `dev` branch before you pull the latest changed from the remote repo (`git pull origin dev`)
+
+Desired output:
+```
+2 2
+2 2
+-3 -3
+-4 -4
+```
+
