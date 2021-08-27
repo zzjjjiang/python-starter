@@ -7,7 +7,7 @@ def add(x,y): # Add() is a function that takes/accepts two parameters and return
 
 # Function Name: sub
 # Parameters: x,y
-# Arguments: None
+# Arguments: N/A (Because nothing is calling/consuming this function)
 # State: Defined, but not called (not used)
 def sub(x,y): # Sub() is a function that takes/accepts two parameters and returns a value.
   return x - y
