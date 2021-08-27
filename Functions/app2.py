@@ -29,7 +29,7 @@ def printMessage(): # printMessage() is a function (AKA subroutine) that accepts
   return "Hi Jason"
 
 # Function Name: main
-# Parameter: Nothing
+# Parameters: Nothing
 # Arguments: Nothing
 # State: Called by Python 
 # Returns: None
