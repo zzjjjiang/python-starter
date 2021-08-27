@@ -248,7 +248,7 @@ print(add(1,2))
 # add = lambda x, y : x + y 
 # r = add(1,2)
 # print(r)
-# FORMAT: lambda <INPUT> : <EXPRESSION> 
+# FORMAT: lambda <INPUT ARGS> : <OUTPUT EXPRESSION> 
 
 # peopleList = [
 #   { 'name': 'fred', 'age' : 20, 'weight': 160 },
