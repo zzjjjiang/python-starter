@@ -222,13 +222,13 @@ kitchenDictionary = {
 # add = lambda x,y : x + y # "lambda" <INPUT> : <EXPRESSION> 
 # print(add(1,2))
 
-peopleList = [
-  { 'name': 'fred', 'age' : 20, 'weight': 160 },
-  { 'name': 'mary', 'age' : 10, 'weight': 130 },
-  { 'name': 'sue', 'age' : 15, 'weight': 120 },
-]
+# peopleList = [
+#   { 'name': 'fred', 'age' : 20, 'weight': 160 },
+#   { 'name': 'mary', 'age' : 10, 'weight': 130 },
+#   { 'name': 'sue', 'age' : 15, 'weight': 120 },
+# ]
 
-peopleList.sort(key = lambda x : x['weight'])
+# peopleList.sort(key = lambda x : x['weight'])
 #print(peopleList)
 
 #l = list(filter(lambda x : x['age'] >= 15, peopleList))
@@ -251,14 +251,4 @@ peopleList.sort(key = lambda x : x['weight'])
 
 # if __name__ == "__main__":
 #     main()
-
-# string = "Testing"
-# upperCase = string.upper().lower()
-# print(upperCase)
-
-for idx in range(3):
-  while True:
-    print("here")
-    break
-  print("there")
 
