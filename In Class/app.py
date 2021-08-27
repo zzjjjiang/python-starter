@@ -252,3 +252,13 @@ peopleList.sort(key = lambda x : x['weight'])
 # if __name__ == "__main__":
 #     main()
 
+# string = "Testing"
+# upperCase = string.upper().lower()
+# print(upperCase)
+
+for idx in range(3):
+  while True:
+    print("here")
+    break
+  print("there")
+

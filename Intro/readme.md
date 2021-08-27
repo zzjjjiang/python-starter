@@ -485,3 +485,6 @@ Example ouput:
 First half: [1, 2, 3, 4, 5]
 Second half: [6, 7, 9, 10, 11]
 ```
+
+ # Ex. 29 Floor It
+ Implement the function stub in your student directory called `my_floor()`.  The `my_floor()` function will operate like the Python `floor()` function.  Make sure you switch to the `dev` branch before you pull the latest changed from the remote repo (`git pull origin dev`)
