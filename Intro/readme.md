@@ -496,4 +496,40 @@ Desired output:
 -3 -3
 -4 -4
 ```
+# Ex. 30 Filter
+Given the car list below:
+
+```
+  carList = [
+    { 
+      'make': 'ford' , 
+      'engine' : { 'size' : 3.0, 'type': 'V6' } 
+    },
+    { 
+      'make': 'chevy', 
+      'engine' : { 'size' : 5.0, 'type': 'V8' }
+    },
+    { 'make': 'toyota',
+      'engine' : { 'size' : 2.0, 'type': 'Flat 4' } 
+    },
+    { 
+      'make': 'honda',
+      'engine' : { 'size' : 5.2, 'type': 'Straight 6' },
+    }
+  ]
+```
+
+Use the `filter()` function to create a list that contains engines greater than 4.0 liters.  Print the list to the console.
+
+Ouput:
+```
+chevy : 5.0
+honda : 5.2
+```
+
+
+# Ex. 31 Map
+
+
+# Ex 32. Filter & Map
 

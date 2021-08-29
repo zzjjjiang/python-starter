@@ -239,9 +239,9 @@ kitchenDictionary = {
 def add(x,y):
   return x + y
 
-r = add(1,2)
-print(r)
-print(add(1,2))
+# r = add(1,2)
+#print(r)
+#print(add(1,2))
 
 # https://youtu.be/Ob9rY6PQMfI
 
@@ -250,14 +250,15 @@ print(add(1,2))
 # print(r)
 # FORMAT: lambda <INPUT ARGS> : <OUTPUT EXPRESSION> 
 
-# peopleList = [
-#   { 'name': 'fred', 'age' : 20, 'weight': 160 },
-#   { 'name': 'mary', 'age' : 10, 'weight': 130 },
-#   { 'name': 'sue', 'age' : 15, 'weight': 120 },
-# ]
+peopleList = [
+  { 'name': 'fred', 'age' : 20, 'weight': 160 },
+  { 'name': 'mary', 'age' : 10, 'weight': 130 },
+  { 'name': 'sue', 'age' : 15, 'weight': 120 },
+]
 
-# peopleList.sort(key = lambda x : x['weight'])
 #print(peopleList)
+peopleList.sort(key = lambda x : x['weight'])
+print(peopleList)
 
 #l = list(filter(lambda x : x['age'] >= 15, peopleList))
-#print(l)
+# print(l)
