@@ -509,7 +509,8 @@ Given the following list:
       'make': 'chevy', 
       'engine' : { 'size' : 5.0, 'type': 'V8' }
     },
-    { 'make': 'toyota',
+    { 
+      'make': 'toyota',
       'engine' : { 'size' : 2.0, 'type': 'Flat 4' } 
     },
     { 
@@ -542,7 +543,8 @@ Given the following list:
       'engine' : { 'size' : 5.0, 'type': 'V8' },
       'cost' : 23000 
     },
-    { 'make': 'toyota',
+    { 
+      'make': 'toyota',
       'engine' : { 'size' : 2.0, 'type': 'Flat 4' },
       'cost' : 24000 
     },
@@ -561,8 +563,23 @@ Output:
 ```
 [{'ford': 'V6'}, {'chevy': 'V8'}, {'toyota': 'Flat 4'}, {'honda': 'Straight 6'}]
 ```
+# Ex 32. Filter People
+Create a program that contains two functions.  These functions are called by the `main()` function:
 
-# Ex 32. Filter & Map
+- `createPeopleList()`
+- `filterPeopleList(peopleList)`
 
+The `createPeopleList()` creates a list with the following people objects:
+- 'name': 'joe',  'sex': 'male'
+- 'name': 'fred', 'sex': 'male' 
+- 'name': 'sue',  'sex': 'female' 
+     
+The `filterPeopleList(peopleList)` function accepts the peopleList and returns only the males.
 
+The `main()` function uses an f-string and prints the names of all the males to the console:
 
+Output
+```
+joe
+fred
+```

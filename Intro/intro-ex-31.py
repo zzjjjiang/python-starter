@@ -18,7 +18,8 @@ def main():
       'engine' : { 'size' : 5.0, 'type': 'V8' },
       'cost' : 23000 
     },
-    { 'make': 'toyota',
+    { 
+      'make': 'toyota',
       'engine' : { 'size' : 2.0, 'type': 'Flat 4' },
       'cost' : 24000 
     },
