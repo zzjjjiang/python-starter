@@ -256,13 +256,12 @@ peopleList = [
   { 'name': 'sue', 'age' : 15, 'weight': 120 },
 ]
 
-#print(peopleList)
-# peopleList.sort(key = lambda x : x['weight'])
-# print(peopleList)
+peopleList.sort(key = lambda x : x['weight'])
+print(peopleList)
 
 #l = list(filter(lambda x : x['age'] >= 15, peopleList))
 # print(l)
 
 #l = list(map(lambda x : { x['name'] : x['age'] + 1 }, peopleList))
 #l = sum(list(map(lambda x : x['age'], peopleList)))
-print(l)
+#print(l)
