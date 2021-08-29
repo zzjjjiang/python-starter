@@ -497,7 +497,7 @@ Desired output:
 -4 -4
 ```
 # Ex. 30 Filter
-Given the car list below:
+Given the following list:
 
 ```
   carList = [
@@ -527,9 +527,42 @@ chevy : 5.0
 honda : 5.2
 ```
 
-
 # Ex. 31 Map
+Given the following list:
 
+```
+  carList = [
+    { 
+      'make': 'ford' , 
+      'engine' : { 'size' : 3.0, 'type': 'V6' },
+      'cost' : 20000 
+    },
+    { 
+      'make': 'chevy', 
+      'engine' : { 'size' : 5.0, 'type': 'V8' },
+      'cost' : 23000 
+    },
+    { 'make': 'toyota',
+      'engine' : { 'size' : 2.0, 'type': 'Flat 4' },
+      'cost' : 24000 
+    },
+    { 
+      'make': 'honda',
+      'engine' : { 'size' : 5.2, 'type': 'Straight 6' },
+      'cost' : 24000 
+    }
+  ]
+```
+
+Use the `map()` function to produce a new list:
+
+Output:
+
+```
+[{'ford': 'V6'}, {'chevy': 'V8'}, {'toyota': 'Flat 4'}, {'honda': 'Straight 6'}]
+```
 
 # Ex 32. Filter & Map
+
+
 
