@@ -30,8 +30,7 @@ def main():
     }
   ]
   
-  myList = list(map(lambda x : { x['make'] : x['engine']['type'] }, carList))
-  print(myList)
+  print(list(map(lambda x : { x['make'] : x['engine']['type'] }, carList)))
 
 if __name__ == "__main__":  
   main()

@@ -334,3 +334,8 @@ except Exception as e: # Make sure this is last.
 
 finally:
   print("Done")
+
+# Key messages:
+# - Do not swallow exceptions
+# - Put more specific message at the top
+# 
