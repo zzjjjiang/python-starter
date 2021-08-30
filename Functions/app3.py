@@ -17,8 +17,8 @@ def mySubroutine(): # This function takes nothing, returns nothing (sometimes ca
 def main():
   r1 = add(1, 3)
   r2 = add(x = 1, y = 3) # Named parameters.
-  add(x = 2, y = 5) # Not storing return value into a variable.
-
+  add(x = 2, y = 5) # add() returns a value, but we are not storing it into a variable (this line of code provides no value).
+  
   mySmallNumber1 = 4
   mySmallNumber2 = 5
   r3 = add(mySmallNumber1, mySmallNumber2)
