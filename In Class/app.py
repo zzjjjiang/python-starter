@@ -272,16 +272,16 @@ sortLambdaFunc = lambda p : p['weight']
 def mySortFunction(x):
   return x['weight']
 
-peopleList.sort(key = lambda p : p['weight']) # Inline Lambda, in-place sort.
-peopleList.sort(key = sortLambdaFunc) # Lambda function defined elsewhere, in-place sort.
-peopleList.sort(key = mySortFunction) # No lambda, native python function, in-place sort.
-print(peopleList)
+# peopleList.sort(key = lambda p : p['weight']) # Inline Lambda, in-place sort.
+# peopleList.sort(key = sortLambdaFunc) # Lambda function defined elsewhere, in-place sort.
+# peopleList.sort(key = mySortFunction) # No lambda, native python function, in-place sort.
+# print(peopleList)
 
 # Declarative programming is a programming paradigm … that expresses the logic of a computation without describing its control flow.
 # Imperative programming is a programming paradigm that uses statements that change a program’s state.
 
-#l = list(filter(lambda x : x['age'] >= 15, peopleList))
-# print(l)
+myList = list(filter(lambda x : x['age'] >= 15, peopleList))
+print(myList)
 
 #l = list(map(lambda x : { 'short_name' : x['name'], 'new_age': x['age'] + 1 }, peopleList))
 #l = sum(list(map(lambda x : x['age'], peopleList)))
@@ -315,5 +315,4 @@ def getNickname(id):
 #   {'short_name': 'mary', 'new_age': 11, 'the_weight': 130, 'sex': 'M', 'nick_name': 'Mary Jane'}, 
 #   {'short_name': 'sue', 'new_age': 16, 'the_weight': 120, 'sex': 'F', 'nick_name': 'Suzie Q'}
 # ]
-
 

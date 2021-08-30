@@ -8,15 +8,15 @@
 def createPeopleList():
   retval = [
     { 
-      'name': 'joe' , 
+      'name': 'joe', 
       'sex': 'male'
     },
     { 
-      'name': 'fred' , 
+      'name': 'fred', 
       'sex': 'male' 
     },
     { 
-      'name': 'sue' , 
+      'name': 'sue', 
       'sex': 'female' 
     } 
   ]
