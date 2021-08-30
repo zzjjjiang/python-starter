@@ -597,7 +597,7 @@ fred
 ```
 
 # Ex 33. Exceptions
- Modify `ex-33.py` in your student directory to catch all the errors thrown by the program so that the program fails gracefully with an error message to the console.
+ Modify `ex-33.py` in your student directory to catch all the errors thrown by the program (`try/except`) so that the program fails gracefully with an error message to the console.
 
 Example:
 ```

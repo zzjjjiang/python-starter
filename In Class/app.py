@@ -318,7 +318,10 @@ def getNickname(id):
 
 try:
   r = 8 / 0
+
 except ZeroDivisionError as z:
+  # pass DO NOT DO THIS.
   print(f"Zero Division Error: {z}")
-except Exception as e:
+
+except Exception as e: # Make sure this is last.
   print(f"Exception: {e}")
