@@ -606,3 +606,33 @@ Example:
 ```
 File not found
 ```
+
+# Ex 34. Create, Sort, Filter, Print
+Create a program that has the following architecture:
+
+```
+def main():
+  list = createList()
+  sorted = sortList(list)
+  filtered = filterList(sorted)
+  printList(filtered)
+```
+
+The `createList()` function returns the following dataset:
+```
+  personList = [
+    { 'ssn': '222-22-2222' , 'name' : 'charlie', 'weight' : 150 },
+    { 'ssn': '333-33-3333' , 'name' : 'bob', 'weight' : 150 },
+    { 'ssn': '555-55-5555' , 'name' : 'mary', 'weight' : 140 },
+    { 'ssn': '444-44-4444' , 'name' : 'fred', 'weight' : 130 },
+    { 'ssn': '111-11-1111' , 'name' : 'alex', 'weight' : 150 }
+  ]
+```
+
+The `sortList()` function sorts the list by name (asc), The `filterList()` function filters the sorted list for people that weight 150 pounds.  The `printList()` function prints the list to the console:
+
+```
+alex : 150 
+bob : 150 
+charlie : 150 
+```
