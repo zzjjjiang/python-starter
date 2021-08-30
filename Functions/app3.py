@@ -5,8 +5,8 @@
 # Desc: Functions Review
 #
 
-def add(x, y): # <== Function Signature.
-  return x + y
+def add(x, y): # This is the function signature.
+  return x + y # This is the implementation of this function.
 
 def sub(number1, number2): # This function is not called.
   return number1 - number2
