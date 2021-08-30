@@ -455,7 +455,7 @@ Example output:
 Create a program that contains a function called `printPersonList(peopleList)`.  This function takes a parameter called `peopleList`.  `PeopleList` is defined below:
 
 ```
-  personList = [
+  peopleList = [
     { 'name' : 'joe', 'age' : 20 },
     { 'name' : 'fred', 'age' : 10 },
     { 'name' : 'sally', 'age' : 30 },
@@ -463,7 +463,7 @@ Create a program that contains a function called `printPersonList(peopleList)`. 
   ]
 ```
 
-The function sorts `personList` by age (asc) and prints it to the console.
+The function sorts `peopleList` by age (asc) and prints it to the console.
 
 Example output:
 ```

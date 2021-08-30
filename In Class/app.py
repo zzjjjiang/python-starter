@@ -71,6 +71,7 @@
 #
 
 from os import killpg
+from typing import Dict
 
 
 kitchenDictionary = {
@@ -236,8 +237,15 @@ kitchenDictionary = {
 # LAMBDA
 #####################################################################################
 
-def add(x,y):
-  return x + y
+
+
+def add5(x):
+  return x + 5
+
+r = add5(5)
+
+def add(x,y,z):
+  return x + y + z
 
 # r = add(1,2)
 #print(r)
@@ -245,10 +253,10 @@ def add(x,y):
 
 # https://youtu.be/Ob9rY6PQMfI
 
-# add = lambda x, y : x + y 
+add = lambda x, y, z : x + y + z
 # r = add(1,2)
 # print(r)
-# FORMAT: lambda <INPUT ARGS> : <OUTPUT EXPRESSION> 
+# FORMAT: lambda <INPUT ARGS> : <OUTPUT EXPRESSION> ONE
 
 peopleList = [
   { 'name' : 'fred', 'age' : 20, 'weight': 160, 'sex' : 'male', 'id' : 1 },
@@ -256,12 +264,22 @@ peopleList = [
   { 'name' : 'sue', 'age' : 15, 'weight': 120, 'sex' : 'female', 'id' : 3 },
 ]
 
-# def sortFunction(x):
-#   return x['weight']
+# [] = List => Selecting is done by index (e.g. myList[1])
+# {} = Dictionary (or set) => selecting is done by key (e.g. myDict['theKey'])
 
-peopleList.sort(key = lambda x : x['weight'])
-#peopleList.sort(key = sortFunction)
+sortLambdaFunc = lambda p : p['weight']
+
+def sortFunction(x):
+  r = add5(5)
+  return x['weight']
+
+peopleList.sort(key = lambda p : p['weight']) # Inline Lambda, in-place sort.
+peopleList.sort(key = sortLambdaFunc) # Lambda function defined elsewhere, in-place sort.
+peopleList.sort(key = sortFunction) # No lambda, native python function, in-place sort.
 print(peopleList)
+
+# Declarative programming is a programming paradigm … that expresses the logic of a computation without describing its control flow.
+# Imperative programming is a programming paradigm that uses statements that change a program’s state.
 
 #l = list(filter(lambda x : x['age'] >= 15, peopleList))
 # print(l)
