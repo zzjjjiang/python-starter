@@ -24,9 +24,10 @@ def main():
   r3 = add(mySmallNumber1, mySmallNumber2)
   r4 = add(x = mySmallNumber1, y = mySmallNumber2) # Named parameters.
 
-  mySubroutine() 
-  
-  # Print results.
+  mySubroutine() # Proper use.
+  r5 = mySubroutine() # Improper use.
+  print(r5) # Prints None to console.
+
   print(r1)
   print(r2)
   print(r3)
