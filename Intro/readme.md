@@ -532,7 +532,7 @@ Given the following list:
   ]
 ```
 
-Use the `filter()` function to create a list that contains engines greater than 4.0 liters.  Print the list to the console.
+Use the `filter()` function to create a list that contains engines greater than 4.0 liters (size).  Print the list to the console.
 
 Ouput:
 ```
