@@ -456,10 +456,22 @@ Create a program that contains a function called `printPersonList(peopleList)`. 
 
 ```
   peopleList = [
-    { 'name' : 'joe', 'age' : 20 },
-    { 'name' : 'fred', 'age' : 10 },
-    { 'name' : 'sally', 'age' : 30 },
-    { 'name' : 'sue', 'age' : 15 },
+    { 
+      'name' : 'joe', 
+      'age' : 20 
+    },
+    { 
+      'name' : 'fred', 
+      'age' : 10 
+    },
+    { 
+      'name' : 'sally', 
+      'age' : 30 
+    },
+    { 
+      'name' : 'sue', 
+      'age' : 15 
+    }
   ]
 ```
 

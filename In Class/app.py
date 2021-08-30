@@ -269,13 +269,12 @@ peopleList = [
 
 sortLambdaFunc = lambda p : p['weight']
 
-def sortFunction(x):
-  r = add5(5)
+def mySortFunction(x):
   return x['weight']
 
 peopleList.sort(key = lambda p : p['weight']) # Inline Lambda, in-place sort.
 peopleList.sort(key = sortLambdaFunc) # Lambda function defined elsewhere, in-place sort.
-peopleList.sort(key = sortFunction) # No lambda, native python function, in-place sort.
+peopleList.sort(key = mySortFunction) # No lambda, native python function, in-place sort.
 print(peopleList)
 
 # Declarative programming is a programming paradigm … that expresses the logic of a computation without describing its control flow.
@@ -316,3 +315,5 @@ def getNickname(id):
 #   {'short_name': 'mary', 'new_age': 11, 'the_weight': 130, 'sex': 'M', 'nick_name': 'Mary Jane'}, 
 #   {'short_name': 'sue', 'new_age': 16, 'the_weight': 120, 'sex': 'F', 'nick_name': 'Suzie Q'}
 # ]
+
+
