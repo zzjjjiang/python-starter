@@ -251,9 +251,9 @@ def add(x,y):
 # FORMAT: lambda <INPUT ARGS> : <OUTPUT EXPRESSION> 
 
 peopleList = [
-  { 'name': 'fred', 'age' : 20, 'weight': 160 },
-  { 'name': 'mary', 'age' : 10, 'weight': 130 },
-  { 'name': 'sue', 'age' : 15, 'weight': 120 },
+  { 'name' : 'fred', 'age' : 20, 'weight': 160 },
+  { 'name' : 'mary', 'age' : 10, 'weight': 130 },
+  { 'name' : 'sue', 'age' : 15, 'weight': 120 },
 ]
 
 peopleList.sort(key = lambda x : x['weight'])
@@ -262,6 +262,17 @@ print(peopleList)
 #l = list(filter(lambda x : x['age'] >= 15, peopleList))
 # print(l)
 
-#l = list(map(lambda x : { x['name'] : x['age'] + 1 }, peopleList))
+#l = list(map(lambda x : { 'short_name' : x['name'], 'new_age': x['age'] + 1 }, peopleList))
 #l = sum(list(map(lambda x : x['age'], peopleList)))
 #print(l)
+
+# def transformIt(person):
+#   retval = { 
+#     'short_name' : person['name'], 
+#     'new_age' : person['age'] + 1,
+#     'the_weight' : person['weight']
+#     }
+#   return retval
+
+# l = list(map(transformIt, peopleList))
+# print(l)
