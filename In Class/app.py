@@ -316,12 +316,21 @@ def getNickname(id):
 #   {'short_name': 'sue', 'new_age': 16, 'the_weight': 120, 'sex': 'F', 'nick_name': 'Suzie Q'}
 # ]
 
+#############################################################################
+# Exceptions
+#############################################################################
+
+# https://www.youtube.com/watch?v=NIWwJbo-9_8
+
 try:
   r = 8 / 0
 
-except ZeroDivisionError as z:
+except ZeroDivisionError as z:  # More specific exception towards the top.
   # pass DO NOT DO THIS.
   print(f"Zero Division Error: {z}")
 
 except Exception as e: # Make sure this is last.
   print(f"Exception: {e}")
+
+finally:
+  print("Done")
