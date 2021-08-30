@@ -256,7 +256,11 @@ peopleList = [
   { 'name' : 'sue', 'age' : 15, 'weight': 120 },
 ]
 
+def sortFunction(x):
+  return x['weight']
+
 peopleList.sort(key = lambda x : x['weight'])
+#peopleList.sort(key = sortFunction)
 print(peopleList)
 
 #l = list(filter(lambda x : x['age'] >= 15, peopleList))
