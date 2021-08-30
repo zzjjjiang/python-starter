@@ -316,3 +316,9 @@ def getNickname(id):
 #   {'short_name': 'sue', 'new_age': 16, 'the_weight': 120, 'sex': 'F', 'nick_name': 'Suzie Q'}
 # ]
 
+try:
+  r = 8 / 0
+except ZeroDivisionError as z:
+  print(f"Zero Division Error: {z}")
+except Exception as e:
+  print(f"Exception: {e}")
