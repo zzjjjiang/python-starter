@@ -251,13 +251,13 @@ def add(x,y):
 # FORMAT: lambda <INPUT ARGS> : <OUTPUT EXPRESSION> 
 
 peopleList = [
-  { 'name' : 'fred', 'age' : 20, 'weight': 160 },
-  { 'name' : 'mary', 'age' : 10, 'weight': 130 },
-  { 'name' : 'sue', 'age' : 15, 'weight': 120 },
+  { 'name' : 'fred', 'age' : 20, 'weight': 160, 'sex' : 'male' },
+  { 'name' : 'mary', 'age' : 10, 'weight': 130, 'sex' : 'male' },
+  { 'name' : 'sue', 'age' : 15, 'weight': 120, 'sex' : 'female' },
 ]
 
-def sortFunction(x):
-  return x['weight']
+# def sortFunction(x):
+#   return x['weight']
 
 peopleList.sort(key = lambda x : x['weight'])
 #peopleList.sort(key = sortFunction)
@@ -270,13 +270,21 @@ print(peopleList)
 #l = sum(list(map(lambda x : x['age'], peopleList)))
 #print(l)
 
-# def transformIt(person):
+# def transformPerson(person):
 #   retval = { 
 #     'short_name' : person['name'], 
 #     'new_age' : person['age'] + 1,
-#     'the_weight' : person['weight']
+#     'the_weight' : person['weight'],
+#     'sex' : 'M' if person['sex'] == 'male' else 'F' # inline if
 #     }
 #   return retval
 
-# l = list(map(transformIt, peopleList))
+# l = list(map(transformPerson, peopleList))
 # print(l)
+
+# [
+#   {'short_name': 'fred', 'new_age': 21, 'the_weight': 160, 'sex': 'M'}, 
+#   {'short_name': 'mary', 'new_age': 11, 'the_weight': 130, 'sex': 'M'}, 
+#   {'short_name': 'sue', 'new_age': 16, 'the_weight': 120, 'sex': 'F'}
+# ]
+
