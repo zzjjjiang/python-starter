@@ -576,7 +576,7 @@ Output:
 [{'ford': 'V6'}, {'chevy': 'V8'}, {'toyota': 'Flat 4'}, {'honda': 'Straight 6'}]
 ```
 
-HINT: The solution to this is one line of code.
+The solution to this is one line of code.
 
 # Ex 32. Filter People
 Create a program that contains two functions.  These functions are called by the `main()` function:
