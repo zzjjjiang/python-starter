@@ -655,3 +655,23 @@ Use the `map()` function to subtract 10 pounds from the weight for each person a
 ```
 [{'charlie': 140}, {'bob': 140}, {'mary': 130}, {'fred': 120}, {'alex': 140}]
 ```
+# Ex 36. Map Number Lookup
+
+Given the following:
+
+```
+  numDict = {
+    1: 'One',
+    2: 'Two',
+    3: 'Three',
+    4: 'Four'
+  }
+  numList = [1,2,3,4]
+```
+
+Use the `map()` function to iterate over `numList`.  Each iteration will lookup the textual representation for the current number using the `numDict`.  Display the list in descending order.
+
+Output:
+```
+['Four', 'Three', 'Two', 'One']
+```
