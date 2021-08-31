@@ -9,6 +9,8 @@
 #  - List [] (AKA Arrays)  Selecting syntax is numerical: (e.g. list[2], list[4], etc)
 #  - Dictionary {} (AKA Object) Selecting syntax based off of the key: (e.g. dict['lol'])
 
+# Note: Zero is first position.
+
 colors = ['red', 'green', 'blue'] # This is a List(Array) of colors
 #print(colors[0])
 
