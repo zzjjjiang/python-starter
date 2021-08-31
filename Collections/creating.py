@@ -8,7 +8,7 @@
 ################################################################
 # Dictionaries
 ################################################################
-
+d0 = dict() # An empty dictionary
 d1 = {}  # An empty dictionary
 d2 = { 'lol' : 'Laugh out loud' } # Dictionary with one key/value pair.
 d3 = { 
@@ -23,6 +23,7 @@ print(f'Dict: {d3}')
 ################################################################
 # Lists
 ################################################################
+l0 = list() # An empty list
 l1 = [] # An empty list
 l2 = ['red', 'yellow', 'green']
 l2.append('orange') # Add item to list
@@ -33,6 +34,7 @@ print(f'List: {l2}')
 ################################################################
 # Sets
 ################################################################
+s0 = set() # An empty set.
 s1 = {'red', 'yellow', 'green'}
 s1.add('orange') # Add item to set.
 s1.add('purple')
