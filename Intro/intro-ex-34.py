@@ -16,9 +16,9 @@ def createList():
   return personList
 
 def sortList(list):
-  # peopleList.sort(key = lambda x: x['name'])
-  # return peopleList
-  return sorted(list, key = lambda x: x['name'])
+  list.sort(key = lambda x: x['name']) # Update the list in memory.
+  return list
+  #return sorted(list, key = lambda x: x['name']) # Create a new list.
 
 def filterList(peopleList):
   return list(filter(lambda x: x['weight'] == 150, peopleList))
@@ -29,12 +29,13 @@ def printList(peopleList):
 
 def main():
   list = createList()
-  sorted = sortList(list)
+  sortedList = sortList(list)
 
   # print(id(list))
-  # print(id(sorted))
+  # print(id(sortedList))
+  # exit()
 
-  filtered = filterList(sorted)
+  filtered = filterList(sortedList)
   printList(filtered)
   
 if __name__ == "__main__":  
