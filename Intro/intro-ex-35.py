@@ -14,8 +14,6 @@ def main():
     { 'ssn': '111-11-1111' , 'name' : 'alex', 'weight' : 150 }
   ]
   
-  l = list(map(lambda x: { x['name'] : x['weight'] - 10 }, personList))
-
   print(list(map(lambda x: { x['name'] : x['weight'] - 10 }, personList)))
 
 if __name__ == "__main__":  
