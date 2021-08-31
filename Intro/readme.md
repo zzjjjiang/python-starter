@@ -636,3 +636,22 @@ alex : 150
 bob : 150 
 charlie : 150 
 ```
+
+# Ex 35. Map Weight Loss
+Given the following dictionary:
+
+```
+  personList = [
+    { 'ssn': '222-22-2222' , 'name' : 'charlie', 'weight' : 150 },
+    { 'ssn': '333-33-3333' , 'name' : 'bob', 'weight' : 150 },
+    { 'ssn': '555-55-5555' , 'name' : 'mary', 'weight' : 140 },
+    { 'ssn': '444-44-4444' , 'name' : 'fred', 'weight' : 130 },
+    { 'ssn': '111-11-1111' , 'name' : 'alex', 'weight' : 150 }
+  ]
+```
+
+Use the `map()` function to subtract 10 pounds from the weight and print the following results to the console:
+
+```
+[{'charlie': 140}, {'bob': 140}, {'mary': 130}, {'fred': 120}, {'alex': 140}]
+```
