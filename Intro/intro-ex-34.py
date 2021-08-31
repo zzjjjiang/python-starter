@@ -16,8 +16,9 @@ def createList():
   return personList
 
 def sortList(peopleList):
-  #return (peopleList, key = lambda x: x['name'])
-  return peopleList.sort(key = lambda x: x['name'])
+  # peopleList.sort(key = lambda x: x['name'])
+  # return peopleList
+  return sorted(peopleList, key = lambda x: x['name'])
 
 def filterList(peopleList):
   return list(filter(lambda x: x['weight'] == 150, peopleList))
@@ -27,8 +28,8 @@ def printList(peopleList):
     print(f"{ p['name'] } : {p['weight']} ")
 
 def main():
-  list = createList()
-  sorted = sortList(list)
+  myList = createList()
+  sorted = sortList(myList)
 
   # print(id(list))
   # print(id(sorted))
