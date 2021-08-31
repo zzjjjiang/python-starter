@@ -14,7 +14,6 @@ def main():
     4: 'Four'
   }
   numList = [1,2,3,4]
-  
   numList.sort(reverse=True)
   print(list(map(lambda x: numDict[x], numList)))
 
