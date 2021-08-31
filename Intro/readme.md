@@ -650,7 +650,7 @@ Given the following dictionary:
   ]
 ```
 
-Use the `map()` function to subtract 10 pounds from the weight and print the following results to the console:
+Use the `map()` function to subtract 10 pounds from the weight for each person and print the following results to the console:
 
 ```
 [{'charlie': 140}, {'bob': 140}, {'mary': 130}, {'fred': 120}, {'alex': 140}]
