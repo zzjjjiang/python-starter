@@ -36,6 +36,6 @@ print(f'List: {l2}')
 s1 = {'red', 'yellow', 'green'}
 s1.add('orange') # Add item to set.
 s1.add('purple')
-s1.remove('purple') # Remove item to set.
+s1.remove('purple') # Remove item from set.
 # s1[0] # Not available with Set.
 print(f'Set: {s1}')
