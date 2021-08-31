@@ -5,33 +5,32 @@
 # Desc: 
 #
 
-def printList(filtered):
-  for person in filtered:
-    print(f"{person['name']} : {person['weight']}")
+colors = ['red', 'green', 'blue']
+#print(colors[0])
 
-def filterList(sorted):
-  filtered = list(filter(lambda x: x['weight'] == 150, sorted))
-  return filtered
+peopleList = [
+  { 'name' : 'fred', 'age' : 20, 'weight': 160, 'sex' : 'male', 'id' : 1 },
+  { 'name' : 'mary', 'age' : 10, 'weight': 130, 'sex' : 'male', 'id' : 2 },
+  { 'name' : 'sue', 'age' : 15, 'weight': 120, 'sex' : 'female', 'id' : 3 },
+]
+#print(peopleList)
 
-def sortList(mylist):
-  return mylist.sort(key = lambda x: x['name'])
-  # return sorted
-
-def createList():
-   personList = [
-    { 'ssn': '222-22-2222' , 'name' : 'charlie', 'weight' : 150 },
-    { 'ssn': '333-33-3333' , 'name' : 'bob', 'weight' : 150 },
-    { 'ssn': '555-55-5555' , 'name' : 'mary', 'weight' : 140 },
-    { 'ssn': '444-44-4444' , 'name' : 'fred', 'weight' : 130 },
-    { 'ssn': '111-11-1111' , 'name' : 'alex', 'weight' : 150 } 
-    ]
-   return personList
-
-def main():
-   list = createList()
-   sorted = sortList(list)
-   filtered = filterList(sorted)
-   printList(filtered) 
-
-if __name__ == "__main__":
-    main()
+carList = [
+  { 
+      'make': 'toyota',
+      'engine' : { 
+                   'size' : 2.0, 
+                   'type': 'Flat 4' 
+                 },
+      'cost' : 24000 
+  },
+  { 
+      'make': 'ford',
+      'engine' : { 
+                   'size' : 3.0, 
+                   'type': 'Flat 6' 
+                  },
+      'cost' : 25000 
+  }
+]
+#print(carList)

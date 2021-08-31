@@ -237,8 +237,6 @@ kitchenDictionary = {
 # LAMBDA
 #####################################################################################
 
-
-
 def add5(x):
   return x + 5
 
@@ -280,12 +278,12 @@ def mySortFunction(x):
 # Declarative programming is a programming paradigm … that expresses the logic of a computation without describing its control flow.
 # Imperative programming is a programming paradigm that uses statements that change a program’s state.
 
-myList = list(filter(lambda x : x['age'] >= 15, peopleList))
-print(myList)
+# myList = list(filter(lambda x : x['age'] >= 15, peopleList))
+# print(myList)
 
-#l = list(map(lambda x : { 'short_name' : x['name'], 'new_age': x['age'] + 1 }, peopleList))
+l = list(map(lambda x : { 'short_name' : x['name'], 'new_age': x['age'] + 1 }, peopleList))
 #l = sum(list(map(lambda x : x['age'], peopleList)))
-#print(l)
+print(l)
 
 def transformPerson(person):
   retval = { 
@@ -322,18 +320,18 @@ def getNickname(id):
 
 # https://www.youtube.com/watch?v=NIWwJbo-9_8
 
-try:
-  r = 8 / 0
+# try:
+#   r = 8 / 0
 
-except ZeroDivisionError as z:  # More specific exception towards the top.
-  # pass DO NOT DO THIS.
-  print(f"Zero Division Error: {z}")
+# except ZeroDivisionError as z:  # More specific exception towards the top.
+#   # pass DO NOT DO THIS.
+#   print(f"Zero Division Error: {z}")
 
-except Exception as e: # Make sure this is last.
-  print(f"Exception: {e}")
+# except Exception as e: # Make sure this is last.
+#   print(f"Exception: {e}")
 
-finally:
-  print("Done")
+# finally:
+#   print("Done")
 
 # Key messages:
 # - Do not swallow exceptions
