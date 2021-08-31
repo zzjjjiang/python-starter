@@ -675,3 +675,17 @@ Output:
 ```
 ['Four', 'Three', 'Two', 'One']
 ```
+
+# Ex 37. Tuple Set Conversion
+Given the following tuples:
+
+```
+tuples = [(1,'red'), (2, 'blue'), (3, 'green'), (4, 'green'), (5, 'red')]
+```
+
+Convert the tuples to a set using the `map()` function.
+
+Output:
+```
+{'blue', 'red', 'green'}
+```
