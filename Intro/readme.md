@@ -676,7 +676,7 @@ Output:
 ['Four', 'Three', 'Two', 'One']
 ```
 
-# Ex 37. Tuple Set Conversion
+# Ex 37. Tuple to Set Conversion
 Given the following tuples:
 
 ```
