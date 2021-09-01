@@ -53,12 +53,12 @@ def main():
     },
   ]
 
-  PRICE_PER_SQUARE_FEET = .15
+  PRICE_PER_SQUARE_FEET = 3.30
 
-  filterRoomList = list(filter(lambda x: x['room']['color'] == 'blue' and x['room']['dimensions']['height'] == 10, roomsList))
+  filterRoomList = list(filter(lambda x: x['room']['color'] == 'blue', roomsList))
   costList = list(map(lambda x: x['room']['dimensions']['length'] * x['room']['dimensions']['width'], filterRoomList))
   
-  # lc = [r['room']['dimensions']['length'] * r['room']['dimensions']['width'] for r in roomsList if r['room']['color'] == 'blue' and r['room']['dimensions']['height'] == 10]
+  # lc = [r['room']['dimensions']['length'] * r['room']['dimensions']['width'] for r in roomsList if r['room']['color'] == 'blue']
   # cost = sum(lc) * PRICE_PER_SQUARE_FEET
   # print(cost)
 
