@@ -693,7 +693,7 @@ Output:
 # Ex 38.  Carpets
 You are a developer that works at a company called Our Carpets Really Are Pricey (OCRAP). The price to install carpet is $7.89 per square foot.  You have to calculate the price for a customer given the following data:
 ```
- roomsList = [
+  roomsList = [
     { 
       'room' : 
       { 
@@ -701,7 +701,7 @@ You are a developer that works at a company called Our Carpets Really Are Pricey
         'color' : 'blue',
         'dimensions' : 
         { 
-          'width' : 10, 'length' : 20, 'height' : 8 
+          'width' : 10, 'length' : 10, 'height' : 8 
         }
       }
     },
@@ -737,7 +737,7 @@ You are a developer that works at a company called Our Carpets Really Are Pricey
           'width' : 5, 'length' : 8, 'height' : 10 
         }
       }
-    },
+    }
   ]
 ```
 

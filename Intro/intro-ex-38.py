@@ -14,7 +14,7 @@ def main():
         'color' : 'blue',
         'dimensions' : 
         { 
-          'width' : 10, 'length' : 20, 'height' : 8 
+          'width' : 10, 'length' : 10, 'height' : 8 
         }
       }
     },
@@ -50,7 +50,7 @@ def main():
           'width' : 5, 'length' : 8, 'height' : 10 
         }
       }
-    },
+    }
   ]
 
   PRICE_PER_SQUARE_FEET = 7.89
@@ -62,8 +62,10 @@ def main():
   # cost = sum(lc) * PRICE_PER_SQUARE_FEET
   # print(cost)
 
+  print(costList)
   cost = sum(costList) * PRICE_PER_SQUARE_FEET
-  print(cost)
+  currency = "${:,.2f}".format(cost)
+  print(currency)
 
 if __name__ == "__main__":  
   main()
