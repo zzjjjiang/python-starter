@@ -691,7 +691,7 @@ Output:
 ```
 
 # Ex 38.  Carpets
-You are a developer that works at a company called Our Carpets Really Are Pricey (OCRAP). You have to calculate the price to install carpet for a customer given the following data:
+You are a developer that works at a company called Our Carpets Really Are Pricey (OCRAP). The price to install carpet is $3.30 dollars per square foot.  You have to calculate the price for a customer given the following data:
 ```
  roomsList = [
     { 
@@ -741,4 +741,4 @@ You are a developer that works at a company called Our Carpets Really Are Pricey
   ]
 ```
 
-The price to install carpet is $3.30 dollars per square foot.  How much will it cost to install carpet in all the blue rooms?
+How much will it cost to install carpet for only the blue rooms?
