@@ -5,6 +5,7 @@
 # Desc: List comprehensions
 #       Works like a map() but more clear to the reader.
 #       Format: [{expression to execute on each item} {iteration} {if condition}]
+#               [map()  items  filter()]
 #
 
 # numbers = [1, 2, 3, 4, 5, 6]
