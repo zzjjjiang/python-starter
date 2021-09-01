@@ -7,8 +7,6 @@
 
 import string
 
-from collections import OrderedDict
-
 def cleanWordList(dirtyWordList):
   '''
   Accepts a list of dirty words and returns a list of clean words.
@@ -22,7 +20,7 @@ def cleanWordList(dirtyWordList):
   return retval
   
 def main():
-  wordDictionary = OrderedDict()
+  wordDictionary = {}
 
   f = open("input-file-1.txt")
   lines = f.readlines()
@@ -36,7 +34,7 @@ def main():
         count = wordDictionary[word]
         wordDictionary[word] += count
 
-  for key in wordDictionary:
+  for key in sorted(wordDictionary.keys()):
     print(f'{key}:{wordDictionary[key]}')
   f.close()
 
