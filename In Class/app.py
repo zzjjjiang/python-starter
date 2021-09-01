@@ -317,7 +317,7 @@ def transformPerson(person):
 
 
 l = list(map(transformPerson, peopleList))
-print(l)
+#print(l)
 
 # [{'short_name': 'fred', 'new_age': 21, 'the_weight': 160, 'sex': 'M', 'nick_name': 'Freddy'}, 
 # {'short_name': 'mary', 'new_age': 11, 'the_weight': 130, 'sex': 'M', 'nick_name': 'Mary Jane'}, 
@@ -335,12 +335,13 @@ print(l)
 
 # https://www.youtube.com/watch?v=NIWwJbo-9_8
 
-# try:
-#   r = 8 / 0
+def divide(x,y):
+  try:
+    return x / y
+  except ZeroDivisionError:
+    pass
 
-# except ZeroDivisionError as z:  # More specific exception towards the top.
-#   # pass DO NOT DO THIS.
-#   print(f"Zero Division Error: {z}")
+
 
 # except Exception as e: # Make sure this is last.
 #   print(f"Exception: {e}")
@@ -352,8 +353,3 @@ print(l)
 # - Do not swallow exceptions
 # - Put more specific message at the top
 # 
-
-l = [1,2,3,4]
-t = (1,2,3,4)
-tl = [(1,2,3,4),(1,2)]
-print(tl[1][2])
