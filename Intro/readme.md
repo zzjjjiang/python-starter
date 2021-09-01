@@ -751,11 +751,9 @@ Given the following list:
 numList = [1,2,3,4,5,6,7,8,9,10]
 ```
 
-Create a list comprehension that that filters the list for all the even numbers and doubles each number:
+Create a list comprehension that that filters the list for all the even numbers and doubles each number and prints the results to the console.
 
 Output
 ```
 [4, 8, 12, 16, 20]
-```
-
-Hint: Google  
+``` 
