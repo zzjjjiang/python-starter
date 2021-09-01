@@ -41,3 +41,13 @@ s1.add('purple')
 s1.remove('purple') # Remove item from set.
 # s1[0] # Not available with Set.
 print(f'Set: {s1}')
+
+################################################################
+# Tuples
+################################################################
+t = () # Empty tuple
+tuple = (1,2,3,4) # Tuples are immutable once created.
+tupleList = [(1,2,3,4), (1,2)]
+tupleList.append((5,6,7)) # Appending a tuple to a list.
+#print(tupleList[1][2]) # Key Error
+print(tupleList[0][2]) # Returns 3

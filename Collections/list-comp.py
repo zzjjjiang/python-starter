@@ -11,13 +11,14 @@
 # doubledList = [(number * 2) for number in numbers if (number % 2 == 0)]  
 # print(doubledList)
 
-# people = [
-#   { "firstname": "joe", "lastname" : "smith", "age": 30 },
-#   { "firstname": "peter", "lastname" : "jones", "age": 40 },
-#   { "firstname": "mary", "lastname" : "jane", "age" : 50 },
-# ]
-# lessPeople = [(person["firstname"]) for person in people if (person["age"] > 40)]
-# print(lessPeople)
+people = [
+  { "firstname": "joe", "lastname" : "smith", "age": 30 },
+  { "firstname": "peter", "lastname" : "jones", "age": 40 },
+  { "firstname": "mary", "lastname" : "jane", "age" : 50 },
+  { "firstname": "sue", "lastname" : "anderson", "age" : 51 },
+]
+lessPeople = [ person['firstname'] for person in people if person['age'] > 40]
+print(lessPeople)
 
 # people = [
 #   { "firstname": "joe", "lastname" : "smith", "age": 30 },

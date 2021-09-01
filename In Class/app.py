@@ -352,3 +352,8 @@ print(l)
 # - Do not swallow exceptions
 # - Put more specific message at the top
 # 
+
+l = [1,2,3,4]
+t = (1,2,3,4)
+tl = [(1,2,3,4),(1,2)]
+print(tl[1][2])
