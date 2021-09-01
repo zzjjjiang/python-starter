@@ -689,3 +689,56 @@ Output:
 ```
 {'blue', 'red', 'green'}
 ```
+
+# Ex 38.  Carpets
+You are a developer that works at a company called Our Carpets Really Are Pricey (OCRAP). You have to calculate the price to install carpet for a customer given the following data:
+```
+ roomsList = [
+    { 
+      'room' : 
+      { 
+        'name' : 'kitchen',
+        'color' : 'blue',
+        'dimensions' : 
+        { 
+          'width' : 10, 'length' : 20, 'height' : 8 
+        }
+      }
+    },
+    { 
+      'room' : 
+      { 
+        'name' : 'living room',
+        'color' : 'blue',
+        'dimensions' : 
+        { 
+          'width' : 10, 'length' : 20, 'height' : 10 
+        }
+      }
+    },
+    { 
+      'room' : 
+      { 
+        'name' : 'family room',
+        'color' : 'tan',
+        'dimensions' : 
+        { 
+          'width' : 10, 'length' : 20, 'height' : 8 
+        }
+      }
+    },
+    { 
+      'room' : 
+      { 
+        'name' : 'bathroom',
+        'color' : 'blue',
+        'dimensions' : 
+        { 
+          'width' : 5, 'length' : 8, 'height' : 10 
+        }
+      }
+    },
+  ]
+```
+
+The price to install carpet is $3.30 dollars per square foot.  How much will it cost to install carpet in all the blue rooms?
