@@ -742,3 +742,20 @@ You are a developer that works at a company called Our Carpets Really Are Pricey
 ```
 
 How much will it cost to install carpet for only the blue rooms?
+
+
+# Ex 39. Comprehending List Comprehensions
+Given the following list:
+
+```
+numList = [1,2,3,4,5,6,7,8,9,10]
+```
+
+Create a list comprehension that that filters the list for all the even numbers and doubles each number:
+
+Output
+```
+[4, 8, 12, 16, 20]
+```
+
+Hint: Google  
