@@ -17,11 +17,8 @@ def main():
     { 'ssn' : '444-44-4444' , 'name' : 'fred' },
     { 'ssn' : '111-11-1111' , 'name' : 'alex' }
   ]
-  print(list(map(update, peopleList)))
-
-  # Does not work... x.update() returns None.
-  #securePeopleList = list(map(lambda x: x.update({ 'ssn' : 'xxx-xx-xxxx'}), peopleList)) 
-  #print(securePeopleList)
+  #print(list(map(update, peopleList)))
+  print(list(map(lambda x: x.update({ 'ssn' : 'xxx-xx-xxxx'}) or x, peopleList))) # Update in-place trick.
 
 if __name__ == "__main__":  
   main()
