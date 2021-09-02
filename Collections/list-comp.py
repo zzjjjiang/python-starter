@@ -9,18 +9,18 @@
 #         [Required: map()  Required: for items  Optional: filter()]
 #
 
-# numbers = [1, 2, 3, 4, 5, 6]
-# doubledList = [(number * 2) for number in numbers if (number % 2 == 0)]  
-# print(doubledList)
+numbers = [1, 2, 3, 4, 5, 6]
+doubledList = [number * 2 for number in numbers if number % 2 == 0]  
+print(doubledList)
 
-peopleList = [
-  { "firstname": "joe", "lastname" : "smith", "age": 30 },
-  { "firstname": "peter", "lastname" : "jones", "age": 40 },
-  { "firstname": "mary", "lastname" : "jane", "age" : 50 },
-  { "firstname": "sue", "lastname" : "anderson", "age" : 51 },
-]
-lessPeople = [ person['firstname'] for person in peopleList if person['age'] > 40 ]
-print(lessPeople)
+# peopleList = [
+#   { "firstname": "joe", "lastname" : "smith", "age": 30 },
+#   { "firstname": "peter", "lastname" : "jones", "age": 40 },
+#   { "firstname": "mary", "lastname" : "jane", "age" : 50 },
+#   { "firstname": "sue", "lastname" : "anderson", "age" : 51 },
+# ]
+# lessPeople = [person['firstname'] for person in peopleList if person['age'] > 40]
+# print(lessPeople)
 
 # people = [
 #   { "firstname": "joe", "lastname" : "smith", "age": 30 },
@@ -28,9 +28,8 @@ print(lessPeople)
 #   { "firstname": "peter", "lastname" : "jones", "age": 40 },
 #   { "firstname": "mary", "lastname" : "jane" },
 # ]
-# ageList = [(person["age"]) for person in people if ("age" in person and person["age"] > 30)]
-# ageSum = sum(ageList)
-# print(ageList, ageSum)
+# total = sum([(person["age"]) for person in people if ("age" in person and person["age"] > 30)])
+# print(total)
 
 #
 # myList = [6,2,7,3,77,7,1]
