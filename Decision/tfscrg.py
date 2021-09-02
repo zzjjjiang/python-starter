@@ -28,8 +28,8 @@ l1 = ['red', 'green', 'blue'] # truthy
 l2 = [] # falsy
 s1 = "" # falsy
 s2 = "test" # truthy
-d1 = {}
-d2 = { 'lol' : 'Laugh Out Loud' }
+d1 = {} # falsy
+d2 = { 'lol' : 'Laugh Out Loud' } # truthy
 
 if d1:
   print('TRUE')
