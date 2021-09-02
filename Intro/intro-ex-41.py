@@ -18,7 +18,7 @@ def main():
     { 'ssn' : '111-11-1111' , 'name' : 'alex' }
   ]
   #print(list(map(update, peopleList)))
-  print(list(map(lambda x: x.update({ 'ssn' : 'xxx-xx-xxxx'}) or x, peopleList))) # short-circuit.
+  print(list(map(lambda x: x.update({ 'ssn' : 'xxx-xx-xxxx' }) or x, peopleList))) # short-circuit.
 
 if __name__ == "__main__":  
   main()
