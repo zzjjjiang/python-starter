@@ -358,7 +358,7 @@ l = list(map(transformPerson, peopleList))
 # https://www.freecodecamp.org/news/truthy-and-falsy-values-in-python/
 # False    None    0    ""    ()    []     {}
 
-n1 = 1
+n1 = 54
 n2 = None
 n3 = 0
 b1 = True
@@ -368,7 +368,7 @@ l2 = []
 s1 = ""
 s2 = "test"
 
-if n3 or n1:
+if n1:
   print('TRUE')
 else:
   print('FALSE')
