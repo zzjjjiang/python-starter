@@ -821,9 +821,5 @@ Create a Python program that uses the `map()` function and replaces all the soci
 
 Output
 ```
-[{'ssn': 'xxx-xx-xxxx', 'name': 'charlie'}, 
-{'ssn': 'xxx-xx-xxxx', 'name': 'bob'}, 
-{'ssn': 'xxx-xx-xxxx', 'name': 'mary'}, 
-{'ssn': 'xxx-xx-xxxx', 'name': 'fred'}, 
-{'ssn': 'xxx-xx-xxxx', 'name': 'alex'}]
+[{'ssn': 'xxx-xx-xxxx', 'name': 'charlie'}, {'ssn': 'xxx-xx-xxxx', 'name': 'bob'}, {'ssn': 'xxx-xx-xxxx', 'name': 'mary'}, {'ssn': 'xxx-xx-xxxx', 'name': 'fred'}, {'ssn': 'xxx-xx-xxxx', 'name': 'alex'}]
 ```
