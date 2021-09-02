@@ -28,8 +28,10 @@ l1 = ['red', 'green', 'blue'] # truthy
 l2 = [] # falsy
 s1 = "" # falsy
 s2 = "test" # truthy
+d1 = {}
+d2 = { 'lol' : 'Laugh Out Loud' }
 
-if b1 or n3 or b1:
+if d1:
   print('TRUE')
 else:
   print('FALSE')
