@@ -802,3 +802,25 @@ X000000000
 0000X00000
 000000000X
 ```
+
+# Ex 41 Hide SSN
+Given the following list:
+```
+  peopleList = [
+    { 'ssn' : '222-22-2222' , 'name' : 'charlie' },
+    { 'ssn' : '333-33-3333' , 'name' : 'bob' },
+    { 'ssn' : '555-55-5555' , 'name' : 'mary' },
+    { 'ssn' : '444-44-4444' , 'name' : 'fred' },
+    { 'ssn' : '111-11-1111' , 'name' : 'alex' }
+  ]
+```
+Create a Python program that uses the `map()` function and replaces all the social security numbers with `xxx-xx-xxxx`.
+
+Output
+```
+[{'ssn': 'xxx-xx-xxxx', 'name': 'charlie'}, 
+{'ssn': 'xxx-xx-xxxx', 'name': 'bob'}, 
+{'ssn': 'xxx-xx-xxxx', 'name': 'mary'}, 
+{'ssn': 'xxx-xx-xxxx', 'name': 'fred'}, 
+{'ssn': 'xxx-xx-xxxx', 'name': 'alex'}]
+```
