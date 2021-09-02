@@ -823,3 +823,30 @@ Output
 ```
 [{'ssn': 'xxx-xx-xxxx', 'name': 'charlie'}, {'ssn': 'xxx-xx-xxxx', 'name': 'bob'}, {'ssn': 'xxx-xx-xxxx', 'name': 'mary'}, {'ssn': 'xxx-xx-xxxx', 'name': 'fred'}, {'ssn': 'xxx-xx-xxxx', 'name': 'alex'}]
 ```
+# Ex 42. Access Denied
+Given the following data:
+```
+  peopleList = [
+    { 'ssn' : '222-22-2222' , 'name' : 'joe' },
+    { 'ssn' : '333-33-3333' , 'name' : 'bob' },
+    { 'ssn' : '555-55-5555' , 'name' : 'tim' },
+  ]
+  accessDict = {
+    '222-22-2222' : True,
+    '333-33-3333' : False,
+    '555-55-5555' : False,
+  }
+```
+Create a promgram that checks to see if people have access to your server.  The program prompts the user for a username and runs until `control+c` is entered.  The program must handle users that do not exist.
+
+Example:
+```
+Enter Username: Tim
+Access denied.
+Enter Username: Joe
+Access granted.
+Enter Username: Bob
+Access denied.
+Enter Username: Fred
+Username does not exist.
+```
