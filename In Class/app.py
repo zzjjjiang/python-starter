@@ -368,7 +368,3 @@ l2 = []
 s1 = ""
 s2 = "test"
 
-if n1:
-  print('TRUE')
-else:
-  print('FALSE')
