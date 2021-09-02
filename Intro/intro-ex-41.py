@@ -5,7 +5,7 @@
 # Desc: Mask SSN
 #
 
-def update(person):
+def maskSSN(person):
   person.update({'ssn' : 'xxx-xx-xxxx'}) # in-place update.
   return person
 
@@ -17,7 +17,7 @@ def main():
     { 'ssn' : '444-44-4444' , 'name' : 'fred' },
     { 'ssn' : '111-11-1111' , 'name' : 'alex' }
   ]
-  #print(list(map(update, peopleList)))
+  #print(list(map(maskSSN, peopleList)))
   print(list(map(lambda x: x.update({ 'ssn' : 'xxx-xx-xxxx' }) or x, peopleList))) # short-circuit.
 
 if __name__ == "__main__":  
