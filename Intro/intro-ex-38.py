@@ -2,7 +2,7 @@
 # File: intro-ex-38.py
 # Auth: Martin Burolla
 # Date: 8/31/2021
-# Desc: 
+# Desc: Carpets
 #
 
 PRICE_PER_SQUARE_FEET = 7.89
@@ -60,10 +60,9 @@ def main():
   # areaForRoomsList = list(map(lambda x: x['room']['dimensions']['length'] * x['room']['dimensions']['width'], filterRoomList))
   
   # List comprehension...
-  areaForRoomsList = [calcAreaForRoom(r) for r in roomsList if r['room']['color'] == 'blue']
-  cost = sum(areaForRoomsList) * PRICE_PER_SQUARE_FEET
-  formattedCost = "${:,.2f}".format(cost)
-  print(formattedCost)
+  areasOfRoomsList = [calcAreaForRoom(r) for r in roomsList if r['room']['color'] == 'blue']
+  totalCost = sum(areasOfRoomsList) * PRICE_PER_SQUARE_FEET
+  print("${:,.2f}".format(totalCost))
 
 def calcAreaForRoom(r):
   return r['room']['dimensions']['length'] * r['room']['dimensions']['width']
