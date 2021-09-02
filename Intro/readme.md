@@ -804,7 +804,7 @@ X000000000
 ```
 
 # Ex 41. Hide SSN
-Given what you know about short-circuting, and given the following list:
+Given what you know about short-circuiting, and given the following list:
 ```
   peopleList = [
     { 'ssn' : '222-22-2222' , 'name' : 'charlie' },
