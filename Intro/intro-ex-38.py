@@ -57,15 +57,15 @@ def main():
 
   # Map & Filter...
   # filterRoomList = list(filter(lambda x: x['room']['color'] == 'blue', roomsList))
-  # rmSqFtList = list(map(lambda x: x['room']['dimensions']['length'] * x['room']['dimensions']['width'], filterRoomList))
+  # areaForRoomsList = list(map(lambda x: x['room']['dimensions']['length'] * x['room']['dimensions']['width'], filterRoomList))
   
   # List comprehension...
-  rmSqFtList = [calcArea(r) for r in roomsList if r['room']['color'] == 'blue']
-  cost = sum(rmSqFtList) * PRICE_PER_SQUARE_FEET
+  areaForRoomsList = [calcAreaForRoom(r) for r in roomsList if r['room']['color'] == 'blue']
+  cost = sum(areaForRoomsList) * PRICE_PER_SQUARE_FEET
   formattedCost = "${:,.2f}".format(cost)
   print(formattedCost)
 
-def calcArea(r):
+def calcAreaForRoom(r):
   return r['room']['dimensions']['length'] * r['room']['dimensions']['width']
 
 if __name__ == "__main__":  
