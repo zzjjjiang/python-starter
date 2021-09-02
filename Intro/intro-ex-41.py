@@ -2,7 +2,7 @@
 # File: intro-ex-41.py
 # Auth: Martin Burolla
 # Date: 9/1/2021
-# Desc: Cover SSN
+# Desc: Mask SSN
 #
 
 def update(person):
@@ -18,7 +18,7 @@ def main():
     { 'ssn' : '111-11-1111' , 'name' : 'alex' }
   ]
   #print(list(map(update, peopleList)))
-  print(list(map(lambda x: x.update({ 'ssn' : 'xxx-xx-xxxx'}) or x, peopleList))) # Update in-place trick.
+  print(list(map(lambda x: x.update({ 'ssn' : 'xxx-xx-xxxx'}) or x, peopleList))) # short-circuit.
 
 if __name__ == "__main__":  
   main()

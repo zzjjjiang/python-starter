@@ -803,7 +803,7 @@ X000000000
 000000000X
 ```
 
-# Ex 41. Hide SSN
+# Ex 41. Mask SSN
 Given what you know about short-circuiting, and given the following list:
 ```
   peopleList = [
