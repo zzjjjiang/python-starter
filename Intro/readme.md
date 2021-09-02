@@ -804,7 +804,7 @@ X000000000
 ```
 
 # Ex 41 Hide SSN
-Given the following list:
+Given what you know about short-circuting, and given the following list:
 ```
   peopleList = [
     { 'ssn' : '222-22-2222' , 'name' : 'charlie' },
@@ -815,6 +815,8 @@ Given the following list:
   ]
 ```
 Create a Python program that uses the `map()` function and replaces all the social security numbers with `xxx-xx-xxxx`.
+
+Hint: A dictionary has an `update()` method that you might find useful. :-)
 
 Output
 ```

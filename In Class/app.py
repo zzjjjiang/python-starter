@@ -335,11 +335,11 @@ l = list(map(transformPerson, peopleList))
 
 # https://www.youtube.com/watch?v=NIWwJbo-9_8
 
-def divide(x,y):
-  try:
-    return x / y
-  except ZeroDivisionError:
-    pass
+# def divide(x,y):
+#   try:
+#     return x / y
+#   except ZeroDivisionError:
+#     pass
 
 
 
@@ -353,3 +353,22 @@ def divide(x,y):
 # - Do not swallow exceptions
 # - Put more specific message at the top
 # 
+
+# short-circuit
+# https://www.freecodecamp.org/news/truthy-and-falsy-values-in-python/
+# False    None    0    ""    ()    []     {}
+
+n1 = 1
+n2 = None
+n3 = 0
+b1 = True
+b2 = False
+l1 = ['red', 'green', 'blue']
+l2 = []
+s1 = ""
+s2 = "test"
+
+if n3 or n1:
+  print('TRUE')
+else:
+  print('FALSE')
