@@ -31,15 +31,19 @@ s2 = "test" # truthy
 d1 = {} # falsy
 d2 = { 'lol' : 'Laugh Out Loud' } # truthy
 
-# if d1:
-#   print('TRUE')
-# else:
-#   print('FALSE')
 
-n6 = 33
-l1 = ['a', 'b', 'c']
-if (l1.append('d') or l1.append('e') or n6 or l1.append('f')): # l1.append('f') is never called.
+if b1:
   print('TRUE')
 else:
   print('FALSE')
-print(l1) # ['a', 'b', 'c', 'd', 'e']
+
+# n6 = 33
+# l1 = ['a', 'b', 'c']
+# rr =l1.append('d')
+# print(rr)
+
+# if (l1.append('d') or l1.append('e') or n6 or l1.append('f')): # l1.append('f') is never called.
+#   print('TRUE')
+# else:
+#   print('FALSE')
+# print(l1) # ['a', 'b', 'c', 'd', 'e']
