@@ -6,6 +6,8 @@
 #
 # Format: 
 #  [{REQUIRED: expression for each item} {REQUIRED: iteration} {OPTIONAL: if condition}]
+#  [Required: map()  Required: for items  Optional: filter()]
+#
 #
 # PROTIPs: 
 #   If you are filtering and mapping on a list, use a list comprehension 
