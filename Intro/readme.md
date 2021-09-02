@@ -757,3 +757,48 @@ Output
 ```
 [4, 8, 12, 16, 20]
 ``` 
+
+# Ex 40. Tiny Theater
+Create a program that keeps track of the seats of a tiny movie theater.  The theater has 3 rows with 10 seats in each row.  The program displays empty seats with a '0' and occupied seats with 'X'.  
+
+```
+Row 1: 0000000000
+Row 2: 0000000000
+Row 3: 0000000000
+```
+
+The program prompts the user to enter the row number and seat number.  Once the row number and seat number are entered, the program displays all the seats.  The program will display the appropriate error message if the row number and seat number not valid.
+
+Example usage:
+```
+0000000000
+0000000000
+0000000000
+Enter row number: 1
+Enter seat number: 1
+X000000000
+0000000000
+0000000000
+Enter row number: 2
+Enter seat number: 5
+X000000000
+0000X00000
+0000000000
+Enter row number: 3
+Enter seat number: 10
+X000000000
+0000X00000
+000000000X
+Enter row number: 4 
+Enter seat number: 11
+ERROR: Not enough rows and seats!!!
+X000000000
+0000X00000
+000000000X
+Enter row number: 1   
+Enter seat number: 11
+ERROR: Not enough seats!!!
+X000000000
+0000X00000
+000000000X
+```
