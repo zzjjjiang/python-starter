@@ -885,7 +885,7 @@ You are a developer for a moving company call Move It Or Lose It (MIOLI) Inc.  Y
 
 An HL7 2.0 message contains segments. The segment we are interested in is the [PID Segment](https://hl7-definition.caristix.com/v2/HL7v2.4/Segments/PID).
 
-Patient identification is a problem in the health industry. You are a developer that has to parse HL7 2.0 messages from a file named `oru-r01.hl7`.  Write a program that checks that the patient SSN and name in the HL7 message match that in the following dictionary:
+Patient identification is a problem in the health industry. You are a developer that has to parse HL7 2.0 messages from a file named [oru-r01.hl7](https://gitlab.com/mburolla/sia/-/blob/dev/oru-r01.hl7).  Write a program that checks that the patient SSN and name in the HL7 message match that in the following dictionary:
 
 ```
 patientDict = {
