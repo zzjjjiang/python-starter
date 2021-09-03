@@ -358,13 +358,22 @@ l = list(map(transformPerson, peopleList))
 # https://www.freecodecamp.org/news/truthy-and-falsy-values-in-python/
 # False    None    0    ""    ()    []     {}
 
-n1 = 54
-n2 = None
-n3 = 0
-b1 = True
-b2 = False
-l1 = ['red', 'green', 'blue']
-l2 = []
-s1 = ""
-s2 = "test"
+# n1 = 54
+# n2 = None
+# n3 = 0
+# b1 = True
+# b2 = False
+# l1 = ['red', 'green', 'blue']
+# l2 = []
+# s1 = ""
+# s2 = "test"
 
+# myList = [1,2,3]
+# myList.append(4)
+# myList.remove(2)
+# print(myList)
+
+for i in range(3):
+  for k in range(2):
+    print(f"k is: {k}")
+  print(f"i is: {i}")

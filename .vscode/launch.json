@@ -9,8 +9,7 @@
       "type": "python",
       "request": "launch",
       "program": "${file}",
-      //"program": "./DataAccess/app.py",
-      //"program": "./Homework/app.py",
+      //"program": "./Intro/intro-ex-44.py",
       "console": "integratedTerminal"
     }
   ]
