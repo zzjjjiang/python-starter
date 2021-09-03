@@ -850,3 +850,34 @@ Access denied.
 Enter Username: Fred
 Username does not exist.
 ```
+
+# Ex 43. Moving Company
+You are a developer for a moving company call Move It Or Lose It (MIOLI) Inc.  You charge customers based on the size of the moving box.  Given the following data, how much will it cost to move this customer?
+
+```
+ costPerBoxDict = {
+    'small' : 5.00,
+    'medium' : 10.00,
+    'large' : 15.00
+  }
+  
+  customerDict = {
+    'living room' : 
+      { 
+        'small' : 5, 
+        'large' : 4
+      },
+    'bedroom' : 
+      { 
+        'small' : 1, 
+        'medium' : 4,
+        'large' : 5
+      },
+    'bathroom' : 
+      { 
+        'small' : 2, 
+        'large' : 1
+      }
+  }
+```
+
