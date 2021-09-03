@@ -880,7 +880,7 @@ You are a developer for a moving company call Move It Or Lose It (MIOLI) Inc.  Y
       }
   }
 ```
-# Ex 44. Moving Company
+# Ex 44. HL7 Old School
 [HL7](https://www.hl7.org/) stands for Health Level seven.  The seven refers to the 7th layer of the [OSI model](https://en.wikipedia.org/wiki/OSI_model).  HL7 is a standard for communicating hospital related data at the application layer (7th layer) in the OSI model.  There are two versions of the standard, HL7 2.0 and HL7 3.0.  HL7 2.0 is non-XML based and HL7 3.0 is based in XML.  HL7 has many different types of messages, [here](https://www.interfaceware.com/hl7-message-types?utm_medium=ppc&utm_campaign=21Q3_Awareness+(HL7+Information)&utm_term=hl7%20obx&utm_source=adwords&hsa_acc=5413177600&hsa_net=adwords&hsa_kw=hl7%20obx&hsa_ver=3&hsa_mt=b&hsa_cam=14213006772&hsa_grp=125700790517&hsa_ad=538222308215&hsa_tgt=kwd-348003101271&hsa_src=g&gclid=CjwKCAjwj8eJBhA5EiwAg3z0m3odv6GRyXBhlMvaB65JuUnhgZLL_LXx7giEoPjMAklWbmA3DYCmUhoCeeAQAvD_BwE) are the common messages. 
 
 An HL7 2.0 message contains segments. The segment we are interested in is the [PID Segment](https://hl7-definition.caristix.com/v2/HL7v2.4/Segments/PID).
