@@ -27,17 +27,17 @@ def main():
     '333-33-3333' : 'Tim McCoy'
   }
 
-  pidList = parsePIDSegments("oru-r01.hl7")
+  pidSegmentList = parsePIDSegments("oru-r01.hl7")
 
-  # Build name tuple list.
+  # Build name tuple list from PID Segments.
   nameTupleList = []
-  for pid in pidList:
+  for pid in pidSegmentList:
     array = pid.split('|')
     ssn = array[19]
     name = reverseName(array[5])
     nameTupleList.append((ssn, name)) # A list of tuples.
    
-  # Check names:
+  # Check the names against our list and the patientDict.
   for nameTuple in nameTupleList:
     if patientDict[nameTuple[0]].lower() == nameTuple[1].lower():
       print(f'{nameTuple[0]} {nameTuple[1]}: OK')
