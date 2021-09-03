@@ -895,7 +895,7 @@ patientDict = {
 }
 ```
 
-Write the following to the console:
+The program writes the patient match status to the console:
 ```
 111-11-1111 JOHN SMITH: OK
 222-22-2222 SUE ANDERSON: OK
