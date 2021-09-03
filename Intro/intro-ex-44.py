@@ -18,6 +18,7 @@ def parsePIDSegments(filename):
   for l in lines:
     if l[0:3] == 'PID':
       retval.append(l)
+  f.close()
   return retval
 
 def main():
