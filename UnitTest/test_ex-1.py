@@ -5,9 +5,19 @@
 # Desc:
 #
 
+import pytest
 import businessLogicModule
 
 dbConn = None
+
+#
+# Fixture
+#
+
+@pytest.fixture
+def dbConn():
+  dbConn = "Connected"
+  return dbConn
 
 #
 # Setup/Tear Down
@@ -15,7 +25,7 @@ dbConn = None
 
 def setup_module(module):
   global dbConn
-  dbConn = "Done"
+  dbConn = "Connected"
 
 def teardown_module(module):
   global dbConn
@@ -25,7 +35,7 @@ def teardown_module(module):
 # Test Methods
 #
 
-def test_Add_Numbers_Function():              
+def test_Add_Numbers_Function(dbConn):              
   # Arrange
   x = 1
   y = 2
@@ -34,10 +44,10 @@ def test_Add_Numbers_Function():
   r = businessLogicModule.addNumbers(1,2)
 
   # Assert
-  assert dbConn == "Done"
+  assert dbConn == "Connected"
   assert r == 3, "add() function failed"
 
-  # Clean up
+  # Clean up (Nothing to cleanup)
 
 def test_Concat_Strings_Function():              
   # Arrange
@@ -48,8 +58,11 @@ def test_Concat_Strings_Function():
   r = businessLogicModule.concatStrings(x, y)
 
   # Assert
+  assert dbConn == "Connected"
   assert "Hello" in r, "Hello not in Hello World"
   assert "World" in r, "World not in Hello World"
+
+  # Clean up (Nothing to cleanup)
 
 #
 # Helper methods

@@ -1,6 +1,6 @@
 # Unit Testing
 - pip3 install pytest
-- Execute: `pytest test_ex-1.py -v`
+- Execute: `pytest test_ex-1.py -v -s`
 
 # Extensions
 - Test Explorer UI 
