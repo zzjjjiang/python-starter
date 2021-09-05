@@ -1,7 +1,9 @@
 # Unit Testing
-
-pytest test_ex-1.py -v
+- pip3 install pytest
+- Execute: `pytest test_ex-1.py -v`
 
 # Extensions
-- Test Explorer UI
+- Test Explorer UI 
 - PyTest Intellisense
+- Restart VSCode
+
