@@ -806,7 +806,7 @@ def printSeats(movieSeats, numRows, numSeats):
   ...
 
 def validateInput(row, seat, numRows, numSeats):
-  ...
+  raise Exception if not valid
 
 def main():
   numRows = NUM_ROWS
@@ -816,7 +816,8 @@ def main():
   while True:
     # print the seats
     # get row & seat number from user
-    # validate user input, print error if neccessary
+    # validate user input
+    # catch Exception, print error message
     # calculate seat index
     # add 'X' to list at seat index position
 ```
