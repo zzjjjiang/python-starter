@@ -976,5 +976,3 @@ The program writes the patient match status to the console:
 222-22-2222 SUE ANDERSON: OK
 333-33-3333 TIM MCOY: No Match!!!
 ```
-
-# Ex 45. 
