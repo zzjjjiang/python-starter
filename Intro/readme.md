@@ -759,13 +759,8 @@ Output
 ``` 
 
 # Ex 40. Tiny Theater
-Create a program that keeps track of the seats of a tiny movie theater.  The theater has 3 rows with 10 seats in each row.  The program displays empty seats with a '0' and occupied seats with 'X'.  
-
-```
-Row 1: 0000000000
-Row 2: 0000000000
-Row 3: 0000000000
-```
+### Part A.
+Create a program that keeps track of the seats for a tiny movie theater.  The theater has 3 rows with 10 seats in each row.  The program displays empty seats with a '0' and occupied seats with 'X'.  Row 1 is upper top left, Seat 10 is far right.
 
 The program prompts the user to enter the row number and seat number.  Once the row number and seat number are entered, the program displays all the seats.  The program will display the appropriate error message if the row number and seat number not valid.
 
@@ -791,20 +786,60 @@ X000000000
 000000000X
 Enter row number: 4 
 Enter seat number: 11
-ERROR: Not enough rows and seats!!!
+ERROR: Not enough rows and seats
 X000000000
 0000X00000
 000000000X
 Enter row number: 1   
 Enter seat number: 11
-ERROR: Not enough seats!!!
+ERROR: Not enough seats
 X000000000
 0000X00000
 000000000X
 ```
+### Part B.
+Prompt the user to enter the size of the movie theater only once when the program first runs.
+
+Example:
+```
+Enter number of rows: 2
+Enter number of seats: 5
+00000
+00000
+Enter row number: 1
+Enter seat number: 1
+X0000
+00000
+Enter row number: 3
+Enter seat number: 1
+ERROR: Not enough rows
+X0000
+00000
+```
+### Part C.
+Print the total cost of ticket sales after a valid row and seat number have been added.  The cost of a movie ticket is linearly proporational to the row number.  In other words, tickets for row 1 cost $1.00, tickets for row 2 cost $2.00, tickets for row 3 cost $3,00, etc.
+
+Example
+```
+Enter number of rows: 2
+Enter number of seats: 10
+0000000000
+0000000000
+$0.00
+Enter row number: 1
+Enter seat number: 5
+0000X00000
+0000000000
+$1.00
+Enter row number: 2
+Enter seat number: 1
+0000X00000
+X000000000
+$3.00
+```
 
 # Ex 41. Mask SSN
-Given what you know about short-circuiting, and given the following list:
+Given the knowledge obtained about short-circuiting, and given the following list:
 ```
   peopleList = [
     { 'ssn' : '222-22-2222' , 'name' : 'charlie' },
