@@ -841,7 +841,7 @@ X0000
 00000
 ```
 ### Part C.
-Print the total cost of ticket sales after a valid row and seat number have been added.  The cost of a movie ticket is linearly proporational to the row number.  In other words, tickets for row 1 cost $1.00, tickets for row 2 cost $2.00, tickets for row 3 cost $3,00, etc.  Be sure not to increment the ticket sales if a seat has already been sold.
+Print the total cost of ticket sales after a valid row and seat number have been added.  The cost of a movie ticket is linearly proporational to the row number.  In other words, tickets for row 1 cost $1.00, tickets for row 2 cost $2.00, tickets for row 3 cost $3.00, etc.  Be sure only to increment the ticket sales if a seat has not been sold.
 
 Example 1:
 ```
