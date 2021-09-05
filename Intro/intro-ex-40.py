@@ -2,15 +2,15 @@
 # File: intro-ex-40.py
 # Auth: Martin Burolla
 # Date: 9/1/2021
-# Desc: Tiny Theater
+# Desc: Tiny Movie Theater
 #
 
 def printSeats(movieSeats, numRows, numSeats):
   for rowIndex in range(numRows):
     row = ''
     for colIndex in range(numSeats):
-      pos = (rowIndex * numSeats) + colIndex
-      row += movieSeats[pos]
+      seatIndex = (rowIndex * numSeats) + colIndex
+      row += movieSeats[seatIndex]
     print(row)
 
 def validateInput(row, seat, numRows, numSeats):
@@ -39,9 +39,10 @@ def main():
     except Exception as e:
       print(e)
     else:
-      totalSales += row
-      pos = ((row - 1) * numSeats) + (col - 1)
-      movieSeats[pos] = 'X'
+      seatIndex = ((row - 1) * numSeats) + (col - 1)
+      if movieSeats[seatIndex] == '0':
+        totalSales += row
+      movieSeats[seatIndex] = 'X'
 
 if __name__ == "__main__":  
   main()

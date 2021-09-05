@@ -758,7 +758,7 @@ Output
 [4, 8, 12, 16, 20]
 ``` 
 
-# Ex 40. Tiny Theater
+# Ex 40. Tiny Movie Theater
 ### Part A.
 Create a program that keeps track of the seats for a tiny movie theater.  The theater has 3 rows with 10 seats in each row.  The program displays empty seats with a '0' and occupied seats with 'X'.  Row 1 is upper top left, Seat 10 is far right.
 
@@ -797,8 +797,29 @@ X000000000
 0000X00000
 000000000X
 ```
+
+HINT: My architecture:
+```
+def printSeats(movieSeats, numRows, numSeats):
+  ...
+
+def validateInput(row, seat, numRows, numSeats):
+  ...
+
+def main():
+  numRows = NUM_ROWS
+  numSeats = NUM_SEATS
+  movieSeats = ['0' for _ in range(numRows * numSeats)]
+ 
+  while True:
+    # print the seats
+    # get row & seat number from user
+    # validate user input, print error if neccessary
+    # calculate seat index
+    # add 'X' to list at seat index position
+```
 ### Part B.
-Prompt the user to enter the size of the movie theater only once when the program first runs.
+Prompt the user to enter the size of the movie theater only once when the program first runs.  You can assume the user input will be valid numbers (no reason to validate this input).
 
 Example:
 ```
@@ -817,9 +838,9 @@ X0000
 00000
 ```
 ### Part C.
-Print the total cost of ticket sales after a valid row and seat number have been added.  The cost of a movie ticket is linearly proporational to the row number.  In other words, tickets for row 1 cost $1.00, tickets for row 2 cost $2.00, tickets for row 3 cost $3,00, etc.
+Print the total cost of ticket sales after a valid row and seat number have been added.  The cost of a movie ticket is linearly proporational to the row number.  In other words, tickets for row 1 cost $1.00, tickets for row 2 cost $2.00, tickets for row 3 cost $3,00, etc.  Be sure not to increment the ticket sales if a seat has already been sold.
 
-Example
+Example 1:
 ```
 Enter number of rows: 2
 Enter number of seats: 10
@@ -836,6 +857,22 @@ Enter seat number: 1
 0000X00000
 X000000000
 $3.00
+```
+
+Example 2:
+```
+Enter number of rows: 1
+Enter number of seats: 1
+0
+$0.00
+Enter row number: 1
+Enter seat number: 1
+X
+$1.00
+Enter row number: 1
+Enter seat number: 1
+X
+$1.00
 ```
 
 # Ex 41. Mask SSN
