@@ -762,6 +762,8 @@ Output
 ### Part A.
 Create a program that keeps track of the seats for a tiny movie theater.  The theater has 3 rows with 10 seats in each row.  The program displays empty seats with a '0' and occupied seats with 'X'.  Row 1 is upper top left, Seat 10 is far right.
 
+The program loops forever until `control+c` is entered by the user.
+
 The program prompts the user to enter the row number and seat number.  Once the row number and seat number are entered, the program displays all the seats.  The program will display the appropriate error message if the row number and seat number not valid.
 
 Example usage:
