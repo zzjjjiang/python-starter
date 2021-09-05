@@ -7,6 +7,20 @@
 
 import businessLogicModule
 
+dbConn = None
+
+#
+# Setup/Tear Down
+#
+
+def setup_module(module):
+  global dbConn
+  dbConn = "Done"
+
+def teardown_module(module):
+  global dbConn
+  dbConn = None
+
 #
 # Test Methods
 #
@@ -20,7 +34,10 @@ def test_Add_Numbers_Function():
   r = businessLogicModule.addNumbers(1,2)
 
   # Assert
+  assert dbConn == "Done"
   assert r == 3, "add() function failed"
+
+  # Clean up
 
 def test_Concat_Strings_Function():              
   # Arrange
