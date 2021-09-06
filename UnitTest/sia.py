@@ -14,7 +14,19 @@ def concatStrings(a, b):
 def doubleList(list):
    return [item * 2 for item  in list]
 
-# TODO
+# Write test cases for these...
 
 def sortList(list):
-   return list.sort()
+   return list.sort() or list
+
+def dedupeList(aList):
+   retval = []
+   s1 = set(aList)
+   retval = list(s1)
+   return retval
+
+
+
+
+
+

@@ -73,7 +73,7 @@ def test_Add_Numbers_Function():
   assert dbConn == "Connected"
   assert r == 3, "add() function failed"
 
-  # Clean up (Nothing to cleanup)
+  # Clean up (nothing to cleanup here...)
 
 def test_Concat_Strings_Function():             
   # Arrange
@@ -88,11 +88,5 @@ def test_Concat_Strings_Function():
   assert "Hello" in r, "Hello not in Hello World"
   assert "World" in r, "World not in Hello World"
 
-  # Clean up (Nothing to cleanup)
+  # Clean up (nothing to cleanup here...)
 
-#
-# Helper methods
-#
-
-def foo():
-  print('I am a helper method because I do not start with test.')
