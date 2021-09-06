@@ -7,6 +7,9 @@
 - PyTest Intellisense
 - Restart VSCode
 
+# Notes
+- By default, pytest runs tests in sequential order. 
+
 # Links
 - https://www.softwaretestinghelp.com/python-testing-frameworks/
 - https://docs.pytest.org/en/6.2.x/fixture.html
