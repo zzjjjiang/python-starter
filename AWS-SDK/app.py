@@ -5,9 +5,12 @@
 # Desc: Interact with S3.
 #
 #       AWS-SDK:
+#         Install: pip install boto3
 #         https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/index.html
 #         https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html
-#       AWS-CLI:      
+#
+#       AWS-CLI:    
+#         Install: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html    
 #         https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html
 #
 
