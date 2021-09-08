@@ -4,12 +4,12 @@
 # Date: 9/8/2021
 # Desc: Interact with S3.
 #
-#       AWS-SDK:
+#       AWS-SDK: (Used with a programming language)
 #         Install: pip install boto3
 #         https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/index.html
 #         https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html
 #
-#       AWS-CLI:    
+#       AWS-CLI: (Used on the terminal)
 #         Install: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html    
 #         https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html
 #
@@ -31,7 +31,10 @@ def upload():
     print(e)
 
 def download():
-  pass
+  print('*** Downloading file from S3 ***')
+  s3_client = boto3.client('s3')
+  with open('marty_myfile.txt', 'wb') as f:
+    s3_client.download_fileobj('siua-bucket', 'marty/myfile.txt', f)
 
 def main():
   upload()
