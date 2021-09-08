@@ -1,10 +1,14 @@
 #
 # File: app.py
 # Auth: Martin Burolla
-# Date: 8/9/2021
-# Desc: AWS CLI
-#       https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/index.html
-#       https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html
+# Date: 9/8/2021
+# Desc: Interact with S3.
+#
+#       AWS-SDK:
+#         https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/index.html
+#         https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html
+#       AWS-CLI:      
+#         https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html
 #
 
 import boto3
