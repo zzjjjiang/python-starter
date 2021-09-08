@@ -1,6 +1,7 @@
 # Unit Testing
 - pip install pytest
-- Execute: `pytest test_demo.py -v -s`
+- Execute MacOS: `pytest test_demo.py -v -s`
+- Execute Windows: `python -m pytest test_demo.py`
 
 # Extensions
 - Test Explorer UI 
