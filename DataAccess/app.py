@@ -5,10 +5,7 @@
 # Desc: Data access
 #
 
-import boto3
 import pymysql
-from AuroraDBProxy import AuroraDBProxy
-
 
 def getPeople():
   retval = []
@@ -29,6 +26,7 @@ def getPeople():
   connection.commit()
   retval = cursor.fetchall()
   return retval
+
 
 def main():
   people = getPeople()
