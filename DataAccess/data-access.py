@@ -9,8 +9,6 @@ import pymysql
 
 def createConnection():
   retval = None  
-    
-  # Connecting...
   USER = 'sia-db-user'
   HOST = 'sia-db-cluster-instance-1.cosgu9wr5iwp.us-east-1.rds.amazonaws.com'
   PWD = 'testtest'
@@ -21,7 +19,6 @@ def createConnection():
     host = HOST,
     password = PWD,
     database = DB)
-
   return retval
 
 def getPeople():
