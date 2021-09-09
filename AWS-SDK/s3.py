@@ -4,6 +4,8 @@
 # Date: 9/9/2021
 # Desc: S3 under the hood
 #       S3 is a flat object store, it works much like a Python dictionary.
+#       S3 is not implemented using a hierarchical tree structure or table structure 
+#       found in file systems such as Linux or Windows.
 #
 
 def main():
