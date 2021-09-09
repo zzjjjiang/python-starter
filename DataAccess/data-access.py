@@ -23,23 +23,11 @@ def createConnection():
 
 def getPeople():
   retval = []
-
-  # Connecting...
-  USER = 'sia-db-user'
-  HOST = 'sia-db-cluster-instance-1.cosgu9wr5iwp.us-east-1.rds.amazonaws.com'
-  PWD = 'testtest'
-  DB = 'sia-db'
-
-  connection = pymysql.connect(
-    user = USER,
-    host = HOST,
-    password = PWD,
-    database = DB)
-
+  conn = createConnection()
   # Querying...
-  with connection.cursor(pymysql.cursors.DictCursor) as cursor:
+  with conn.cursor(pymysql.cursors.DictCursor) as cursor:
     cursor.execute('select * from person')
-  connection.commit()
+  conn.commit()
   retval = cursor.fetchall()
   return retval
 
@@ -52,12 +40,24 @@ def insertPerson(personName):
   conn.commit()
   return retval
 
+def updatePerson(id, name):
+  conn = createConnection()
+  with conn.cursor() as cursor:
+    cursor.execute("update person set name = %s where id = %s;", (name, id))
+  conn.commit()
+
 def main():
-  id = insertPerson('Tom')
-  print(f"Person Id: {id}.")
-  people = getPeople()
-  print(people)
+  # id = insertPerson('Billy')
+  # print(f"Person Id: {id}.")
+  # people = getPeople()
+  # print(people)
+  updatePerson(1, 'Joey Jo Jo')
+  print(id)
+
+  # people = getPeople()
+  # print(people)
 
 if __name__ == "__main__":  
   main()
+
 
