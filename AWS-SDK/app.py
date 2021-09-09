@@ -45,8 +45,9 @@ def download2():
   s3Client.Bucket(BUCKET_NAME).download_file(KEY, 'downloaded.txt')
 
 def deleteFile():
-  # TODO: Delete file from S3 after we downloaded it.
-  pass
+  print("*** Deleting file from S3 ***")
+  s3 = boto3.resource('s3')
+  s3.Object('siua-bucket', 'marty/myfile.txt').delete()
 
 def main():
   #upload()
