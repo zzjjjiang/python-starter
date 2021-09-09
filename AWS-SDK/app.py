@@ -36,7 +36,6 @@ def download():
   with open('marty_myfile.txt', 'wb') as f: # C# USING JAVA  
     s3_client.download_fileobj('siua-bucket', 'marty/myfile.txt', f)
 
-
 def download2():
   print("*** Downloading file from Kristi's S3 ***")
   BUCKET_NAME = 'siua-bucket'
@@ -51,7 +50,7 @@ def deleteFile():
 
 def main():
   #upload()
-  #download2()
+  download()
   deleteFile()
   
 if __name__ == "__main__":  
