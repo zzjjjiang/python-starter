@@ -33,12 +33,21 @@ def upload():
 def download():
   print('*** Downloading file from S3 ***')
   s3_client = boto3.client('s3')
-  with open('marty_myfile.txt', 'wb') as f:
+  with open('marty_myfile.txt', 'wb') as f: # C# USING JAVA  
     s3_client.download_fileobj('siua-bucket', 'marty/myfile.txt', f)
 
+
+def download2():
+  print("*** Downloading file from Kristi's S3 ***")
+  BUCKET_NAME = 'siua-bucket'
+  KEY = 'kristi/myfile.txt'
+  s3Client = boto3.resource('s3')
+  s3Client.Bucket(BUCKET_NAME).download_file(KEY, 'downloaded.txt')
+
+
 def main():
-  upload()
-  download()
+  #upload()
+  download2()
   
 if __name__ == "__main__":  
     main()
