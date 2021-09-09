@@ -22,7 +22,7 @@ def upload():
   s3_client = boto3.client('s3')
   file = 'myfile.txt'
   bucketName = 'siua-bucket'
-  objectName = 'marty/myfile.txt'
+  objectName = 'marty/today/myfile2.txt'
 
   try:
     response = s3_client.upload_file(file, bucketName, objectName)
@@ -46,11 +46,11 @@ def download2():
 def deleteFile():
   print("*** Deleting file from S3 ***")
   s3 = boto3.resource('s3')
-  s3.Object('siua-bucket', 'marty/myfile.txt').delete()
+  s3.Object('siua-bucket', 'marty/today/myfile.txt').delete()
 
 def main():
   #upload()
-  download()
+  # download()
   deleteFile()
   
 if __name__ == "__main__":  
