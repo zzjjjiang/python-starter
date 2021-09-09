@@ -44,10 +44,14 @@ def download2():
   s3Client = boto3.resource('s3')
   s3Client.Bucket(BUCKET_NAME).download_file(KEY, 'downloaded.txt')
 
+def deleteFile():
+  # TODO: Delete file from S3 after we downloaded it.
+  pass
 
 def main():
   #upload()
-  download2()
+  #download2()
+  deleteFile()
   
 if __name__ == "__main__":  
     main()

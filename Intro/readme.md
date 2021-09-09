@@ -956,6 +956,9 @@ You are a developer for a moving company call Move It Or Lose It (MIOLI) Inc.  Y
   }
 ```
 # Ex 44. HL7 Old School
+
+### Part A
+
 [HL7](https://www.hl7.org/) stands for Health Level Seven.  The seven refers to the 7th layer of the [OSI model](https://en.wikipedia.org/wiki/OSI_model).  HL7 is a standard for communicating hospital related data at the application layer, the 7th layer in the OSI model.  There are two versions of the standard, HL7 2.0 and HL7 3.0.  HL7 3.0 is XML based, and HL7 2.0 is not.  HL7 has many different types of messages, [here](https://www.interfaceware.com/hl7-message-types?utm_medium=ppc&utm_campaign=21Q3_Awareness+(HL7+Information)&utm_term=hl7%20obx&utm_source=adwords&hsa_acc=5413177600&hsa_net=adwords&hsa_kw=hl7%20obx&hsa_ver=3&hsa_mt=b&hsa_cam=14213006772&hsa_grp=125700790517&hsa_ad=538222308215&hsa_tgt=kwd-348003101271&hsa_src=g&gclid=CjwKCAjwj8eJBhA5EiwAg3z0m3odv6GRyXBhlMvaB65JuUnhgZLL_LXx7giEoPjMAklWbmA3DYCmUhoCeeAQAvD_BwE) are the most common ones. 
 
 An HL7 2.0 message contains segments. The segment we are interested in is the [PID Segment](https://hl7-definition.caristix.com/v2/HL7v2.4/Segments/PID).
@@ -972,6 +975,26 @@ patientDict = {
 
 The program writes the patient match status to the console:
 ```
+111-11-1111 JOHN SMITH: OK
+222-22-2222 SUE ANDERSON: OK
+333-33-3333 TIM MCOY: No Match!!!
+```
+
+### Part B
+Provide the user with the option of downloading the HL7 text file from S3 (https://siua-bucket.s3.amazonaws.com/hl7/oru-r01.hl7) or to use the file stored locally on the filesystem.
+
+Example:
+```
+Use S3? Yes
+Downloading from S3...
+Downloaded file from S3
+111-11-1111 JOHN SMITH: OK
+222-22-2222 SUE ANDERSON: OK
+333-33-3333 TIM MCOY: No Match!!!
+```
+
+```
+Use S3? No
 111-11-1111 JOHN SMITH: OK
 222-22-2222 SUE ANDERSON: OK
 333-33-3333 TIM MCOY: No Match!!!
