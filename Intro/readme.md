@@ -995,7 +995,7 @@ The program writes the patient match status to the console:
 ```
 
 ### Part B.
-Provide the user with the option of downloading the HL7 text file from S3 (https://siua-bucket.s3.amazonaws.com/hl7/oru-r01.hl7) or to use the file stored locally on the filesystem.
+Provide the user with the option of downloading the HL7 text file from S3 (//siua-bucket/hl7/oru-r01.hl7) or to use the file stored locally on the filesystem.
 
 Example:
 ```
