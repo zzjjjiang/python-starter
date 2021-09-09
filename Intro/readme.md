@@ -800,7 +800,7 @@ X000000000
 000000000X
 ```
 
-HINT: Try to implement the solution from start to finish only using 1 row with 10 seats (optionally commit and push your branch), then modify your solution to support any number of rows and seats.
+HINT: Try to implement the solution from start to finish only using 1 row with 10 seats (optionally commit and push your branch), then modify your solution to support 3 rows with 10 seats.
 
 HINT: My architecture:
 ```
