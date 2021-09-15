@@ -19,7 +19,7 @@ def getFormattedSeats(movieSeats, numRows, numSeats):
 
 def validateInput(row, seat, numRows, numSeats):
   if (row > numRows and seat > numSeats):
-    raise Exception('ERROR: Not enough rows and seats')
+    raise Exception('ERROR: Not enough rows and seats') # Ideally we would subclass Exception and raise our own Exception.
   elif row > numRows:
     raise Exception('ERROR: Not enough rows')
   elif seat > numSeats:
@@ -71,7 +71,7 @@ def main():
 
     try:
       validateInput(row, col, numRows, numSeats)
-    except Exception as e:
+    except Exception as e: # Ideally we would catch our own custom Exception.
       print(e)
     else:
       seatIndex = ((row - 1) * numSeats) + (col - 1)
