@@ -47,6 +47,7 @@ def uploadToS3():
   s3_client.upload_file(file, bucketName, objectName)
 
 def shouldExit(row, totalSales, movieSeats, numRows, numSeats):
+  ''' If we should exit, create file and upload to S3.'''
   retval = row.lower() == 'exit'
   if retval:
     createFile(totalSales, movieSeats, numRows, numSeats)
@@ -55,13 +56,17 @@ def shouldExit(row, totalSales, movieSeats, numRows, numSeats):
 
 def main():
   totalSales = 0
+  # Build the movie theater.
   numRows = int(input('Enter number of rows: '))
   numSeats = int(input('Enter number of seats: '))
   movieSeats = ['0' for _ in range(numRows * numSeats)]
  
   while True:
+    # Display movie theater on console.
     print(getFormattedSeats(movieSeats, numRows, numSeats))
     print("${:,.2f}".format(totalSales))
+
+     # Add customers to movie theater.
     row = input('Enter row number: ')
     if shouldExit(row, totalSales, movieSeats, numRows, numSeats):
       break
