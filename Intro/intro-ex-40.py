@@ -19,7 +19,7 @@ def getFormattedSeats(movieSeats, numRows, numSeats):
 
 def validateInput(row, seat, numRows, numSeats):
   if (row > numRows and seat > numSeats):
-    raise Exception('ERROR: Not enough rows and seats') # Ideally we would subclass Exception and raise our own Exception.
+    raise Exception('ERROR: Not enough rows and seats') # Ideally we would subclass Exception and raise our own custom Exception.
   elif row > numRows:
     raise Exception('ERROR: Not enough rows')
   elif seat > numSeats:
@@ -31,22 +31,24 @@ def validateInput(row, seat, numRows, numSeats):
   elif row > 1000:
     raise Exception('ERROR: Too many rows')
 
-def shouldExit(row):
-  return row.lower() == 'exit'
+def createFile(totalSales, movieSeats, numRows, numSeats):
+  with open('upload.txt', 'w') as file:
+    file.write(getFormattedSeats(movieSeats, numRows, numSeats))
+    file.write("${:,.2f}".format(totalSales))
 
-def createFileAndUploadToS3(totalSales, movieSeats, numRows, numSeats):
-  # Create file
-  f = open("upload.txt", "w")
-  f.write(getFormattedSeats(movieSeats, numRows, numSeats))
-  f.write("${:,.2f}".format(totalSales))
-  f.close()
-
-  # Upload to S3
+def uploadToS3():  
   s3_client = boto3.client('s3')
   file = 'upload.txt'
   bucketName = 'siua-bucket'
   objectName = 'marty/movies/output.txt'
   s3_client.upload_file(file, bucketName, objectName)
+
+def shouldExit(row, totalSales, movieSeats, numRows, numSeats):
+  retval = row.lower() == 'exit'
+  if retval:
+      createFile(totalSales, movieSeats, numRows, numSeats)
+      uploadToS3()
+  return retval
 
 def main():
   totalSales = 0
@@ -58,12 +60,10 @@ def main():
     print(getFormattedSeats(movieSeats, numRows, numSeats))
     print("${:,.2f}".format(totalSales))
     row = input('Enter row number: ')
-    if shouldExit(row):
-      createFileAndUploadToS3(totalSales, movieSeats, numRows, numSeats)
+    if shouldExit(row, totalSales, movieSeats, numRows, numSeats):
       break
     col = input('Enter seat number: ')
-    if shouldExit(col):
-      createFileAndUploadToS3(totalSales, movieSeats, numRows, numSeats)
+    if shouldExit(row, totalSales, movieSeats, numRows, numSeats):
       break
 
     row = int(row)

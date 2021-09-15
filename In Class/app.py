@@ -379,8 +379,9 @@ l = list(map(transformPerson, peopleList))
 #   print(f"i is: {i}")
 
 
-seatList = ['0000000000','0000000000', '0000000000']
-# seatList[0][1:] = 'X'
-movieSeats = 'X000000000\nX000000000\nX000000000\nCost: $6.00'
-# s = s[1] = 'X'
-print(s)
+# seatList = ['0000000000','0000000000', '0000000000']
+# # seatList[0][1:] = 'X'
+# movieSeats = 'X000000000\nX000000000\nX000000000\nCost: $6.00'
+# # s = s[1] = 'X'
+# print(s)
+
