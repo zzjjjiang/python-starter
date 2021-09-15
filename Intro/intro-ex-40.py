@@ -48,7 +48,7 @@ def uploadToS3():
   s3_client.upload_file(file, BUCKET_NAME, objectName)
 
 def shouldExit(row, totalSales, movieSeats, numRows, numSeats):
-  ''' If we should exit, create file and upload to S3.'''
+  ''' Returns True if we should exit, otherwise returns False.  If True, create a file and upload it to S3.'''
   retval = row.lower() == 'exit'
   if retval:
     createFile(totalSales, movieSeats, numRows, numSeats)
