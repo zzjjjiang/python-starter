@@ -7,6 +7,8 @@
 
 import boto3
 
+BUCKET_NAME = 'siua-bucket'
+
 def getFormattedSeats(movieSeats, numRows, numSeats):
   retval = ''
   for rowIndex in range(numRows):
@@ -42,9 +44,8 @@ def createFile(totalSales, movieSeats, numRows, numSeats):
 def uploadToS3():  
   s3_client = boto3.client('s3')
   file = 'upload.txt'
-  bucketName = 'siua-bucket'
   objectName = 'marty/movies/output.txt'
-  s3_client.upload_file(file, bucketName, objectName)
+  s3_client.upload_file(file, BUCKET_NAME, objectName)
 
 def shouldExit(row, totalSales, movieSeats, numRows, numSeats):
   ''' If we should exit, create file and upload to S3.'''
