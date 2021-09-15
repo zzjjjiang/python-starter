@@ -62,7 +62,7 @@ def main():
       createFileUploadToS3(totalSales, movieSeats, numRows, numSeats)
       break
     col = input('Enter seat number: ')
-    if shouldExit(row):
+    if shouldExit(col):
       createFileUploadToS3(totalSales, movieSeats, numRows, numSeats)
       break
 
