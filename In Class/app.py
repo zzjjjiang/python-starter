@@ -385,3 +385,6 @@ l = list(map(transformPerson, peopleList))
 # # s = s[1] = 'X'
 # print(s)
 
+s = 'test'
+ss = s[:-1]
+print(ss)

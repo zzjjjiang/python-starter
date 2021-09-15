@@ -15,6 +15,7 @@ def getFormattedSeats(movieSeats, numRows, numSeats):
       seatIndex = (rowIndex * numSeats) + colIndex
       row += movieSeats[seatIndex]
     retval += (row + '\n')
+  retval = retval[:-1] # Lop off the last \n
   return retval
 
 def validateInput(row, seat, numRows, numSeats):
@@ -36,7 +37,7 @@ def validateInput(row, seat, numRows, numSeats):
 def createFile(totalSales, movieSeats, numRows, numSeats):
   with open('upload.txt', 'w') as file: # Python context manager.
     file.write(getFormattedSeats(movieSeats, numRows, numSeats))
-    file.write("${:,.2f}".format(totalSales))
+    file.write("\n${:,.2f}".format(totalSales))
 
 def uploadToS3():  
   s3_client = boto3.client('s3')
