@@ -15,7 +15,7 @@ def getFormattedSeats(movieSeats, numRows, numSeats):
       seatIndex = (rowIndex * numSeats) + colIndex
       row += movieSeats[seatIndex]
     retval += (row + '\n')
-  retval = retval[:-1] # Lop off the last \n
+  retval = retval[:-1] # Lop off the last newline.
   return retval
 
 def validateInput(row, seat, numRows, numSeats):
