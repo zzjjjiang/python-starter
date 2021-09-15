@@ -48,8 +48,8 @@ def uploadToS3():
 def shouldExit(row, totalSales, movieSeats, numRows, numSeats):
   retval = row.lower() == 'exit'
   if retval:
-      createFile(totalSales, movieSeats, numRows, numSeats)
-      uploadToS3()
+    createFile(totalSales, movieSeats, numRows, numSeats)
+    uploadToS3()
   return retval
 
 def main():
