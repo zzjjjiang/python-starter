@@ -35,7 +35,7 @@ def validateInput(row, seat, numRows, numSeats):
     raise Exception('ERROR: Too many rows and seats')
 
 def createFile(totalSales, movieSeats, numRows, numSeats):
-  with open('upload.txt', 'w') as file: # Python context manager.
+  with open('upload.txt', 'w') as file: # with ==> context manager
     file.write(getFormattedSeats(movieSeats, numRows, numSeats))
     file.write("\n${:,.2f}".format(totalSales))
 
