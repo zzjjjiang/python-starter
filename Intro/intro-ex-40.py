@@ -34,7 +34,7 @@ def validateInput(row, seat, numRows, numSeats):
 def shouldExit(row):
   return row.lower() == 'exit'
 
-def createFileUploadToS3(totalSales, movieSeats, numRows, numSeats):
+def createFileAndUploadToS3(totalSales, movieSeats, numRows, numSeats):
   # Create file
   f = open("upload.txt", "w")
   f.write(getFormattedSeats(movieSeats, numRows, numSeats))
@@ -59,11 +59,11 @@ def main():
     print("${:,.2f}".format(totalSales))
     row = input('Enter row number: ')
     if shouldExit(row):
-      createFileUploadToS3(totalSales, movieSeats, numRows, numSeats)
+      createFileAndUploadToS3(totalSales, movieSeats, numRows, numSeats)
       break
     col = input('Enter seat number: ')
     if shouldExit(col):
-      createFileUploadToS3(totalSales, movieSeats, numRows, numSeats)
+      createFileAndUploadToS3(totalSales, movieSeats, numRows, numSeats)
       break
 
     row = int(row)
