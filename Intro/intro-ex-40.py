@@ -66,7 +66,7 @@ def main():
     if shouldExit(row, totalSales, movieSeats, numRows, numSeats):
       break
     col = input('Enter seat number: ')
-    if shouldExit(row, totalSales, movieSeats, numRows, numSeats):
+    if shouldExit(col, totalSales, movieSeats, numRows, numSeats):
       break
 
     row = int(row)
