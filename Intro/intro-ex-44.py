@@ -11,7 +11,7 @@ def reverseName(name):
   retval = f"{array[1]} {array[0]}"
   return retval
 
-def parsePIDSegments(filename):
+def parsePIDSegmentsFromFile(filename):
   retval = []
   f = open(filename, "r")
   lines = f.readlines()
@@ -28,7 +28,7 @@ def main():
     '333-33-3333' : 'Tim McCoy'
   }
 
-  pidSegmentList = parsePIDSegments("oru-r01.hl7")
+  pidSegmentList = parsePIDSegmentsFromFile("oru-r01.hl7")
 
   # Build name tuple list from PID Segments.
   nameTupleList = []

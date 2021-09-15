@@ -385,6 +385,6 @@ l = list(map(transformPerson, peopleList))
 # # s = s[1] = 'X'
 # print(s)
 
-s = 'test'
-ss = s[:-1]
-print(ss)
+f = open("/Users/martinburolla/demofile3.txt", "w")
+f.write("Woops! I have deleted the content!")
+f.close()
