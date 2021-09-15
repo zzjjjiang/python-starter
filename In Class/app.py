@@ -373,7 +373,14 @@ l = list(map(transformPerson, peopleList))
 # myList.remove(2)
 # print(myList)
 
-for i in range(3):
-  for k in range(2):
-    print(f"k is: {k}")
-  print(f"i is: {i}")
+# for i in range(3):
+#   for k in range(2):
+#     print(f"k is: {k}")
+#   print(f"i is: {i}")
+
+
+seatList = ['0000000000','0000000000', '0000000000']
+# seatList[0][1:] = 'X'
+movieSeats = 'X000000000\nX000000000\nX000000000\nCost: $6.00'
+# s = s[1] = 'X'
+print(s)
