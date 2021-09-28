@@ -1013,3 +1013,12 @@ Use S3? No
 222-22-2222 SUE ANDERSON: OK
 333-33-3333 TIM MCOY: No Match!!!
 ```
+
+
+# Ex 45. PyCopy
+Create a python program that works like robocopy.  Robocopy only copies files that have been updated, in other words the source and destination files are different.  PyCopy will essentially sync the source and destination directories not touching files that are the same.  If a file exists in the destination directory, but does not exist in the source, the file is deleted in the destination directory.  
+
+Example:
+```
+pycopy.py c:\source c:\destination
+```
