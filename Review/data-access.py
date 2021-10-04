@@ -21,10 +21,18 @@ def createConnection():
     database = DB)
   return retval
 
+def getPerson(personId):
+  retval = []
+  conn = createConnection()
+  with conn.cursor(pymysql.cursors.DictCursor) as cursor:
+    cursor.execute('select * from person where id = %s', (personId))
+  conn.commit()
+  retval = cursor.fetchone()
+  return retval
+
 def getPeople():
   retval = []
   conn = createConnection()
-  # Querying...
   with conn.cursor(pymysql.cursors.DictCursor) as cursor:
     cursor.execute('select * from person')
   conn.commit()
@@ -48,16 +56,18 @@ def updatePerson(id, name):
 
 def main():
   # INSERT
-  id = insertPerson('Billy')
-  print(f"Person Id: {id}.")
+  # id = insertPerson('Billy')
+  # print(f"Person Id: {id}.")
 
   # SELECT
   # people = getPeople()
   # print(people)
 
   # UPDATE
-  # updatePerson(1, 'Joey Jo Jo')
-  # print(id)
+  # updatePerson(1, 'Joey Jr.') # Do the update
+  # person = getPerson(1) # Did the update work?
+  # print(person)
+  pass
 
 if __name__ == "__main__":  
   main()
