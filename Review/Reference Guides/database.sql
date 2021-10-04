@@ -68,7 +68,7 @@ create view vwPatientClaims as
     join claim c on p.patient_id = c.patient_id
   group by p.name
 
--- Use the view.
+-- Use the view to return three lowest claims.
 select * from vwPatientClaims order by total_claims limit 3; -- Return top 3.
 
 -- Find the patients that do not have doctors.
@@ -88,3 +88,11 @@ where d.patient_id is null;
 
 /* PROTIP: USE THE LEFT JOIN AS YOUR GOTO DIRECTION. */
 
+-- Find the patients who have doctors and active claims.
+select 
+  distinct(p.name)
+from
+  patient p 
+  join doctor d on p.patient_id = d.patient_id
+  join claim c on p.patient_id = c.patient_id
+where c.is_active = true
