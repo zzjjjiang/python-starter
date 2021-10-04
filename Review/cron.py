@@ -9,7 +9,7 @@
 from time import sleep
 from datetime import datetime
 
-INTERVAL_SECONDS = 2 # The number of seconds to sleep.
+INTERVAL_SECONDS = 2 # Number of seconds to sleep.
 
 def businessLogic():
   # Do some real work here...
