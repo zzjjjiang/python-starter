@@ -101,7 +101,7 @@ select
 from patient p 
   left join doctor d on p.patient_id = d.patient_id
 where 
-  d.patient_id is null;
+  d.doctor_id is null;
 
 -- A right join returns nulls from the left table.
 select 
@@ -109,7 +109,7 @@ select
 from doctor d
   right join patient p on p.patient_id = d.patient_id
 where 
-  d.patient_id is null;
+  d.doctor_id is null;
 
 /* PROTIP: USE THE LEFT JOIN AS YOUR GOTO DIRECTION. */
 
