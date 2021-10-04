@@ -23,6 +23,19 @@ CREATE TABLE doctor (
   PRIMARY KEY (doctor_id)
 );
 
+CREATE TABLE bank (
+  bank_id int(11) NOT NULL,
+  name varchar(45) DEFAULT NULL,
+  PRIMARY KEY (bank_id)
+);
+
+CREATE TABLE patient_bank (
+  patient_bank_id int(11) NOT NULL AUTO_INCREMENT,
+  patient_id int(11) DEFAULT NULL,
+  bank_id int(11) DEFAULT NULL,
+  PRIMARY KEY (patient_bank_id)
+);
+
 
 -- DML
 INSERT INTO patient (name) VALUES ('marty');
@@ -46,6 +59,16 @@ insert into claim (person_id, amount) values (5, 23);
 insert into doctor (patient_id, doc_name) values (1, 'Doc Brown');
 insert into doctor (patient_id, doc_name) values (2, 'Doc Brown');
 
+insert into bank values (1, 'Bank of America');
+insert into bank values (2, 'Key Bank');
+insert into bank values (3, 'Union Bank');
+insert into bank values (4, 'ESL');
+
+insert into patient_bank (patient_id, bank_id) values (1,1);
+insert into patient_bank (patient_id, bank_id) values (2,1);
+insert into patient_bank (patient_id, bank_id) values (3,1);
+insert into patient_bank (patient_id, bank_id) values (4,2);
+insert into patient_bank (patient_id, bank_id) values (5,2);
 
 -- Find the total amount of claims for all patients.
 select sum(amount) from claim;
@@ -77,14 +100,16 @@ select
   p.name
 from patient p 
   left join doctor d on p.patient_id = d.patient_id
-where d.patient_id is null;
+where 
+  d.patient_id is null;
 
 -- A right join returns nulls from the left table.
 select 
   p.name
 from doctor d
   right join patient p on p.patient_id = d.patient_id
-where d.patient_id is null;
+where 
+  d.patient_id is null;
 
 /* PROTIP: USE THE LEFT JOIN AS YOUR GOTO DIRECTION. */
 
@@ -95,4 +120,15 @@ from
   patient p 
   join doctor d on p.patient_id = d.patient_id
   join claim c on p.patient_id = c.patient_id
-where c.is_active = true
+where 
+  c.is_active = true
+
+-- Find the names of the patients that belong to Bank of America.
+select 
+  p.name
+from 
+  patient p 
+join patient_bank pb on p.patient_id = pb.patient_id
+join bank b on b.bank_id = pb.bank_id
+where 
+  b.name = 'Bank of America'
