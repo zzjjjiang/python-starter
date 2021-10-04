@@ -1,6 +1,5 @@
 # Week in Review
-This area containts two diretories:
-- Notes
+This area contains the following diretories:
 - Example Code
+- Notes
 - Reference Guides
-
