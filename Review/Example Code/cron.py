@@ -19,7 +19,7 @@ def main():
   while True:
     businessLogic()
     timestamp = datetime.today().strftime('%m/%d/%Y %I:%M:%S %p')
-    print(f'Last run: {timestamp}')
+    print(f'Last run: {timestamp}.')
     sleep(INTERVAL_SECONDS)
 
 if __name__ == "__main__":  
