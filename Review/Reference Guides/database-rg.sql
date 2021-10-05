@@ -2,7 +2,7 @@
  * Handy queries for the sia db
  */
 
--- DDL
+-- DDL: Entity tables...
 CREATE TABLE claim (
      claim_id INT NOT NULL AUTO_INCREMENT,
      person_id INT NOT NULL,
@@ -29,13 +29,13 @@ CREATE TABLE bank (
   PRIMARY KEY (bank_id)
 );
 
+-- DDL: Relationship tables...
 CREATE TABLE patient_bank (
   patient_bank_id int(11) NOT NULL AUTO_INCREMENT,
   patient_id int(11) DEFAULT NULL,
   bank_id int(11) DEFAULT NULL,
   PRIMARY KEY (patient_bank_id)
 );
-
 
 -- DML
 INSERT INTO patient (name) VALUES ('marty');
@@ -82,7 +82,7 @@ from patient p
 group by p.name
 order by p.patient_id;
 
--- Create view (A view is an abstraction of one or more tables).
+-- Create view from: "Find the total amount of claims for EACH patient, ordered by patient id" query. (A view is an abstraction of one or more tables).
 create view vwPatientClaims as
   select 
     p.name,
