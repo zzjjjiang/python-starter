@@ -65,7 +65,7 @@ def insertDemo(firstName, lastName):
 
 def main():
   # INSERT
-  #id = insertDemo('joe', 'green')
+  # id = insertDemo('joe', 'green')
   # print(id)
 
   # id = insertPerson('Billy')
@@ -76,9 +76,9 @@ def main():
   # print(people)
 
   # UPDATE
-  updatePerson(1, 'Joey Jr.') # Do the update
-  person = getPerson(1) # Did the update work?
-  print(person)
+  # updatePerson(1, 'Joey Jr.') # Do the update
+  # person = getPerson(1) # Did the update work?
+  # print(person)
   pass
 
 if __name__ == "__main__":  
