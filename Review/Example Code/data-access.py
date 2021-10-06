@@ -27,7 +27,7 @@ def getPerson(personId):
   with conn.cursor(pymysql.cursors.DictCursor) as cursor:
     cursor.execute('select * from person where id = %s', (personId)) # personId is substituted for %s.
     conn.commit()
-    retval = cursor.fetchone()
+    retval = cursor.fetchone() # <== Return only ONE result.
   return retval
 
 def getPeople():
@@ -36,7 +36,7 @@ def getPeople():
   with conn.cursor(pymysql.cursors.DictCursor) as cursor:
     cursor.execute('select * from person')
     conn.commit()
-    retval = cursor.fetchall()
+    retval = cursor.fetchall() #<== Return all rows from the query.
   return retval
 
 def insertPerson(personName):
@@ -57,16 +57,16 @@ def updatePerson(id, name): # Note the order of id and name here doesn't matter.
 def insertDemo(firstName, lastName):
   retval = 0
   conn = createConnection()
-  with conn.cursor() as cursor:
+  with conn.cursor() as cursor: # "with" means we are using Python's context manager, so we don't have to close things.
     cursor.execute("insert into demo (firstname, lastname) values (%s, %s)", (firstName, lastName))
-    retval = cursor.lastrowid
-    conn.commit()
-  return retval
+    retval = cursor.lastrowid # Get the ID of the row we just inserted.
+    conn.commit() # Force the DB accept our change.
+  return retval # Return the ID we just inserted.
 
 def main():
   # INSERT
-  # id = insertDemo('joe', 'green')
-  # print(id)
+  id = insertDemo('Marty', 'Burolla')
+  print(id)
 
   # id = insertPerson('Billy')
   # print(f"Person Id: {id}.")
