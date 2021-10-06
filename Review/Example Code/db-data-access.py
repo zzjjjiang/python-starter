@@ -1,8 +1,8 @@
 #
-# File: app.py
+# File: db-data-access.py
 # Auth: Martin Burolla
 # Date: 10/4/2021
-# Desc: Data access
+# Desc: Wraps Aurora DB with data access code.
 #
 
 import pymysql # <== need to install dependencies: pip install pymysql
@@ -65,8 +65,8 @@ def insertDemo(firstName, lastName):
 
 def main():
   # INSERT
-  id = insertDemo('Marty', 'Burolla')
-  print(id)
+  # id = insertDemo('Marty', 'Burolla')
+  # print(id)
 
   # id = insertPerson('Billy')
   # print(f"Person Id: {id}.")

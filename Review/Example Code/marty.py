@@ -75,15 +75,17 @@ def insertMarty(guitarName, carName, computerName):
 
 def main():
   # INSERT
-  id = insertMarty('Suhr', 'Mazda', 'MacOS')
-  print(id)
+  # id = insertMarty('Carvin', 'Toyota', 'Linux')
+  # print(id)
 
   # id = insertPerson('Billy')
   # print(f"Person Id: {id}.")
 
   # SELECT
-  # people = getPeople()
-  # print(people)
+  people = getPeople()
+  for p in people: 
+    print(p)
+
 
   # UPDATE
   # updatePerson(1, 'Joey Jr.') # Do the update
