@@ -5,7 +5,7 @@
 # Desc: Data access
 #
 
-import pymysql
+import pymysql # <== need to install dependencies: pip install pymysql
 
 def createConnection():
   retval = None  
@@ -27,7 +27,7 @@ def getPerson(personId):
   with conn.cursor(pymysql.cursors.DictCursor) as cursor:
     cursor.execute('select * from person where id = %s', (personId)) # personId is substituted for %s.
     conn.commit()
-  retval = cursor.fetchone()
+    retval = cursor.fetchone()
   return retval
 
 def getPeople():
@@ -36,7 +36,7 @@ def getPeople():
   with conn.cursor(pymysql.cursors.DictCursor) as cursor:
     cursor.execute('select * from person')
     conn.commit()
-  retval = cursor.fetchall()
+    retval = cursor.fetchall()
   return retval
 
 def insertPerson(personName):
@@ -65,7 +65,7 @@ def insertDemo(firstName, lastName):
 
 def main():
   # INSERT
-  # id = insertDemo('joe', 'green')
+  #id = insertDemo('joe', 'green')
   # print(id)
 
   # id = insertPerson('Billy')
