@@ -10,7 +10,6 @@ import boto3
 from time import sleep
 from datetime import datetime
 
-
 def main():
   client = boto3.client('s3')
 

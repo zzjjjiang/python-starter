@@ -5,6 +5,8 @@
 # Desc: Data access
 #
 
+from time import sleep
+from datetime import datetime
 import pymysql # <== need to install dependencies: pip install pymysql
 
 def createConnection():
@@ -25,7 +27,7 @@ def getPerson(personId):
   retval = []
   conn = createConnection()
   with conn.cursor(pymysql.cursors.DictCursor) as cursor:
-    cursor.execute('select * from person where id = %s', (personId)) # personId is substituted for %s.
+    cursor.execute('select * from person where id = %s;', (personId)) # personId is substituted for %s.
     conn.commit()
     retval = cursor.fetchone() # <== Return only ONE result.
   return retval
@@ -34,7 +36,7 @@ def getPeople():
   retval = []
   conn = createConnection()
   with conn.cursor(pymysql.cursors.DictCursor) as cursor:
-    cursor.execute('select * from person')
+    cursor.execute('select * from person;')
     conn.commit()
     retval = cursor.fetchall() #<== Return all rows from the query.
   return retval
@@ -43,7 +45,7 @@ def insertPerson(personName):
   retval = 0
   conn = createConnection()
   with conn.cursor() as cursor:
-    cursor.execute("insert into person (name) values (%s)", (personName)) # personName is substituted for %s.
+    cursor.execute("insert into person (name) values (%s);", (personName)) # personName is substituted for %s.
     retval = cursor.lastrowid
     conn.commit()
   return retval
@@ -58,7 +60,7 @@ def insertDemo(firstName, lastName):
   retval = 0
   conn = createConnection()
   with conn.cursor() as cursor: # "with" means we are using Python's context manager, so we don't have to close things.
-    cursor.execute("insert into demo (firstname, lastname) values (%s, %s)", (firstName, lastName))
+    cursor.execute("insert into demo (firstname, lastname) values (%s, %s);", (firstName, lastName))
     retval = cursor.lastrowid # Get the ID of the row we just inserted.
     conn.commit() # Force the DB accept our change.
   return retval # Return the ID we just inserted.
@@ -72,6 +74,33 @@ def insertMarty(guitarName, carName, computerName):
     conn.commit() 
   return retval 
 
+def getMarty():
+  retval = []
+  conn = createConnection()
+  with conn.cursor(pymysql.cursors.DictCursor) as cursor:
+    cursor.execute('select * from marty;')
+    conn.commit()
+    retval = cursor.fetchall()
+  return retval
+
+def getPatients(bankName):
+  retval = []
+  sql = '''
+    select 
+      p.name
+    from 
+      patient p 
+      join patient_bank pb on p.patient_id = pb.patient_id
+      join bank b on b.bank_id = pb.bank_id
+    where 
+      b.name = %s;
+  '''
+  conn = createConnection()
+  with conn.cursor(pymysql.cursors.DictCursor) as cursor:
+    cursor.execute(sql, (bankName))
+    conn.commit()
+    retval = cursor.fetchall()
+  return retval
 
 def main():
   # INSERT
@@ -81,14 +110,27 @@ def main():
   # id = insertPerson('Billy')
   # print(f"Person Id: {id}.")
 
+  # martyRows = getMarty()
+  # print(martyRows)
+
+  bofaList = getPatients(bankName = 'Bank of America') # Named parameter.
+  print(bofaList)
+
   # SELECT
-  peopleList = getPeople()
-  print(peopleList)
-  
+  while True:
+    timestamp = datetime.today().strftime('%m/%d/%Y %I:%M:%S %p')
+    pl = getPeople()
+    print(pl)
+    if len(pl) >= 5:
+      print('ALERT!!!!!!!! TABLE IS TOO LARGE!!!')
+    print(f'*** Last run: {timestamp}. ***')
+    sleep(5)
+
+
   # for p in peopleList: 
   #   print(p)
   
-  #l1 = list(filter(lambda p : p['name'] == 'Billy', peopleList))
+  #l1 = list(filter(lambda p : p['name'] == 'Batman', peopleList))
   #l2 = list(map(lambda x : x['name'], peopleList))
   #print(l2)
 

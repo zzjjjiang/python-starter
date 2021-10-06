@@ -27,7 +27,7 @@ def getPerson(personId):
   with conn.cursor(pymysql.cursors.DictCursor) as cursor:
     cursor.execute('select * from person where id = %s', (personId)) # personId is substituted for %s.
     conn.commit()
-    retval = cursor.fetchone() # <== Return only ONE result.
+    retval = cursor.fetchone() # <== Return only ONE result row.
   return retval
 
 def getPeople():
@@ -36,7 +36,7 @@ def getPeople():
   with conn.cursor(pymysql.cursors.DictCursor) as cursor:
     cursor.execute('select * from person')
     conn.commit()
-    retval = cursor.fetchall() #<== Return all rows from the query.
+    retval = cursor.fetchall() # <== Return ALL ROWS from the query.
   return retval
 
 def insertPerson(personName):
