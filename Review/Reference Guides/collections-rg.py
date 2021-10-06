@@ -1,8 +1,8 @@
 #
-# File: creating.py
+# File: collections-rg.py
 # Auth: Martin Burolla
 # Date: 8/31/2021
-# Desc: Creating Reference Guide (CRG)
+# Desc: Collections Reference Guide (CRG)
 #
 
 ################################################################
@@ -65,10 +65,10 @@ print(tupleList[0][2]) # Returns 3
 
 # Note: Zero is first position.
 
-colors = ['red', 'green', 'blue'] # This is a List(Array) of colors
+colors = ['red', 'green', 'blue'] # This is a List (Array) of colors
 #print(colors[0])
 
-peopleList = [ # Is a List of dictionary object.
+peopleList = [ # peopleList is a List of dictionary objects.
   { 'name' : 'fred', 'age' : 20, 'weight': 160, 'sex' : 'male', 'id' : 1 },
   { 'name' : 'mary', 'age' : 10, 'weight': 130, 'sex' : 'male', 'id' : 2 },
   { 'name' : 'sue', 'age' : 15, 'weight': 120, 'sex' : 'female', 'id' : 3 },

@@ -82,10 +82,14 @@ def main():
   # print(f"Person Id: {id}.")
 
   # SELECT
-  people = getPeople()
-  for p in people: 
-    print(p)
+  peopleList = getPeople()
+  # for p in peopleList: 
+  #   print(p)
+  
+  l1 = list(filter(lambda p : p['name'] == 'Billy', peopleList))
+  l2 = list(map(lambda x : x['name'], peopleList))
 
+  print(l2)
 
   # UPDATE
   # updatePerson(1, 'Joey Jr.') # Do the update

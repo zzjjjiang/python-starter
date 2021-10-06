@@ -1,5 +1,5 @@
 #
-# File: tfrg.py
+# File: truthy-falsey-rg.py
 # Auth: Martin Burolla
 # Date: 9/2/2021
 # Desc: Truthy-Falsy Short-Circuiting Reference Guide (TFSCRG)

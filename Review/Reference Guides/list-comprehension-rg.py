@@ -1,5 +1,5 @@
 #
-# File: lcrg.py
+# File: list-comprehension-rg.py
 # Auth: Martin Burolla
 # Date: 8/10/2021
 # Desc: List Comprehension Reference Guide (LCRG)
