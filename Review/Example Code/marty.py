@@ -83,13 +83,14 @@ def main():
 
   # SELECT
   peopleList = getPeople()
+  print(peopleList)
+  
   # for p in peopleList: 
   #   print(p)
   
-  l1 = list(filter(lambda p : p['name'] == 'Billy', peopleList))
-  l2 = list(map(lambda x : x['name'], peopleList))
-
-  print(l2)
+  #l1 = list(filter(lambda p : p['name'] == 'Billy', peopleList))
+  #l2 = list(map(lambda x : x['name'], peopleList))
+  #print(l2)
 
   # UPDATE
   # updatePerson(1, 'Joey Jr.') # Do the update

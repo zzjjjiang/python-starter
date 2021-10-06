@@ -1,5 +1,8 @@
 /**
- * Handy queries for the sia db
+ * File: database-rg.sql
+ * Auth: Martin Burolla
+ * Date: 10/6/2021
+ * Desc: DB reference queries.
  */
 
 -- DDL: Entity tables...
