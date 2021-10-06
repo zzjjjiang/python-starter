@@ -113,8 +113,11 @@ def main():
   # martyRows = getMarty()
   # print(martyRows)
 
-  bofaList = getPatients(bankName = 'Bank of America') # Named parameter.
-  print(bofaList)
+  # bofaList = getPatients(bankName = 'Bank of America') # Named parameter.
+  # print(bofaList)
+
+  
+
 
   # SELECT
   while True:
@@ -127,8 +130,6 @@ def main():
     sleep(5)
 
 
-  # for p in peopleList: 
-  #   print(p)
   
   #l1 = list(filter(lambda p : p['name'] == 'Batman', peopleList))
   #l2 = list(map(lambda x : x['name'], peopleList))
