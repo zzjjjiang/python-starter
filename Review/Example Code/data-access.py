@@ -26,7 +26,7 @@ def getPerson(personId):
   conn = createConnection()
   with conn.cursor(pymysql.cursors.DictCursor) as cursor:
     cursor.execute('select * from person where id = %s', (personId)) # personId is substituted for %s.
-  conn.commit()
+    conn.commit()
   retval = cursor.fetchone()
   return retval
 
@@ -35,7 +35,7 @@ def getPeople():
   conn = createConnection()
   with conn.cursor(pymysql.cursors.DictCursor) as cursor:
     cursor.execute('select * from person')
-  conn.commit()
+    conn.commit()
   retval = cursor.fetchall()
   return retval
 
@@ -45,17 +45,29 @@ def insertPerson(personName):
   with conn.cursor() as cursor:
     cursor.execute("insert into person (name) values (%s)", (personName)) # personName is substituted for %s.
     retval = cursor.lastrowid
-  conn.commit()
+    conn.commit()
   return retval
 
 def updatePerson(id, name): # Note the order of id and name here doesn't matter.
   conn = createConnection()
   with conn.cursor() as cursor:
     cursor.execute("update person set name = %s where id = %s;", (name, id)) # name, and id is substituted name and id, the order of name and id matters here.
-  conn.commit()
+    conn.commit()
+
+def insertDemo(firstName, lastName):
+  retval = 0
+  conn = createConnection()
+  with conn.cursor() as cursor:
+    cursor.execute("insert into demo (firstname, lastname) values (%s, %s)", (firstName, lastName))
+    retval = cursor.lastrowid
+    conn.commit()
+  return retval
 
 def main():
   # INSERT
+  # id = insertDemo('joe', 'green')
+  # print(id)
+
   # id = insertPerson('Billy')
   # print(f"Person Id: {id}.")
 
@@ -64,9 +76,9 @@ def main():
   # print(people)
 
   # UPDATE
-  # updatePerson(1, 'Joey Jr.') # Do the update
-  # person = getPerson(1) # Did the update work?
-  # print(person)
+  updatePerson(1, 'Joey Jr.') # Do the update
+  person = getPerson(1) # Did the update work?
+  print(person)
   pass
 
 if __name__ == "__main__":  
