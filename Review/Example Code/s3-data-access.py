@@ -2,12 +2,11 @@
 # File: s3-data-access.py
 # Auth: Martin Buroll
 # Date: 10/6/2021
-# Desc: Wraps S3
+# Desc: Uploads data in memory to S3.
 #
 
 import boto3 # <== Need this to upload to S3.
 
-from time import sleep
 from datetime import datetime
 
 def createFileS3(customerList, fileHeader, bucketName, keyPath):
