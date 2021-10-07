@@ -116,17 +116,13 @@ def main():
   # bofaList = getPatients(bankName = 'Bank of America') # Named parameter.
   # print(bofaList)
 
-  
-  # age = 11
-  # if age <=10:
-  #   print('young')
-  # elif age > 10 and age <= 20:
-  #   print('medium')
-  # elif age > 20:
-  #   print('old')
+  age = 51
+  name = 'Marty'
 
-  
-
+  myString = f'My name is: {name} my age is: {age}.'    # String interpolation: Injecting variables into our string.
+  myString2 = f'My name is: {name} \nMy age is: {age}.' # \ is an escape character and it allows us to do special things like new lines, and tabs.
+  myString3 = f'My name is: {name} \tMy age is: {age}.' 
+  print(myString2)
 
   # # SELECT
   # while True:
