@@ -24,9 +24,8 @@ def createFileS3(customerList, fileHeader, bucketName, keyPath):
   return retval
 
 def main():
-  
   # Our customer IDs.
-  billableCustomersList = ['123', '456', '789'] # Square brackets indicate a list.
+  billableCustomersList = ['123', '456', '789'] # Square brackets indicate that this is a list.
 
   # Store a file from our customer list into S3.
   createFileS3(customerList = billableCustomersList, fileHeader = '*** Marty was here ***', bucketName = 'siua-bucket', keyPath = 'demo/bill_these_customers.txt' )
