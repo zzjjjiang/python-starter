@@ -28,7 +28,7 @@ def main():
   billableCustomersList = ['123', '456', '789'] # Square brackets indicate that this is a list.
 
   # Store a file from our customer list into S3.
-  createFileS3(list = billableCustomersList, fileHeader = '*** Marty was here ***', bucketName = 'siua-bucket', keyPath = 'demo/bill_these_customers.txt' )
+  createFileS3(list = billableCustomersList, fileHeader = '*** Marty was here ***', bucketName = 'siua-bucket', keyPath = 'demo/bill_these_customers.txt')
 
 
 if __name__ == "__main__":  

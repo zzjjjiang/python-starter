@@ -116,13 +116,13 @@ def main():
   # bofaList = getPatients(bankName = 'Bank of America') # Named parameter.
   # print(bofaList)
 
-  age = 51
-  name = 'Marty'
+  # age = 51
+  # name = 'Marty'
 
-  myString = f'My name is: {name} my age is: {age}.'    # String interpolation: Injecting variables into our string.
-  myString2 = f'My name is: {name} \nMy age is: {age}.' # \ is an escape character and it allows us to do special things like new lines, and tabs.
-  myString3 = f'My name is: {name} \tMy age is: {age}.' 
-  print(myString2)
+  # myString = f'My name is: {name} my age is: {age}.'    # String interpolation: Injecting variables into our string.
+  # myString2 = f'My name is: {name} \nMy age is: {age}.' # \ is an escape character and it allows us to do special things like new lines, and tabs.
+  # myString3 = f'My name is: {name} \tMy age is: {age}.' 
+  # print(myString2)
 
   # # SELECT
   # while True:
@@ -133,8 +133,6 @@ def main():
   #     print('ALERT!!!!!!!! TABLE IS TOO LARGE!!!')
   #   print(f'*** Last run: {timestamp}. ***')
   #   sleep(5)
-
-
   
   #l1 = list(filter(lambda p : p['name'] == 'Batman', peopleList))
   #l2 = list(map(lambda x : x['name'], peopleList))
@@ -144,6 +142,10 @@ def main():
   # updatePerson(1, 'Joey Jr.') # Do the update
   # person = getPerson(1) # Did the update work?
   # print(person)
+
+  # Split
+  myString = input('Enter your name and age separated by a comma: ')
+  print(myString)
   pass
 
 if __name__ == "__main__":  
