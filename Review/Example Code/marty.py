@@ -117,17 +117,26 @@ def main():
   # print(bofaList)
 
   
+  # age = 11
+  # if age <=10:
+  #   print('young')
+  # elif age > 10 and age <= 20:
+  #   print('medium')
+  # elif age > 20:
+  #   print('old')
+
+  
 
 
-  # SELECT
-  while True:
-    timestamp = datetime.today().strftime('%m/%d/%Y %I:%M:%S %p')
-    pl = getPeople()
-    print(pl)
-    if len(pl) >= 5:
-      print('ALERT!!!!!!!! TABLE IS TOO LARGE!!!')
-    print(f'*** Last run: {timestamp}. ***')
-    sleep(5)
+  # # SELECT
+  # while True:
+  #   timestamp = datetime.today().strftime('%m/%d/%Y %I:%M:%S %p')
+  #   pl = getPeople()
+  #   print(pl)
+  #   if len(pl) >= 5:
+  #     print('ALERT!!!!!!!! TABLE IS TOO LARGE!!!')
+  #   print(f'*** Last run: {timestamp}. ***')
+  #   sleep(5)
 
 
   

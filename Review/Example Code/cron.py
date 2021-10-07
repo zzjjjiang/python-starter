@@ -2,14 +2,14 @@
 # File: cron.py
 # Auth: Martin Burolla
 # Date: 10/4/2021
-# Desc: Task template
+# Desc: CRPON template boilerplate code
 #       Runs forever until Control+C is entered on the console.
 #
 
 from time import sleep
 from datetime import datetime
 
-INTERVAL_SECONDS = 2 # Number of seconds to sleep.
+INTERVAL_SECONDS = 10 # Number of seconds to sleep.
 
 def businessLogic():
   # Do some real work here...
