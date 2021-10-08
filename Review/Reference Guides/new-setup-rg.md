@@ -8,4 +8,4 @@
  - TestExplorer UI
  - Docker
 - Install MySqlWorkbench, client tools only
-
+- Install AWS CLI: secret key (short one)/access key(long one)
