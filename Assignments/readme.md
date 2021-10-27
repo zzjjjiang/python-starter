@@ -1,5 +1,4 @@
-# Intro
-Beginner assignments.
+# Python Assignments.
 
 # Ex 1: Random number
 Create a program that creates a list of 10 random numbers and sums all the numbers.  The result is printed to the console.  The numbers in the list range from 0 - 100.  The program must use an f-string to display the output.
