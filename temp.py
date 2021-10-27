@@ -5,6 +5,10 @@
 # Desc: A temporary place to write python code.
 #
 
+import random
+
+
+
 def main():
 
     people_list = [
@@ -25,10 +29,18 @@ def main():
     #print(people_list)
 
     l = list(map(lambda p: {'age': p['age']}, people_list))
-    print(l);
+    print(l)
 
-    # l = list(map(lambda x : { 'short_name' : x['name'], 'new_age': x['age'] + 1 }, peopleList))
-    # l = sum(list(map(lambda x : x['age'], peopleList)))
+    foo()
+
+def foo():
+    my_list = []
+    for _ in range(0, 10):
+        my_list.append(random.randint(1, 100))
+    print(my_list)
+    # total = sum(my_list)
+    # print(f'The sum is: {total}')
+
 
 if __name__ == "__main__":
     main()
