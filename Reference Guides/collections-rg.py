@@ -2,7 +2,7 @@
 # File: collections-rg.py
 # Auth: Martin Burolla
 # Date: 8/31/2021
-# Desc: Collections Reference Guide (CRG)
+# Desc: Collections Reference Guide
 #
 
 ################################################################

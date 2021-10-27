@@ -2,16 +2,15 @@
 # File: list-comprehension-rg.py
 # Auth: Martin Burolla
 # Date: 8/10/2021
-# Desc: List Comprehension Reference Guide (LCRG)
+# Desc: List Comprehension Reference Guide
 #
 # Format: 
 #  [{REQUIRED: expression for each item} {REQUIRED: iteration} {OPTIONAL: if condition}]
 #  [Required: map()  Required: for items  Optional: filter()]
 #
 #
-# PROTIPs: 
-#   If you are filtering and mapping on a list, use a list comprehension 
-#   instead of using the filter() and map() functions.
+# PROTIP:
+#   If you are filtering and mapping a list, use a list comprehension instead of using the filter() and map() functions.
 #       
 
 people = [

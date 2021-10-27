@@ -2,20 +2,20 @@
 # File: truthy-falsey-rg.py
 # Auth: Martin Burolla
 # Date: 9/2/2021
-# Desc: Truthy-Falsy Short-Circuiting Reference Guide (TFSCRG)
+# Desc: Truthy-Falsy Short-Circuiting Reference Guide
+# Overview:
+#   Falsy:
+#     False
+#     None
+#     0
+#     ""
+#     ()
+#     []
+#     {}
+#   Everything else is truthy
 #
-# Falsy: 
-#   False    
-#   None    
-#   0    
-#   ""    
-#   ()    
-#   []     
-#   {}
-# Everything else is truthy
+# Reference: https://www.freecodecamp.org/news/truthy-and-falsy-values-in-python/
 #
-
-# https://www.freecodecamp.org/news/truthy-and-falsy-values-in-python/
 
 b1 = True
 b2 = False
