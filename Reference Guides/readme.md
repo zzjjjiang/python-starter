@@ -9,4 +9,3 @@ Handy references to Python code.
 - [Lambda Filter Map](lambda-filter-map-rg.py)
 - [List Comprehension](list-comprehension-rg.py)
 - [Truthy Falsey](truthy-falsey-rg.py)
-- 
