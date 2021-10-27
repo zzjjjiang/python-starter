@@ -52,13 +52,6 @@ tupleList.append((5,6,7)) # Appending a tuple to a list.
 #print(tupleList[1][2]) # Key Error
 print(tupleList[0][2]) # Returns 3
 
-#
-# File: selecting.py
-# Auth: Martin Burolla
-# Date: 8/31/2021
-# Desc: Selection Reference Guide (SRG)
-#
-
 # Collections:
 #  - List [] (AKA Arrays)  Selecting syntax is numerical: (e.g. list[2], list[4], etc)
 #  - Dictionary {} (AKA Object) Selecting syntax based off of the key: (e.g. dict['lol'])
