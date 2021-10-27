@@ -17,5 +17,5 @@ The if-statement contains an obvious error, where the repeat() function is accid
 
 
 # Contents
-- [Assignments](./assignments/readme.md)
+- [Assignments](./Assignments/readme.md)
 - 
