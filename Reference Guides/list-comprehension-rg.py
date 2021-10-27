@@ -6,28 +6,30 @@
 #
 # Format: 
 #  [{REQUIRED: expression for each item} {REQUIRED: iteration} {OPTIONAL: if condition}]
-#  [Required: map()  Required: for items  Optional: filter()]
-#
-#
+
 # PROTIP:
 #   If you are filtering and mapping a list, use a list comprehension instead of using the filter() and map() functions.
 #       
 
 people = [
-  { "firstname": "joe", "lastname" : "smith", "age": 30 },
-  { "firstname": "peter", "lastname" : "jones", "age": 40 },
-  { "firstname": "mary", "lastname" : "jane", "age" : 50 },
-  { "firstname": "sue", "lastname" : "anderson", "age" : 51 },
+  {"firstname": "joe", "lastname": "smith", "age": 30},
+  {"firstname": "peter", "lastname": "jones", "age": 40},
+  {"firstname": "mary", "lastname": "jane", "age": 50},
+  {"firstname": "sue", "lastname": "anderson", "age": 51},
 ]
 
-def formatName(p):
-  return f"{p['firstname'].upper()} {p['lastname'].upper()}"
 
+def format_name(p):
+    return f"{p['firstname'].upper()} {p['lastname'].upper()}"
+
+# Return a list that only contains the first names: ['joe', 'peter', 'mary', 'sue']
 l1 = [p['firstname'] for p in people]
-print(l1) # ['joe', 'peter', 'mary', 'sue']
+print(l1)
 
+# Return a list that only contains the firat names for people over 40: ['mary', 'sue']
 l2 = [p['firstname'] for p in people if p['age'] > 40]
-print(l2) # ['mary', 'sue']
+#  print(l2)
 
-l3 = [formatName(p) for p in people if p['age'] > 40]
-print(l3) # ['MARY JANE', 'SUE ANDERSON']
+# Return a list of captialized first names for people over 40: ['MARY JANE', 'SUE ANDERSON']
+l3 = [format_name(p) for p in people if p['age'] > 40]
+#  print(l3)
