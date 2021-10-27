@@ -6,6 +6,7 @@
 
 from datetime import date
 
+
 class Person: 
     
     #
@@ -13,14 +14,14 @@ class Person:
     #
 
     def __init__(self, name, age): 
-      self.name = name 
-      self.age = age
-      self.ssn = ''
-      self.__lookUpSSN()
+        self.name = name
+        self.age = age
+        self.ssn = ''
+        self.__lookUpSSN()
       
     @classmethod # Constructor overloading
     def fromBirthYear(cls, name, year): 
-      return cls(name, date.today().year - year) 
+        return cls(name, date.today().year - year)
       
     #
     # Public methods
@@ -31,21 +32,21 @@ class Person:
 
     @staticmethod
     def isAdult(age): 
-      return age > 18
+        return age > 18
 
     #
     # Private methods
     #
 
     def __lookUpSSN(self):
-      self.ssn = 'xxx-xxx-xxxx'
+        self.ssn = 'xxx-xxx-xxxx'
 
     #
     # Dunder
     #
 
     def __len__(self):
-      return len(self.name) 
+        return len(self.name)
 
     def __repr__(self):
-      return f'Person: {self.name, str(self.age)}'
+        return f'Person: {self.name, str(self.age)}'
