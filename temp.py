@@ -33,6 +33,7 @@ def main():
 
     foo()
 
+
 def foo():
     my_list = []
     for _ in range(0, 10):
