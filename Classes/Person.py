@@ -19,7 +19,7 @@ class Person:
         self.ssn = ''
         self.__lookUpSSN()
       
-    @classmethod # Constructor overloading
+    @classmethod  # Constructor overloading
     def fromBirthYear(cls, name, year): 
         return cls(name, date.today().year - year)
       
