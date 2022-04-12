@@ -4,6 +4,9 @@ Assignment repo that illustrates how to create Python applications.  Assignments
 # Videos
 [Python for Beginners - Learn Python (1h)](https://youtu.be/kqtD5dpn9C8)
 
+# Links
+[Python docs](https://docs.python.org/3.10/)
+
 # Contents
 - [Classes](./Classes)
 - [Data Access](./DataAccess)
@@ -11,9 +14,17 @@ Assignment repo that illustrates how to create Python applications.  Assignments
 - [Exceptions](./Exceptions)
 - [Functions](./Functions)
 - [AWS-SDK](./AWS-SDK)
-- [Reference Guides](./Reference Guides)
 - [Unit Testing](./UnitTest)
 - [Git](./Git)
+
+# Quick Reference Guides
+- [Data Structures (Collections)](./Reference-Guides/collections-rg.py)
+- [Database (DDL/DML)](./Reference-Guides/database-rg.sql)
+- [Functions-1](./Reference-Guides/functions1-rg.py)
+- [Functions-2](./Reference-Guides/functions2-rg.py)
+- [Lambda Filter Map](./Reference-Guides/lambda-filter-map-rg.py)
+- [List Comprehension](./Reference-Guides/list-comprehension-rg.py)
+- [Truthy Falsey](./Reference-Guides/truthy-falsey-rg.py)
 
 # Python
 Python is a dynamic, interpreted (bytecode-compiled) language. There are no type declarations of variables, parameters, functions, or methods in source code. This makes the code short and flexible, and you lose the compile-time type checking of the source code. Python tracks the types of all values at runtime and flags code that does not make sense as it runs.
