@@ -2,7 +2,7 @@
 Assignment repo that illustrates how to create Python applications.  Assignments are located [here](./assignments.md)
 
 # Videos
-
+test
 
 # Contents
 - [Classes](./Classes)
