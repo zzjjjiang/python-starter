@@ -1,7 +1,10 @@
-# Step It Up America
+# Python Starter 
+Assignment repo that illustrates how to create Python applications.  Assignments are located [here](./assignments.md)
 
-### Contents
-- [Assignments](./Assignments/readme.md) ==> [Solutions](./Assignments)
+# Videos
+
+
+# Contents
 - [Classes](./Classes)
 - [Data Access](./DataAccess)
 - [Collections](./Collections)
@@ -12,7 +15,7 @@
 - [Unit Testing](./UnitTest)
 - [Git](./Git)
 
-### Python
+# Python
 
 Python is a dynamic, interpreted (bytecode-compiled) language. There are no type declarations of variables, parameters, functions, or methods in source code. This makes the code short and flexible, and you lose the compile-time type checking of the source code. Python tracks the types of all values at runtime and flags code that does not make sense as it runs.
 
