@@ -2,7 +2,7 @@
 Assignment repo that illustrates how to create Python applications.  Assignments are located [here](./assignments.md)
 
 # Videos
-test
+[Python for Beginners - Learn Python (1h)](https://youtu.be/kqtD5dpn9C8)
 
 # Contents
 - [Classes](./Classes)
@@ -16,7 +16,6 @@ test
 - [Git](./Git)
 
 # Python
-
 Python is a dynamic, interpreted (bytecode-compiled) language. There are no type declarations of variables, parameters, functions, or methods in source code. This makes the code short and flexible, and you lose the compile-time type checking of the source code. Python tracks the types of all values at runtime and flags code that does not make sense as it runs.
 
 Python does very little checking at compile time, deferring almost all type, name, etc. checks on each line until that line runs. Suppose the above main() calls repeat() like this:
