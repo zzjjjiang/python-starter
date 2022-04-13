@@ -1,5 +1,5 @@
 # Python Starter 
-Assignment repo that illustrates how to create Python applications.  Assignments are located [here](./assignments.md)
+Assignment repo that illustrates the core concepts found in the Python programming language. Assignments are located [here](./assignments.md)
 
 # Videos
 [Python for Beginners - Learn Python (1h)](https://youtu.be/kqtD5dpn9C8)
