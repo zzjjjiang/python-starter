@@ -1,6 +1,6 @@
 # Python Assignments.
 
-# Ex 1: Random number
+# Ex. 1 Random number
 Create a program that creates a list of 10 random numbers and sums all the numbers.  The result is printed to the console.  The numbers in the list range from 0 - 100.  The program must use an f-string to display the output.
 
 Example list: `[1, 34, 2, 33, 45, 67, 24, 87, 32, 38]`
@@ -10,7 +10,7 @@ Example Output:
 The sum is: 363
 ```
 
-# Ex 2: Python in a Box
+# Ex. 2 Python in a Box
 Create a program that uses the `input()` function to obtain the width, height and length of a box.  The program computes the volume of the box (width * height * length) and writes it to the console:
 
 Example input:
@@ -25,7 +25,7 @@ Example output:
 Volume is: 1.72.
 ```
 
-# Ex 3: First and Last
+# Ex. 3 First and Last
 Create a program that accepts a list of numbers using the `input()` function and writes `True` if the first and last numbers are the same, otherwise write `False` to the console.
 
 Example input:
@@ -37,7 +37,7 @@ Example output:
 ```
 False
 ```
-# Ex 4: Word Count
+# Ex. 4 Word Count
 Create a program that counts the number of times the word `Python` appears in the text below and writes the result to the console. Do not use the `string.count()` method.
 
 ```
@@ -48,7 +48,7 @@ Create a program that counts the number of times the word `Python` appears in th
 3
 ```
 
-# Ex 5: Bigger Set
+# Ex. 5 Bigger Set
 Create a program that adds the following List of numbers to the Set and writes the final Set to the console:
 ```
 myList = [1,2,3]
@@ -58,7 +58,7 @@ Example output:
 ```
 {1,2,3,4,5}
 ```
-# Ex 6: Reverse Me
+# Ex. 6 Reverse Me
 Create a program that writes the following list of numbers in reverse order to the console:
 ```
 [11, 100, 101, 999, 1001]
@@ -68,7 +68,7 @@ Example output:
 [1001, 999, 101, 100, 11]
 ```
 
-# Ex 7: Winner Winner
+# Ex. 7 Winner Winner
 Create a program that generates a randon number between 1 and 100.  If the number is less than 10 the program prints the value of the number and `You lose.` on the console.  If the number is greater than 10 and less than 50 the program prints the value of the number and `Try again.` on the console.  If the number is greater than 50 the program prints the value of the number and `You win!` on the console.
 
 Example output:
@@ -78,7 +78,7 @@ Example output:
 86: You win!
 ```
 
-# Ex 8: Shortest Straw
+# Ex. 8 Shortest Straw
 Create a program that finds the smallest number in this list and writes the result to the console.  Do not use the `min()` or `sort()` functions.
 ```
 myList = [6,2,7,3,77,7,1]
@@ -88,7 +88,7 @@ Example output:
 1
 ```
 
-# Ex 9: Uppers or Lowers
+# Ex. 9 Uppers or Lowers
 Create a program that writes `True` to the console if a string is upper case, `False` if a string is not.
 
 Example input:
@@ -101,7 +101,7 @@ Example output:
 True
 ```
 
-# Ex 10: Vs and Cs
+# Ex. 10 Vs and Cs
 Create a program that counts all the vowels and consonants in a word and writes the count to the console:
 
 Example input:
@@ -115,7 +115,7 @@ Vowels: 2
 Consonants: 3
 ```
 
-# Ex 11: Write Today's Date
+# Ex. 11 Write Today's Date
 Create a program that writes the current date to a file named: `output.txt`.  The program must use an f-string when writing to a file.
 
 File Contents:
@@ -123,7 +123,7 @@ File Contents:
 Today's date is: 08/17/2021.
 ```
 
-# Ex 12: Negative to Positive / Positive to Negative
+# Ex. 12 Negative to Positive / Positive to Negative
 Create a program that prompts the user to enter an integer value.  The program converts a positive integer to a negative integer, and converts a negative integer to a positive integer.  The result is written to the console. The program returns an error if the user enters a float value.  Do not use the `abs()` function.
 
 Examples:
@@ -142,7 +142,7 @@ Enter integer: 123232.1
 ERROR: 123232.1 is not an integer.
 ```
 
-# Ex: 13 Add Only Calculator
+# Ex. 13 Add Only Calculator
 Create a program that prompts the user for two integers and adds them.  The program runs indefinitely until `exit` is typed.
 
 Example:
@@ -156,7 +156,7 @@ Answer: 10.
 Enter first integer: exit
 ```
 
-# Ex: 14 Forever Calculator
+# Ex. 14 Forever Calculator
 Extend Exercise 13 and create a program that prompts the user for two integers.  The program also asks the user for a mathmetical operation (add, subtract, multiply, divide).  The program runs indefinitely until `exit` is typed.  Ensure the program does not crash when dividing by zero.
 
 Example usage:
@@ -172,7 +172,7 @@ Answer: 12.0
 Enter first integer: exit
 ```
 
-# Ex: 15 Forever Calculator Logger
+# Ex. 15 Forever Calculator Logger
 Extend Exercise 14 and log every calculation to a file named `output.txt`.
 
 Example log file:
@@ -183,7 +183,7 @@ Example log file:
 08/17/2021 07:59:51 PM: 1.0 div 2.0 = 0.5
 ```
 
-# Ex: 16 Hash It, Print It
+# Ex. 16 Hash It, Print It
 Hashing is often applied to passwords.  Instead of storing raw passwords in backend systems, passwords are hashed (optionally with a salt value) and the hash value is stored.
 
 Create a program that prompts the user to enter a username and password.  The program hashes the password
@@ -200,7 +200,7 @@ mburolla : 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
 joe : 60303ae22b998861bce3b28f33eec1be758a213c86c93c076dbe9f558c11c752
 ```
 
-# Ex: 17 Simple Authentication, No Authorization
+# Ex. 17 Simple Authentication, No Authorization
 #### Background
 Authentication is the process in which a set of credentials is validated.  Authorization is what the user is allowed to do once they have been Authenticated. To summarize, Authentication is proving who you are and Authorization is what you are allowed to do.
 
@@ -251,7 +251,7 @@ main:
       compare hashes, print results
 ```
 
-# Ex: 18 Random Number Game
+# Ex. 18 Random Number Game
 Create a program generates a random number 1-10 inclusive.  The program prompts the user to enter a number between 1-10.  If the user number is too low the program prints `Too low`.  If the user number is too high, the program prints `Too high`.  If the user number is equal to the number the program generated print `You guessed it!!!` and the program terminates.
 
 Example Usage:
@@ -268,7 +268,7 @@ Enter a number between 1-10: 2
 You guessed it!!!!
 ```
 
-# Ex: 19 Frame It
+# Ex. 19 Frame It
 Create a program that contains a list of strings and prints them in a frame on the console:
 
 ```
@@ -284,7 +284,7 @@ wordlist = ["Hello", "World", "in", "a", "frame"]
 *********
 ```
 
-# Ex: 20 Super Simple File Indexer
+# Ex. 20 Super Simple File Indexer
 Create a program that reads the words from the following file: [input-file-1.txt](http://www.google.com).  The program contains a dictionary that keeps track of the word count and prints the results to the console.
 
 Example output:
@@ -301,7 +301,7 @@ how:1
 .
 ```
 
-# Ex: 21 Blast Off!!!
+# Ex. 21 Blast Off!!!
 Create a program that asks the user for a countdown value in seconds, and then starts printing the countdown. When the countdown ends the program displays `Blast off!!!` on the console.  If the user enters a negative value, the programs terminates with an error message. 
 
 Example output:
@@ -315,7 +315,7 @@ Enter countdown (sec): 5
 Blast off!!
 ```
 
-# Ex: 22 Morse Codify It
+# Ex. 22 Morse Codify It
 Create a program that converts text to morse code.  The program loops indefinitely until `control+c`is entered by the user.  The program will contain a function called `convertTextToMorseCode(inputString)`.  This function contains a parameter called `inputString` and will contain the following dictionary:
 
 ```
@@ -577,7 +577,7 @@ Output:
 
 The solution to this is one line of code.
 
-# Ex 32. Filter People
+# Ex. 32 Filter People
 Create a program that contains two functions.  These functions are called by the `main()` function:
 
 - `createPeopleList()`
@@ -598,7 +598,7 @@ joe
 fred
 ```
 
-# Ex 33. Exceptions
+# Ex. 33 Exceptions
  Modify `ex-33.py` in your student directory to catch all the errors thrown by the program (`try/except`) so that the program fails gracefully with an error message to the console.
 
 Example:
@@ -606,7 +606,7 @@ Example:
 File not found
 ```
 
-# Ex 34. Create, Sort, Filter, Print
+# Ex. 34 Create, Sort, Filter, Print
 Create a program that has the following architecture:
 
 ```
@@ -636,7 +636,7 @@ bob : 150
 charlie : 150 
 ```
 
-# Ex 35. Map Weight Loss
+# Ex. 35 Map Weight Loss
 Given the following dictionary:
 
 ```
@@ -654,7 +654,7 @@ Use the `map()` function to subtract 10 pounds from the weight for each person a
 ```
 [{'charlie': 140}, {'bob': 140}, {'mary': 130}, {'fred': 120}, {'alex': 140}]
 ```
-# Ex 36. Map Number Lookup
+# Ex. 36 Map Number Lookup
 
 Given the following:
 
@@ -675,7 +675,7 @@ Output:
 ['Four', 'Three', 'Two', 'One']
 ```
 
-# Ex 37. Tuple to Set Conversion
+# Ex. 37 Tuple to Set Conversion
 Given the following tuples:
 
 ```
@@ -689,7 +689,7 @@ Output:
 {'blue', 'red', 'green'}
 ```
 
-# Ex 38.  Carpets
+# Ex. 38 Carpets
 You are a developer that works at a company called Our Carpets Really Are Pricey (OCRAP) Inc. The price to install carpet is $7.89 per square foot.  You have to calculate the price for a customer given the following data:
 ```
   roomsList = [
@@ -743,7 +743,7 @@ You are a developer that works at a company called Our Carpets Really Are Pricey
 How much will it cost to install carpet for only the blue rooms?
 
 
-# Ex 39. Comprehending List Comprehensions
+# Ex. 39 Comprehending List Comprehensions
 Given the following list:
 
 ```
@@ -757,7 +757,7 @@ Output
 [4, 8, 12, 16, 20]
 ``` 
 
-# Ex 40. Tiny Movie Theater
+# Ex. 40 Tiny Movie Theater
 ### Part A.
 Create a program that displays and keeps track of occupied seats for a tiny movie theater.  The theater has 3 rows with 10 seats in each row.  The program displays empty seats with a '0' and occupied seats with 'X'.  Row 1 is upper top left, Seat 10 is far right.
 
@@ -891,7 +891,7 @@ X000000000
 $3.00
 ```
 
-# Ex 41. Mask SSN
+# Ex. 41 Mask SSN
 Given the knowledge obtained about short-circuiting, and given the following list:
 ```
   peopleList = [
@@ -911,7 +911,7 @@ Output
 ```
 [{'ssn': 'xxx-xx-xxxx', 'name': 'charlie'}, {'ssn': 'xxx-xx-xxxx', 'name': 'bob'}, {'ssn': 'xxx-xx-xxxx', 'name': 'mary'}, {'ssn': 'xxx-xx-xxxx', 'name': 'fred'}, {'ssn': 'xxx-xx-xxxx', 'name': 'alex'}]
 ```
-# Ex 42. Access Denied
+# Ex. 42 Access Denied
 Given the following data:
 ```
   peopleList = [
@@ -939,7 +939,7 @@ Enter Username: Fred
 Username does not exist.
 ```
 
-# Ex 43. Moving Company
+# Ex. 43 Moving Company
 You are a developer for a moving company call Move It Or Lose It (MIOLI) Inc.  You charge customers based on the size of the moving box.  Given the following data, how much will it cost to move this customer?
 
 ```
@@ -968,7 +968,7 @@ You are a developer for a moving company call Move It Or Lose It (MIOLI) Inc.  Y
       }
   }
 ```
-# Ex 44. HL7 Old School
+# Ex. 44 HL7 Old School
 
 ### Part A.
 
@@ -1014,7 +1014,7 @@ Use S3? No
 ```
 
 
-# Ex 45. PyCopy
+# Ex. 45 PyCopy
 Create a python program that works like robocopy.  Robocopy only copies files that have been updated, in other words the source and destination files are different.  PyCopy will essentially sync the source and destination directories not touching files that are the same.  If a file exists in the destination directory, but does not exist in the source, the file is deleted in the destination directory.  
 
 Example:
