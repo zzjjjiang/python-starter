@@ -33,7 +33,7 @@ Python does very little checking at compile time, deferring almost all type, nam
 
 ```
 def main():
-    if name == 'Guido':
+    if name == 'Guiseppe':
         print repeeeet(name) + '!!!'
     else:
         print repeat(name)
